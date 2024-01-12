@@ -1,3 +1,11 @@
-export default function Home(){
-    return <h1> Hello </h1>
+import { Navbar } from "../../components/navbar/navbar";
+
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <h1> Hello Gabriel </h1>
+    </>
+  );
 }
