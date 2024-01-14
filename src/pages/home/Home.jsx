@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       {news.map((item, index) => (
-        <Card Key={index} news={item}/>
+        <Card key={index} news={item}/>
       ))}
     </>
   );
