@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   width: 100%;
   position: fixed;
   padding: 1rem 0;
+  height: 5%;
   top: 0;
   right: 0;
   background-color: blueviolet;
@@ -33,6 +34,7 @@ export const InputSpace = styled.div`
     position: absolute;
     top: 1;
     right: 0.2rem;
+    color: black;
     z-index: 10;
     border: none;
     border-radius: 10px;
