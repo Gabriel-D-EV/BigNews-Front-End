@@ -11,4 +11,5 @@ export const HomeBody = styled.section`
     width: 85%;
     background-color: #0f0f0f75;
     padding: 30px;
+    padding-top: 100px;
 `;

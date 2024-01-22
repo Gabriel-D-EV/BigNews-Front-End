@@ -16,6 +16,19 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     height: 100vh;
     color: white;
-    background-color: #888;
+    background: #aaa;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        width: 8px;
+        background: blueviolet;
+    }
+
 `;
