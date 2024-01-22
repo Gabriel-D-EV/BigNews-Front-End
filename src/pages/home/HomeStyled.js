@@ -8,7 +8,7 @@ export const HomeBody = styled.section`
     margin: 0 auto;
     
 
-    width: 80%;
+    width: 85%;
     background-color: #0f0f0f;
     padding: 30px;
 `;
