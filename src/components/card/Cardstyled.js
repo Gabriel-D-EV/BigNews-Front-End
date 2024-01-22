@@ -14,6 +14,7 @@ export const CardContainer = styled.section`
 
 export const CardBody = styled.article`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -25,6 +26,12 @@ export const CardBody = styled.article`
         width: 30%;
         object-fit: cover;
         object-position: center;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 `;
  
