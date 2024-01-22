@@ -41,4 +41,11 @@ export const news = [
     likes: 2,
     comments: 5,
   },
+  {
+    title: "New News 7",
+    text: "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor ",
+    image: "https://avatars.githubusercontent.com/u/140929886?v=4",
+    likes: 2,
+    comments: 5,
+  },
 ];
