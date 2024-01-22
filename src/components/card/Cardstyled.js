@@ -7,7 +7,7 @@ export const CardContainer = styled.section`
     gap: 1rem;
     max-width: 100%;
     background-color: #3c3c3c;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
     border-radius: 10px;
     padding: 10px;
 `
@@ -33,10 +33,12 @@ export const CardFooter = styled.section`
     display: flex;
     align-items: center;
     gap: 1rem;
+    
 
     div {
         display: flex;
         align-items: center;
         gap: 0.2rem;
+        bottom: 0;
     }
 `;

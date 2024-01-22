@@ -1,7 +1,7 @@
 export const news = [
   {
     title: "New News",
-    text: "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adit lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor ",
+    text: "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adit lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adit lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsumorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adit lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsumorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor ",
     image: "https://avatars.githubusercontent.com/u/140929886?v=4",
     likes: 2,
     comments: 5,

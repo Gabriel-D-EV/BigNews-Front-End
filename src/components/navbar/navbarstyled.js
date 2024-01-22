@@ -46,28 +46,58 @@ export const InputSpace = styled.div`
     width: 100%;
     border: none;
     border-radius: 10px;
-    :focus {
-      border: 1px solid rgb(108, 30, 180)
-    }
   }
+  input:focus {
+      border: 3px solid rgb(50, 30, 100)
+    }
 `;
 
 export const Button = styled.button`
-  background-color: rgb(108, 30, 180);
+  background-color: blueviolet;
   color: #000;
   border: none;
   border-radius: 10px;
-  font-size: 0.8rem;
-  padding: 10px 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  :hover {
-    background-color: rgb(80, 30, 100);
+  margin-right: 20px;
+  padding: 5px;
+  a {
+    border: 3px solid rgb(50, 30, 100);
+    text-decoration: none;
     color: #fff;
-    transform: scale(1.1, 1.1);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .2s all ease-in-out;
+  }
+  a:hover {
+    background-color: rgb(50, 30, 100);
+    color: #fff;
     z-index: 3;
+    border-radius: 10px;
   }
 `;
+
+export const NavList = styled.ul`
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .2s all ease-in-out;
+  
+    }
+    a:hover {
+      color: rgb(50, 30, 100);
+      border-bottom: 3px solid ;
+    }
+  
+`
