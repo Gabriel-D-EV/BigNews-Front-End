@@ -4,7 +4,7 @@ import { CardContainer, CardBody, CardFooter } from "./Cardstyled";
 export function Card(props) {
   return (
     <CardContainer>
-      <CardBody>
+      <CardBody top={props}>
         <div>
           <h2>{props.title}</h2>
           <img src={props.banner} alt="Banner da Noticia" />
