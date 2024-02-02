@@ -6,21 +6,21 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import  Home  from './pages/home/Home.jsx';
 import { Navbar } from './components/navbar/Navbar.jsx';
 import { GlobalStyle } from './GlobalStyled.js';
-import pageError from './pages/pageError/PageError';
+import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Navbar />,
-    errorElement: <pageError/>,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
         element: <Home />
       },
       {
-        path: "/search",
+        path: "/search/:title",
         element: <Search />
       },
     ],
