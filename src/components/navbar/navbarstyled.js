@@ -30,7 +30,8 @@ export const InputSpace = styled.div`
   display: flex;
   align-items: center;
   margin-left: 1rem;
-  i {
+  button {
+    cursor: pointer;
     position: absolute;
     top: 1;
     right: 0.2rem;
@@ -38,6 +39,11 @@ export const InputSpace = styled.div`
     z-index: 10;
     border: none;
     border-radius: 10px;
+    transition: all .2 ease-in-out; 
+  }
+  button:hover {
+    color: blueviolet;
+    font-weight: bolder;
   }
   input {
     outline: none;

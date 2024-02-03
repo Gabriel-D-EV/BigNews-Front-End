@@ -2,5 +2,5 @@ import { useParams } from "react-router-dom";
 
 export function Search() {
     const { title } = useParams();
-    return <h1>{title}</h1>;
+    return <h1 className="mt-10">{title}</h1>;
 }
