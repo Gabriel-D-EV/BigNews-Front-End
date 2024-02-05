@@ -2,9 +2,19 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
 import { Button, Nav, InputSpace, Img, NavList } from "./Navbarstyled";
 import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+
+const searchSchema = z.object({
+  title: z.string().refine(value => !/^\s*$/.test(value	))
+})
+
 
 export function Navbar() {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm({
+    resolver: zodResolver(searchSchema),
+  });
   const navigate = useNavigate();
 
   function onSearch(data) {
@@ -47,7 +57,7 @@ export function Navbar() {
             <button type="submit">
               <i className="bi bi-search"></i>
             </button>
-            <input {...register("title")} type="text" placeholder="Pesquisar" />
+            <input {...register("title")} type="text" strip placeholder="Pesquisar" required/>
           </InputSpace>
         </form>
 
