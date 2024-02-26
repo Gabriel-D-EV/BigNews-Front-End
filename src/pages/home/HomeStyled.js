@@ -7,16 +7,16 @@ export const HomeBody = styled.section`
   grid-gap: 1rem;
   margin: 0 auto;
 
-  width: 72%;
-  background-color: #0f0f0f75;
+  width: 70%;
+  background-color: #0f0f0fe9;
   padding: 30px;
   padding-top: 100px;
 `;
 
 export const HomeHeader = styled.section`
-  width: 72%;
+  width: 70%;
   display: flex;
   margin: auto;
-  background-color: #0f0f0f75;
+  background-color: #0f0f0fe9;
   padding: 30px;
 `;

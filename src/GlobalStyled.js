@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import images from "./images/animes-bg.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -16,10 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     height: 100vh;
     color: white;
-    background: #aaa;
+    background-image: url(${images});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     }
 
     ::-webkit-scrollbar {
