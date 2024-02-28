@@ -15,6 +15,11 @@ export const Nav = styled.nav`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  .ini-ent {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const Img = styled.img`
@@ -58,32 +63,6 @@ export const InputSpace = styled.div`
     }
 `;
 
-export const Button = styled.button`
-  background-color: blueviolet;
-  color: #000;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  margin-right: 20px;
-  padding: 5px;
-  h3 {
-    border: 3px solid rgb(50, 30, 100);
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 10px;
-    transition: .2s all ease-in-out;
-  }
-  h3:hover {
-    background-color: rgb(50, 30, 100);
-    color: #fff;
-    z-index: 3;
-    border-radius: 10px;
-  }
-`;
 
 export const NavList = styled.ul`
   text-decoration: none;
@@ -105,4 +84,4 @@ export const NavList = styled.ul`
       border-bottom: 3px solid ;
     }
   
-`
+`;

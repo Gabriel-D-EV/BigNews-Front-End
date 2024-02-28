@@ -9,7 +9,8 @@ export const AuthContainer = styled.div`
     margin: 0 auto;
     padding: 0 15%;
     background-color: #0f0f0fe9;
-
+    gap: 50px;
+    
     form {
         display: flex;
         flex-direction: column;
@@ -18,7 +19,7 @@ export const AuthContainer = styled.div`
         max-width: 400px;
         gap: 0.5rem;
         border-radius: 10px;
-        
+        margin: auto;
     }
 `;
 
@@ -32,11 +33,20 @@ export const Section = styled.section`
     gap: 1rem;
     background-color: ${(props) => (props.type === "signin" ? "blueviolet" : "gray")};
     color: ${(props) => (props.type === "signup" ? "blueviolet" : "gray")};
+    border-radius: 10px;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
 
     h2 {
         font-size: 2rem;
         text-align: center;
         font-weight: bold;
+        color: black;
+    }
+    hr {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: black;
     }
 `;
 export const Img = styled.img`

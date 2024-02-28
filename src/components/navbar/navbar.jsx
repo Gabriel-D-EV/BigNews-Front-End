@@ -1,18 +1,22 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Button, Nav, InputSpace, Img, NavList } from "./Navbarstyled";
+import { Nav, InputSpace, Img, NavList } from "./navbarstyled";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-
+import { Button } from "../button/Button";
 
 const searchSchema = z.object({
-  title: z.string().refine(value => !/^\s*$/.test(value	))
-})
-
+  title: z.string().refine((value) => !/^\s*$/.test(value)),
+});
 
 export function Navbar() {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm({
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
     resolver: zodResolver(searchSchema),
   });
   const navigate = useNavigate();
@@ -23,16 +27,19 @@ export function Navbar() {
     reset();
   }
 
-  function goAuth() {
-    navigate("/auth");
-  }
-
   return (
     <>
       <Nav>
-        <Link to="/">
-          <Img src={logo} alt="Logo big News" />
+        <div className="ini-ent">
+          <Link to="/">
+            <Img src={logo} alt="Logo big News" />
+          </Link>
+
+          <Link to="/auth">
+          <Button type="button" text="Entrar"></Button>
         </Link>
+        </div>
+        
         <div>
           <NavList>
             <li>
@@ -61,13 +68,16 @@ export function Navbar() {
             <button type="submit">
               <i className="bi bi-search"></i>
             </button>
-            <input {...register("title")} type="text" strip placeholder="Pesquisar" required/>
+            <input
+              {...register("title")}
+              type="text"
+              strip
+              placeholder="Pesquisar"
+              required
+            />
           </InputSpace>
         </form>
-
-        <Button onClick={goAuth}>
-          <h3>Entrar</h3>
-        </Button>
+        
       </Nav>
       <Outlet />
     </>

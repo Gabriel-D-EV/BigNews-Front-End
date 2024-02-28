@@ -1,12 +1,12 @@
 import { Card } from "../../components/card/Card";
-import { Navbar } from "../../components/navbar/Navbar";
+import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
 import { HomeBody, HomeHeader } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [news, setNews] = useState([]); 
-  const [topNews, setTopNews] = useState({}); 
+  const [news, setNews] = useState([]);
+  const [topNews, setTopNews] = useState({});
 
   async function findNews() {
     const newsResponse = await getAllNews();
