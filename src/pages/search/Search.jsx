@@ -30,7 +30,7 @@ export function Search() {
           {news.length
             ? `Encontramos ${news.length} ${
                 news.length > 1 ? "notícias" : "notícia"
-              } com o título ${title}`
+              } com o título "${title}"`
             : "Não encontramos notícias com este título"}
           
         </span>
