@@ -23,6 +23,10 @@ export function Navbar() {
     reset();
   }
 
+  function goAuth() {
+    navigate("/auth");
+  }
+
   return (
     <>
       <Nav>
@@ -61,8 +65,8 @@ export function Navbar() {
           </InputSpace>
         </form>
 
-        <Button>
-          <a href="#">ENTRAR</a>
+        <Button onClick={goAuth}>
+          <h3>Entrar</h3>
         </Button>
       </Nav>
       <Outlet />

@@ -9,7 +9,7 @@ export const HomeBody = styled.section`
 
   width: 70%;
   background-color: #0f0f0fe9;
-  padding: 30px;
+  padding: 60px;
   padding-top: 100px;
 `;
 
@@ -18,5 +18,6 @@ export const HomeHeader = styled.section`
   display: flex;
   margin: auto;
   background-color: #0f0f0fe9;
-  padding: 30px;
+  padding: 60px;
+  padding-top: 6%;
 `;

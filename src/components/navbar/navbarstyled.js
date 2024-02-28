@@ -67,18 +67,17 @@ export const Button = styled.button`
   transition: all 0.2s ease-in-out;
   font-weight: 500;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
   margin-right: 20px;
   padding: 5px;
-  a {
+  h3 {
     border: 3px solid rgb(50, 30, 100);
     text-decoration: none;
     color: #fff;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
     transition: .2s all ease-in-out;
   }
-  a:hover {
+  h3:hover {
     background-color: rgb(50, 30, 100);
     color: #fff;
     z-index: 3;
