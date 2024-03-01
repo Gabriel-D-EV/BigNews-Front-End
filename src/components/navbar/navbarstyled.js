@@ -19,6 +19,8 @@ export const Nav = styled.nav`
   .ini-ent {
     display: flex;
     align-items: center;
+    gap: 20px;
+    padding: 10px;
   }
 `;
 
@@ -44,7 +46,7 @@ export const InputSpace = styled.div`
     z-index: 10;
     border: none;
     border-radius: 10px;
-    transition: all .2 ease-in-out; 
+    transition: all 0.2 ease-in-out;
   }
   button:hover {
     color: blueviolet;
@@ -59,10 +61,9 @@ export const InputSpace = styled.div`
     border-radius: 10px;
   }
   input:focus {
-      border: 3px solid rgb(50, 30, 100)
-    }
+    border: 3px solid rgb(50, 30, 100);
+  }
 `;
-
 
 export const NavList = styled.ul`
   text-decoration: none;
@@ -76,12 +77,23 @@ export const NavList = styled.ul`
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
-    transition: .2s all ease-in-out;
-  
-    }
-    a:hover {
-      color: rgb(50, 30, 100);
-      border-bottom: 3px solid ;
-    }
-  
+    transition: 0.2s all ease-in-out;
+  }
+  a:hover {
+    color: rgb(50, 30, 100);
+    border-bottom: 3px solid;
+  }
+`;
+
+export const ErrorSpan = styled.span`
+  background-color: #900;
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow:  0px 1px 10px #000;
 `;

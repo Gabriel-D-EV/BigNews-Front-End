@@ -2,27 +2,28 @@ import { AuthContainer, Section, Img } from "./AuthStyled";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
 import { Input } from "../../components/input/input";
-import { Button } from "../../components/button/Button"
+import { Button } from "../../components/button/Button";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { signinSchema } from "../../schemas/signinSchema";
+import { ErrorSpan } from "../../components/navbar/navbarstyled";
+import { signupSchema } from "../../schemas/signupSchema";
 
 export function Auth() {
   const {
     register: registerSignin,
     handleSubmit: handleSubmitSignin,
-    reset: resetSignin,
     formState: { errors: errorsSignin },
   } = useForm({
-    //resolver: zodResolver(signinSchema),
+    resolver: zodResolver(signinSchema),
   });
 
   const {
     register: registerSignup,
     handleSubmit: handleSubmitSignup,
-    reset: resetSignup,
     formState: { errors: errorsSignup },
   } = useForm({
-    //resolver: zodResolver(signupSchema),
+    resolver: zodResolver(signupSchema),
   });
 
   function inHandleSubmit(data) {
@@ -43,22 +44,78 @@ export function Auth() {
         <h2>Logar</h2>
         <hr />
         <form onSubmit={handleSubmitSignin(inHandleSubmit)}>
-          <Input type="email" placeholder="E-mail" name="email" required register={registerSignin}/>
-          <Input type="password" placeholder="Senha" name="password" required register={registerSignin}/>
+          <Input
+            type="email"
+            placeholder="E-mail"
+            name="email"
+            required
+            register={registerSignin}
+          />
+          {errorsSignin.email && (
+            <ErrorSpan>{errorsSignin.email.message}</ErrorSpan>
+          )}
+          <Input
+            type="password"
+            placeholder="Senha"
+            name="password"
+            required
+            register={registerSignin}
+          />
+          {errorsSignin.password && (
+            <ErrorSpan>{errorsSignin.password.message}</ErrorSpan>
+          )}
           <Button type="submit" text="Entrar"></Button>
         </form>
-      </Section>
         
+      </Section>
+
       <Section type="signup">
-              <h2>Cadastrar</h2>
-              <hr />
-              <form onSubmit={handleSubmitSignup(upHandleSubmit)}>
-                  <Input type="text" placeholder="Nome" name="nome" required register={registerSignup}/>
-                  <Input type="email" placeholder="Seu melhor e-mail" name="email" required register={registerSignup}/>
-                  <Input type="password" placeholder="Senha" name="password" required register={registerSignup}/>
-                  <Input type="password" placeholder="Confirmar senha" name="password2" required register={registerSignup}/>
-                  <Button type="submit" text="Cadastrar"></Button>
-              </form>
+        <h2>Cadastrar</h2>
+        <hr />
+        <form onSubmit={handleSubmitSignup(upHandleSubmit)}>
+          <Input
+            type="text"
+            placeholder="Nome"
+            name="name"
+            required
+            register={registerSignup}
+          />
+          {errorsSignup.nome && (
+            <ErrorSpan>{errorsSignup.nome.message}</ErrorSpan>
+          )}
+          <Input
+            type="email"
+            placeholder="Seu melhor e-mail"
+            name="email"
+            required
+            register={registerSignup}
+          />
+          {errorsSignup.email && (
+            <ErrorSpan>{errorsSignup.email.message}</ErrorSpan>
+          )}
+          <Input
+            type="password"
+            placeholder="Senha"
+            name="password"
+            required
+            register={registerSignup}
+          />
+          {errorsSignup.password && (
+            <ErrorSpan>{errorsSignup.password.message}</ErrorSpan>
+          )}
+          <Input
+            type="password"
+            placeholder="Confirmar senha"
+            name="password2"
+            required
+            register={registerSignup}
+          />
+          {errorsSignup.password2 && (
+            <ErrorSpan>{errorsSignup.password2.message}</ErrorSpan>
+          )}
+          <Button type="submit" text="Cadastrar"></Button>
+        </form>
+        
       </Section>
     </AuthContainer>
   );

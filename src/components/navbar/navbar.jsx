@@ -1,14 +1,12 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Nav, InputSpace, Img, NavList } from "./navbarstyled";
+import { Nav, InputSpace, Img, NavList, ErrorSpan } from "./navbarstyled";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../button/Button";
+import { searchSchema } from "../../schemas/searchSchema";
 
-const searchSchema = z.object({
-  title: z.string().refine((value) => !/^\s*$/.test(value)),
-});
+
 
 export function Navbar() {
   const {
@@ -30,16 +28,10 @@ export function Navbar() {
   return (
     <>
       <Nav>
-        <div className="ini-ent">
-          <Link to="/">
-            <Img src={logo} alt="Logo big News" />
-          </Link>
-
-          <Link to="/auth">
-          <Button type="button" text="Entrar"></Button>
+        <Link to="/">
+          <Img src={logo} alt="Logo big News" />
         </Link>
-        </div>
-        
+
         <div>
           <NavList>
             <li>
@@ -63,22 +55,28 @@ export function Navbar() {
           </NavList>
         </div>
 
-        <form onSubmit={handleSubmit(onSearch)}>
-          <InputSpace>
-            <button type="submit">
-              <i className="bi bi-search"></i>
-            </button>
-            <input
-              {...register("title")}
-              type="text"
-              strip
-              placeholder="Pesquisar"
-              required
-            />
-          </InputSpace>
-        </form>
-        
+        <div className="ini-ent">
+          <form onSubmit={handleSubmit(onSearch)}>
+            <InputSpace>
+              <button type="submit">
+                <i className="bi bi-search"></i>
+              </button>
+              <input
+                {...register("title")}
+                type="text"
+                strip
+                placeholder="Pesquisar"
+                required
+              />
+            </InputSpace>
+          </form>
+
+          <Link to="/auth">
+            <Button type="button" text="Entrar"></Button>
+          </Link>
+        </div>
       </Nav>
+      {errors.title && <ErrorSpan>{errors.title.message}</ErrorSpan>}
       <Outlet />
     </>
   );

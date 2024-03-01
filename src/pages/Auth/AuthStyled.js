@@ -17,18 +17,19 @@ export const AuthContainer = styled.div`
         align-items: center;
         width: 100%;
         max-width: 400px;
-        gap: 0.5rem;
+        gap: 0.7rem;
         border-radius: 10px;
         margin: auto;
+        z-index: 10;
     }
 `;
 
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    height: 400px;
+    height: 60%;
     padding: 2rem;
     gap: 1rem;
     background-color: ${(props) => (props.type === "signin" ? "blueviolet" : "gray")};
