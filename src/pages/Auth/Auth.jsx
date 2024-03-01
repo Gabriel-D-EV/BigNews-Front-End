@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { signinSchema } from "../../schemas/signinSchema";
 import { ErrorSpan } from "../../components/navbar/navbarstyled";
 import { signupSchema } from "../../schemas/signupSchema";
+import { signup } from "../../services/userServices";
 
 export function Auth() {
   const {
@@ -30,8 +31,13 @@ export function Auth() {
     console.log(data);
   }
 
-  function upHandleSubmit(data) {
-    console.log(data);
+  async function upHandleSubmit(data) {
+    try {
+      const response = await signup(data);
+      console.log(response);
+    } catch (error) {
+      
+    }
   }
 
   return (
