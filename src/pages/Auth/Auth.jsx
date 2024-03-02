@@ -1,5 +1,5 @@
 import { AuthContainer, Section, Img } from "./AuthStyled";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
 import { Input } from "../../components/input/input";
 import { Button } from "../../components/button/Button";
@@ -9,6 +9,7 @@ import { signinSchema } from "../../schemas/signinSchema";
 import { ErrorSpan } from "../../components/navbar/navbarstyled";
 import { signupSchema } from "../../schemas/signupSchema";
 import { signup } from "../../services/userServices";
+import Cookies from "js-cookie";
 
 export function Auth() {
   const {
@@ -31,14 +32,17 @@ export function Auth() {
     console.log(data);
   }
 
+  const navigate = useNavigate()
+
   async function upHandleSubmit(data) {
     try {
       const response = await signup(data);
-      console.log(response);
-    } catch (error) {
-      
-    }
+      Cookies.set("token", response.data.token, { expires: 1 });
+      navigate("/")
+    } catch (error) {}
   }
+
+  
 
   return (
     <AuthContainer>
@@ -72,7 +76,6 @@ export function Auth() {
           )}
           <Button type="submit" text="Entrar"></Button>
         </form>
-        
       </Section>
 
       <Section type="signup">
@@ -121,7 +124,6 @@ export function Auth() {
           )}
           <Button type="submit" text="Cadastrar"></Button>
         </form>
-        
       </Section>
     </AuthContainer>
   );

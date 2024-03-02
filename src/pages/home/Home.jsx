@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import { Card } from "../../components/card/Card";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
@@ -18,6 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     findNews();
+    console.log(Cookies.get("token"));
   }, []);
 
   return (
