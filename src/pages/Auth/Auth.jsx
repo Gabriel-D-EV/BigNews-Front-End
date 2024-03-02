@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { signinSchema } from "../../schemas/signinSchema";
 import { ErrorSpan } from "../../components/navbar/navbarstyled";
 import { signupSchema } from "../../schemas/signupSchema";
-import { signup } from "../../services/userServices";
+import { signin, signup } from "../../services/userServices";
 import Cookies from "js-cookie";
 
 export function Auth() {
@@ -28,11 +28,16 @@ export function Auth() {
     resolver: zodResolver(signupSchema),
   });
 
-  function inHandleSubmit(data) {
-    console.log(data);
+  const navigate = useNavigate()
+
+  async function inHandleSubmit(data) {
+    try {
+      const response = await signin(data);
+      Cookies.set("token", response.data.token, { expires: 1 });
+      navigate("/")
+    } catch (error) {}
   }
 
-  const navigate = useNavigate()
 
   async function upHandleSubmit(data) {
     try {
