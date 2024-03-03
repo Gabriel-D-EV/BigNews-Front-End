@@ -5,8 +5,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../button/Button";
 import { searchSchema } from "../../schemas/searchSchema";
-
-
+import { userLogado } from "../../services/userServices";
+import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 export function Navbar() {
   const {
@@ -18,12 +19,26 @@ export function Navbar() {
     resolver: zodResolver(searchSchema),
   });
   const navigate = useNavigate();
+  const [user, setUser] = useState({});
 
   function onSearch(data) {
     const { title } = data;
     navigate(`/search/${title}`);
     reset();
   }
+
+  async function findUserLogado() {
+    try {
+      const response = await userLogado();
+      setUser(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    if (Cookies.get("token")) findUserLogado();
+  }, []);
 
   return (
     <>
@@ -70,6 +85,14 @@ export function Navbar() {
               />
             </InputSpace>
           </form>
+
+          {user ? (
+            <h2>{user.name}</h2>
+          ) : (
+            <Link to="/auth">
+              <Button type="button" text="Entrar"></Button>
+            </Link>
+          )}
 
           <Link to="/auth">
             <Button type="button" text="Entrar"></Button>
