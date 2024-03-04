@@ -10,6 +10,7 @@ import { ErrorSpan } from "../../components/navbar/navbarstyled";
 import { signupSchema } from "../../schemas/signupSchema";
 import { signin, signup } from "../../services/userServices";
 import Cookies from "js-cookie";
+import { FooterFinal } from "../../components/footer/Footer";
 
 export function Auth() {
   const {
@@ -50,6 +51,7 @@ export function Auth() {
   
 
   return (
+    <>
     <AuthContainer>
       <Link to="/">
         <Img src={logo} alt="Logo big News" />
@@ -130,6 +132,9 @@ export function Auth() {
           <Button type="submit" text="Cadastrar"></Button>
         </form>
       </Section>
+      
     </AuthContainer>
+      <FooterFinal />
+      </>
   );
 }

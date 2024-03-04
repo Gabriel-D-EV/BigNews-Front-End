@@ -1,5 +1,6 @@
 
 import { Card } from "../../components/card/Card";
+import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
 import { HomeBody, HomeHeader } from "./HomeStyled.js";
@@ -46,6 +47,7 @@ export default function Home() {
           />
         ))}
       </HomeBody>
+      <FooterFinal />
     </>
   );
 }
