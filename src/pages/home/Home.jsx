@@ -1,4 +1,5 @@
 
+import Cookies from "js-cookie";
 import { Card } from "../../components/card/Card";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
@@ -20,6 +21,8 @@ export default function Home() {
 
   useEffect(() => {
     findNews();
+   
+    
   }, []);
 
   return (

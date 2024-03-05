@@ -16,7 +16,7 @@ export function signin(data) {
 }
 
 export function userLogado() {
-    const response = axios.get(`${baseURL}/user/logado`, {
+    const response = axios.get(`${baseURL}/user/userlogado`, {
         headers: {
             Authorization: `Bearer ${Cookies.get("token")}`
         }
