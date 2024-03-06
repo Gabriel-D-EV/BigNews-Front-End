@@ -1,11 +1,11 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Nav, InputSpace, Img, NavList, ErrorSpan } from "./navbarstyled";
+import { Nav, InputSpace, Img, NavList, ErrorSpan } from "./navbarstyled.js";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button } from "../button/Button";
-import { searchSchema } from "../../schemas/searchSchema";
-import { userLogado } from "../../services/userServices";
+import { Button } from "../button/Button.jsx";
+import { searchSchema } from "../../schemas/searchSchema.js";
+import { userLogado } from "../../services/userServices.js";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 
@@ -18,8 +18,10 @@ export function Navbar() {
   } = useForm({
     resolver: zodResolver(searchSchema),
   });
+
   const navigate = useNavigate();
   const [user, setUser] = useState({});
+
 
   function onSearch(data) {
     const { title } = data;
@@ -30,14 +32,14 @@ export function Navbar() {
   async function findUserLogado() {
     try {
       const response = await userLogado();
-      setUser(response.data);
+      console.log(response);
     } catch (error) {
       console.log(error);
     }
   }
 
   useEffect(() => {
-    if (Cookies.get("token")) findUserLogado();
+    findUserLogado();
   }, []);
 
   return (

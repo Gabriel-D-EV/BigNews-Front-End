@@ -13,16 +13,17 @@ export const CardContainer = styled.section`
 
 export const CardBody = styled.article`
     display: flex;
-   width: 100%;
+    width: 100%;
     justify-content: center;
     height: 100%;
 
 
     img{
-        width: 40%;
+        width: 50%;
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
+        padding: 10px
     }
 
     div {
@@ -38,12 +39,14 @@ export const CardHeader = styled.article`
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-size: ${(props) => (props.top ? "1.3rem" : ".9rem")};
+    font-size: ${(props) => (props.top ? "1.2rem" : ".9rem")};
     
     h2 {
+        color: aquamarine;
+        text-align: center;
         margin-bottom: 1rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "3rem" : "1.5rem")};
+        font-size: ${(props) => (props.top? "3.3rem" : "1.8rem")};
     }
 `;
 

@@ -10,6 +10,7 @@ export const AuthContainer = styled.div`
     padding: 0 15%;
     background-color: #0f0f0fe9;
     gap: 50px;
+    padding-bottom: 50px;
     
     form {
         display: flex;

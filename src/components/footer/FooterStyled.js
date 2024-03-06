@@ -9,15 +9,17 @@ export const FooterStyle = styled.footer`
     
     p {
         text-align: center;
-        padding: 20px;
+        padding: 50px;
     }
 `;
 
 export const Redes = styled.div`
+
+    padding: 30px;
     
     p {
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: bold;
         color: white;
         margin: 0;

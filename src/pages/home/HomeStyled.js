@@ -10,10 +10,10 @@ export const HomeBody = styled.section`
 
   width: 70%;
   background-color: #0f0f0fe9;
-  padding: 60px;
+  padding: 50px;
   padding-top: 100px;
-  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
-  margin-bottom: 60px;
+  box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.70), 5px 12px 10px rgba(0, 0, 0, 0.70);
+  margin-bottom: 80px;
 `;
 
 export const HomeHeader = styled.section`
@@ -21,7 +21,7 @@ export const HomeHeader = styled.section`
   display: flex;
   margin: auto;
   background-color: #0f0f0ffc;
-  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
-  padding: 60px;
-  padding-top: 6%;
+  box-shadow: 5px 20px 25px rgba(0, 0, 0, 0.70), 5px 20px 25px rgba(0, 0, 0, 0.70);
+  padding: 50px;
+  padding-top: 8%;
 `;

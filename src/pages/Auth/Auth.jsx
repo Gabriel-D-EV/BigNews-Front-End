@@ -1,16 +1,16 @@
-import { AuthContainer, Section, Img } from "./AuthStyled";
+import { AuthContainer, Section, Img } from "./AuthStyled.js";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Input } from "../../components/input/input";
-import { Button } from "../../components/button/Button";
+import { Input } from "../../components/input/input.jsx";
+import { Button } from "../../components/button/Button.jsx";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { signinSchema } from "../../schemas/signinSchema";
-import { ErrorSpan } from "../../components/navbar/navbarstyled";
-import { signupSchema } from "../../schemas/signupSchema";
-import { signin, signup } from "../../services/userServices";
+import { signinSchema } from "../../schemas/signinSchema.js";
+import { ErrorSpan } from "../../components/navbar/navbarstyled.js";
+import { signupSchema } from "../../schemas/signupSchema.js";
+import { signin, signup } from "../../services/userServices.js";
 import Cookies from "js-cookie";
-import { FooterFinal } from "../../components/footer/Footer";
+import { FooterFinal } from "../../components/footer/Footer.jsx";
 
 export function Auth() {
   const {
@@ -35,6 +35,7 @@ export function Auth() {
     try {
       const response = await signin(data);
       Cookies.set("token", response.data.token, { expires: 1 });
+      Cookies.set("id", response.data.name)
      
       navigate("/")
     } catch (error) {}
@@ -45,6 +46,7 @@ export function Auth() {
     try {
       const response = await signup(data);
       Cookies.set("token", response.data.token, { expires: 1 });
+      Cookies.set("id", response.data.name)
       
       navigate("/")
     } catch (error) {}

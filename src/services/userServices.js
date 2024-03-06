@@ -15,13 +15,18 @@ export function signin(data) {
     return response;
 }
 
-export function userLogado() {
-    const response = axios.get(`${baseURL}/user/userlogado`, {
+export async function userLogado() {
+   try {
+    const response = await axios.get(`${baseURL}/user/userlogado/${Cookies.get("id")}`, {
         headers: {
             Authorization: `Bearer ${Cookies.get("token")}`
         }
     });
     return response;
+   } catch (error) {
+    console.error("Erro ao buscar usuario", error)
+    };
+    throw error;
 }
 
 function aleatorioUser(name) {
