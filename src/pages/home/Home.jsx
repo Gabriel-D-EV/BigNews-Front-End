@@ -6,12 +6,14 @@ import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
 import { HomeBody, HomeHeader } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
-import { signup } from "../../services/userServices.js";
+
 
 export default function Home() {
   const [news, setNews] = useState([]);
   const [topNews, setTopNews] = useState({});
-  const response = signup()
+  
+
+  
 
   async function findNews() {
     const newsResponse = await getAllNews();
@@ -24,8 +26,7 @@ export default function Home() {
   useEffect(() => {
     findNews();
     console.log(Cookies.get("token"));
-    Cookies.set("id", response.data.id);
-    console.log(Cookies.get("id"));
+    
   }, []);
 
   return (
