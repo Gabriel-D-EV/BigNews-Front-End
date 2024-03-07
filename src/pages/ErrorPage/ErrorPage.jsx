@@ -1,16 +1,17 @@
 import { useRouteError } from "react-router-dom";
+import { ErrorPageSt } from "./ErrorPageStyled";
 
 export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
 
   return (
-    <div id="error-page">
+    <ErrorPageSt>
       <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <p>Desculpe, ocorreu um erro inesperado.</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-    </div>
+    </ErrorPageSt>
   );
 }

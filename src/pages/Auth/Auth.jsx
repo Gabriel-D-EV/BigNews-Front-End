@@ -35,7 +35,7 @@ export function Auth() {
     try {
       const response = await signin(data);
       Cookies.set("token", response.data.token, { expires: 1 });
-      Cookies.set("id", response.data.name)
+      
      
       navigate("/")
     } catch (error) {}
@@ -46,7 +46,7 @@ export function Auth() {
     try {
       const response = await signup(data);
       Cookies.set("token", response.data.token, { expires: 1 });
-      Cookies.set("id", response.data.name)
+      
       
       navigate("/")
     } catch (error) {}
