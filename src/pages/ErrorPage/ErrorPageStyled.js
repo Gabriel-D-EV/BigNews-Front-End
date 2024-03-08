@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ErrorPageSt = styled.div`
     display: flex;
     width: 70vw;
-    height: 70vh;
+    padding: 30px;
     margin: 100px auto;
     flex-direction: column;
     align-items: center;
