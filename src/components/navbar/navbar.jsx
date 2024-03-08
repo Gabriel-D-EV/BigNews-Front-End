@@ -1,6 +1,6 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Nav, InputSpace, Img, NavList, ErrorSpan } from "./navbarstyled.js";
+import { Nav, InputSpace, Img, NavList, ErrorSpan, UserLogado } from "./navbarstyled.js";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../button/Button.jsx";
@@ -22,7 +22,6 @@ export function Navbar() {
   const navigate = useNavigate();
   const [user, setUser] = useState({});
 
-
   function onSearch(data) {
     const { title } = data;
     navigate(`/search/${title}`);
@@ -32,14 +31,19 @@ export function Navbar() {
   async function findUserLogado() {
     try {
       const response = await userLogado();
-      console.log(response);
+      setUser(response.data);
     } catch (error) {
       console.log(error);
     }
   }
 
+  function signout() {
+    Cookies.remove("token");
+    navigate("/auth");
+  }
+
   useEffect(() => {
-    findUserLogado();
+    if (Cookies.get("token")) findUserLogado();
   }, []);
 
   return (
@@ -89,16 +93,15 @@ export function Navbar() {
           </form>
 
           {user ? (
-            <h2>{user.name}</h2>
+            <UserLogado>
+              <h2>{user.name}</h2>
+              <i class="bi bi-box-arrow-right" onClick={signout}></i>
+            </UserLogado>
           ) : (
             <Link to="/auth">
               <Button type="button" text="Entrar"></Button>
             </Link>
           )}
-
-          <Link to="/auth">
-            <Button type="button" text="Entrar"></Button>
-          </Link>
         </div>
       </Nav>
       {errors.title && <ErrorSpan>{errors.title.message}</ErrorSpan>}

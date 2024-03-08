@@ -77,11 +77,13 @@ export const NavList = styled.ul`
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
+    padding: 2px 10px;
     transition: 0.2s all ease-in-out;
   }
   a:hover {
-    color: rgb(50, 30, 100);
-    border-bottom: 3px solid;
+    color: aquamarine;
+    font-weight: bold;
+    border-bottom : 1px solid;
   }
 `;
 
@@ -96,4 +98,29 @@ export const ErrorSpan = styled.span`
   border-radius: 10px;
   font-weight: bold;
   box-shadow:  0px 1px 10px #000;
+`;
+
+export const UserLogado = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  h2:hover {
+    color: aquamarine
+  }
+  i {
+    font-size: 1.2rem;
+    transition: .2s ease-in;
+  }
+  i:hover {
+    color: #f00;
+    font-weight: bolder;
+    transform: scale(1.4);
+  }
 `;
