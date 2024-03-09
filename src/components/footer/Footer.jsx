@@ -1,16 +1,15 @@
-import { FooterStyle, Img, ImgQR, Redes } from "./FooterStyled";
+import { FooterStyle, Img, ImgLogo, ImgQR, Redes } from "./FooterStyled";
 import zoro from "../../images/zoro.png";
 import qrcode from "../../images/portifolio-g.png";
+import logo from "../../images/logo-bn.png";
 
 export function FooterFinal() {
   return (
     <FooterStyle>
       <Redes>
+        <ImgLogo src={logo} alt="Logo big News" />
         <a href="https://gabrielsilvadeveloper.site/">
           <i class="bi bi-globe2"></i> <p>Minhas Redes</p>
-        </a>
-        <a href="https://gabrielsilvadeveloper.site/portifolio/sobre">
-          <i class="bi bi-columns"></i> <p>Portifólio Dev</p>
         </a>
         <a href="https://www.youtube.com/channel/UCk1yxwX6zPEdWhfZoffbVIw">
           <i class="bi bi-youtube"></i> <p>Youtube</p>

@@ -12,8 +12,6 @@ export const FooterStyle = styled.footer`
         align-items: center;
         gap: 10px;
     }
-    
-    
     p {
         text-align: center;
         padding: 50px;
@@ -22,7 +20,6 @@ export const FooterStyle = styled.footer`
 
 export const Redes = styled.div`
 
-    padding: 30px;
     
     p {
         align-items: center;
@@ -30,19 +27,16 @@ export const Redes = styled.div`
         font-weight: bold;
         color: white;
         margin: 0;
-        padding: 20px;
         padding: 5px;
-    }
-    
+    }  
     a {
-        margin: 10px;
+        margin: 5px;
         display: flex;
         align-items: center;
         gap: 10px;
         text-decoration: none;
         color: white;
         font-size: 1.5rem;
-        
     }
     i {
         transition: all .2s ease-in-out;
@@ -67,3 +61,6 @@ export const ImgQR = styled.img`
     width: 200px;
     
 `;
+export const ImgLogo = styled.img`
+    width: 200px;
+`; 
