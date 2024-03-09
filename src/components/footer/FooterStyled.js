@@ -5,6 +5,13 @@ export const FooterStyle = styled.footer`
     align-items: end;
     justify-content: space-around;
     background-color: #121212;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     
     
     p {
@@ -53,6 +60,10 @@ export const Redes = styled.div`
 
 export const Img = styled.img`
     position: absolute;
-    width: 300px;
+    width: 450px;
+`;
+
+export const ImgQR = styled.img`
+    width: 200px;
     
 `;

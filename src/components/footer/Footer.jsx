@@ -1,5 +1,6 @@
-import { FooterStyle, Img, Redes } from "./FooterStyled";
+import { FooterStyle, Img, ImgQR, Redes } from "./FooterStyled";
 import zoro from "../../images/zoro.png";
+import qrcode from "../../images/portifolio-g.png";
 
 export function FooterFinal() {
   return (
@@ -19,7 +20,12 @@ export function FooterFinal() {
         </a>
       </Redes>
 
-      <p>Copyright &copy; 2024 - Big News - Todos direitos reservados</p>
+      <div>
+        <br />
+        <ImgQR src={qrcode} alt="QR-Code" />
+        <h3>Gabriel Dev</h3>
+        <p>Copyright &copy; 2024 - Big News - Todos direitos reservados</p>
+      </div>
 
       <Img src={zoro} alt="Logo big News" />
     </FooterStyle>
