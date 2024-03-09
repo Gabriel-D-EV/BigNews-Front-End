@@ -110,9 +110,14 @@ export const UserLogado = styled.div`
   h2 {
     font-size: 1.5rem;
     font-weight: 500;
+    
   }
   h2:hover {
     color: aquamarine
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
   }
   i {
     font-size: 1.2rem;

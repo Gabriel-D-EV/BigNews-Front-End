@@ -1,6 +1,13 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Nav, InputSpace, Img, NavList, ErrorSpan, UserLogado } from "./navbarstyled.js";
+import {
+  Nav,
+  InputSpace,
+  Img,
+  NavList,
+  ErrorSpan,
+  UserLogado,
+} from "./navbarstyled.js";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../button/Button.jsx";
@@ -39,7 +46,8 @@ export function Navbar() {
 
   function signout() {
     Cookies.remove("token");
-    navigate("/auth");
+    setUser(undefined);
+    navigate("/");
   }
 
   useEffect(() => {
@@ -94,7 +102,10 @@ export function Navbar() {
 
           {user ? (
             <UserLogado>
-              <h2>{user.name}</h2>
+              <Link to="/profile">
+                <h2>{user.name}</h2>
+              </Link>
+
               <i class="bi bi-box-arrow-right" onClick={signout}></i>
             </UserLogado>
           ) : (
