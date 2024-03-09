@@ -13,8 +13,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../button/Button.jsx";
 import { searchSchema } from "../../schemas/searchSchema.js";
 import { userLogado } from "../../services/userServices.js";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
+import { UserContext } from "../../context/userContext.jsx";
 
 export function Navbar() {
   const {
@@ -27,7 +28,7 @@ export function Navbar() {
   });
 
   const navigate = useNavigate();
-  const [user, setUser] = useState({});
+  const { user, setUser } = useContext(UserContext);
 
   function onSearch(data) {
     const { title } = data;

@@ -1,3 +1,15 @@
-export function Profile(user) {
-    return <h2>{user.name}</h2>
+import { useContext } from "react";
+import { UserContext } from "../../context/userContext";
+import { UserName } from "./profileStyled";
+import { FooterFinal } from "../../components/footer/Footer.jsx";
+
+export function Profile() {
+  const { user } = useContext(UserContext);
+  return (
+    <>
+      <UserName>{user.name}</UserName>
+
+      <FooterFinal />
+    </>
+  );
 }
