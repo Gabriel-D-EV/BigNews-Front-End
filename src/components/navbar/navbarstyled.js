@@ -105,12 +105,20 @@ export const UserLogado = styled.div`
   gap: 20px;
   align-items: center;
   justify-content: center;
+  text-align: center;
   cursor: pointer;
 
+  img {
+    border-radius: 50%;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
-    
   }
   h2:hover {
     color: aquamarine

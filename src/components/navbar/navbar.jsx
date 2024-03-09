@@ -103,7 +103,8 @@ export function Navbar() {
           {user ? (
             <UserLogado>
               <Link to="/profile">
-                <h2>{user.name}</h2>
+                <img src={user.avatar} alt="imagem do avatar" />
+                <h2> {user.name}</h2>
               </Link>
 
               <i class="bi bi-box-arrow-right" onClick={signout}></i>
