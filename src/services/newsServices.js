@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const baseURL = "https://big-news.onrender.com";
+const baseURL = ("https://real-erin-tortoise-hem.cyclic.app", "https://big-news.onrender.com");
 
 export function getAllNews() {
   const response = axios.get(`${baseURL}/news`);
