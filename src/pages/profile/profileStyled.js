@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.h1`
-    width: 60%;
-    padding: 20px 150px;
+    width: 80%;
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +40,7 @@ export const IconP = styled.i`
 `;
 
 export const ImgP = styled.img`
-    width: 15vw;
+    width: 20vw;
     border-radius: 50%;
     border: 10px solid #0f0f0f;
     object-fit: cover;
