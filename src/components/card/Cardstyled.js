@@ -7,7 +7,7 @@ export const CardContainer = styled.section`
     gap: 1rem;
     max-width: 100%;
     background-color: #3a3a3a;
-    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40), 0 12px 10px rgba(0, 0, 0, 0.40);
     border-radius: 10px;
 `
 
@@ -23,7 +23,6 @@ export const CardBody = styled.article`
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
-        padding: 10px
     }
 
     div {
@@ -46,7 +45,7 @@ export const CardHeader = styled.article`
         text-align: center;
         margin-bottom: 1rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "3.3rem" : "1.8rem")};
+        font-size: ${(props) => (props.top? "3rem" : "1.5rem")};
     }
 `;
 

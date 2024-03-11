@@ -8,22 +8,20 @@ export const HomeBody = styled.section`
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
 
-  width: 60%;
+  width: 80%;
   
   background-color: #0f0f0fe9;
-  padding: 20px 150px;
-  padding-top: 100px;
+  padding: 50px;
   box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.70), 5px 12px 10px rgba(0, 0, 0, 0.70);
   margin-bottom: 80px;
-  padding-top: 6.4%;
 `;
 
 export const HomeHeader = styled.section`
-  width: 60%;
+  width: 80%;
   display: flex;
   margin: auto;
   background-color: #0f0f0ffc;
   box-shadow: 5px 20px 25px rgba(0, 0, 0, 0.70), 5px 20px 25px rgba(0, 0, 0, 0.70);
-  padding: 20px 150px;
-  padding-top: 7%;
+  padding: 20px 50px;
+  padding-top: 10%;
 `;
