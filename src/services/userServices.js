@@ -1,7 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const baseURL = ("http://localhost:3000");
+const baseURL = ("https://real-erin-tortoise-hem.cyclic.app/");
 
 export function signup(data) {
     delete data.password2;
