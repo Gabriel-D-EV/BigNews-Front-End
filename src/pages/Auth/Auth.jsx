@@ -1,7 +1,7 @@
 import { AuthContainer, Section, Img } from "./AuthStyled.js";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
-import { Input } from "../../components/input/input.jsx";
+import { Input } from "../../components/input/Input.jsx";
 import { Button } from "../../components/button/Button.jsx";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
