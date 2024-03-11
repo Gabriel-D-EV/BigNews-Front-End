@@ -9,7 +9,6 @@ export const ProfileContainer = styled.h1`
     padding-top: 100px;
     box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.70), 5px 12px 10px rgba(0, 0, 0, 0.70);
     background-color: #0f0f0fe9;
-    height: 100vh;
     border-radius: 10px;
     margin: 20px auto;
 `;
