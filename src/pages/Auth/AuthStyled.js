@@ -5,20 +5,21 @@ export const AuthContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin: 0 auto;
-    padding: 0 15%;
+    width: 75%;
+    margin: 50px auto;
+    padding: 0 50px;
     background-color: #0f0f0fe9;
-    gap: 50px;
-    padding-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.40), 0 12px 20px rgba(0, 0, 0, 0.80);
+    border-radius: 10px;
+    gap: 10px;
     
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 400px;
-        gap: 0.7rem;
+        max-width: 500px;
+        gap: 1rem;
         border-radius: 10px;
         margin: auto;
         z-index: 10;
@@ -57,6 +58,5 @@ export const Img = styled.img`
   object-fit: cover;
   cursor: pointer;
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 10%;
 `;
