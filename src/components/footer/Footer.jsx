@@ -1,5 +1,5 @@
-import { FooterStyle, Img, ImgLogo, ImgQR, Redes } from "./FooterStyled";
-import zoro from "../../images/zoro.png";
+import { FooterStyle, ImgDon, ImgLogo, ImgQR, Redes } from "./FooterStyled";
+import don from "../../images/don.png";
 import qrcode from "../../images/portifolio-g.png";
 import logo from "../../images/logo-bn.png";
 
@@ -26,7 +26,7 @@ export function FooterFinal() {
         <p>Copyright &copy; 2024 - Big News - Todos direitos reservados</p>
       </div>
 
-      <Img src={zoro} alt="Logo big News" />
+      <ImgDon src={don} alt="don" />
     </FooterStyle>
   );
 }

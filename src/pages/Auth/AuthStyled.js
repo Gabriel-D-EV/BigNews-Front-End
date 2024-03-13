@@ -6,12 +6,13 @@ export const AuthContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 75%;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 0 50px;
     background-color: #0f0f0fe9;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.40), 0 12px 20px rgba(0, 0, 0, 0.80);
     border-radius: 10px;
     gap: 10px;
+    margin-bottom: 60px;
     
     form {
         display: flex;
@@ -58,5 +59,13 @@ export const Img = styled.img`
   object-fit: cover;
   cursor: pointer;
   position: absolute;
-  top: 10%;
+  top: 5%;
+`;
+
+export const ImgLevi = styled.img`
+  position: absolute;
+  z-index: 10;
+  width: 320px;
+  left: 0;
+  bottom: -60px;
 `;

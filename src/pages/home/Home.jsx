@@ -1,10 +1,10 @@
 
-import Cookies from "js-cookie";
+import luffy from "../../images/luffy.png";
 import { Card } from "../../components/card/Card.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
-import { HomeBody, HomeHeader } from "./HomeStyled.js";
+import { HomeBody, HomeHeader, ImgLuffy } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
 
 
@@ -34,8 +34,7 @@ export default function Home() {
       <HomeHeader>
         <Card
           top="true"
-          title={topNews?.title}
-          text={topNews?.text}
+          title={topNews?.title} 
           banner={topNews?.banner}
           likes={topNews?.likes}
           comments={topNews?.comments}
@@ -52,7 +51,9 @@ export default function Home() {
             comments={item.comments}
           />
         ))}
+        <ImgLuffy src={luffy} alt="luffy" />
       </HomeBody>
+      
       <FooterFinal />
     </>
   );

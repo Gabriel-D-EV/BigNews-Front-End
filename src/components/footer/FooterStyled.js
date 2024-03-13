@@ -5,6 +5,7 @@ export const FooterStyle = styled.footer`
     align-items: end;
     justify-content: space-around;
     background-color: #121212;
+    z-index: 99;
 
     div {
         display: flex;
@@ -52,9 +53,9 @@ export const Redes = styled.div`
     }
 `;
 
-export const Img = styled.img`
+export const ImgDon = styled.img`
     position: absolute;
-    width: 450px;
+    width: 250px;
 `;
 
 export const ImgQR = styled.img`

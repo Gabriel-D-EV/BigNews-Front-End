@@ -101,19 +101,20 @@ export function Navbar() {
             </InputSpace>
           </form>
 
-          {user ? (
-            <UserLogado>
-              <Link to="/profile">
-                <img src={user.avatar} alt="imagem do avatar" />
-                <h2> {user.name}</h2>
-              </Link>
-
-              <i class="bi bi-box-arrow-right" onClick={signout}></i>
-            </UserLogado>
-          ) : (
+          {!user ? (
             <Link to="/auth">
-              <Button type="button" text="Entrar"></Button>
+            <Button type="button" text="Entrar"></Button>
+          </Link>
+          ): (
+            <UserLogado>
+            <Link to="/profile">
+              <img src={user.avatar} alt="imagem" />
+              <h2> {user.name}</h2>
             </Link>
+
+            <i class="bi bi-box-arrow-right" onClick={signout}>Sair</i>
+          </UserLogado>
+            
           )}
         </div>
       </Nav>

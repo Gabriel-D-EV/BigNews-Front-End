@@ -5,12 +5,15 @@ import {
   BackgroundP,
   IconP,
   ImgP,
+  ImgZoro,
   ProfileContainer,
   ProfileHeader,
   UserP,
 } from "./profileStyled.js";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import bg from "../../images/background.jpg";
+import zoro from "../../images/zoro.png";
+
 
 export function Profile() {
   const { user } = useContext(UserContext);
@@ -34,7 +37,10 @@ export function Profile() {
             <i class="bi bi-plus-circle"></i>
           </AddNews>
         </ProfileHeader>
+
       </ProfileContainer>
+
+      <ImgZoro src={zoro} />
 
       <FooterFinal />
     </>

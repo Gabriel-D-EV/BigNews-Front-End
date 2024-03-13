@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.h1`
-    width: 80%;
-    padding: 20px 50px;
+    width: 85%;
+    padding: 80px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-    box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.70), 5px 12px 10px rgba(0, 0, 0, 0.70);
-    background-color: #0f0f0fe9;
-    border-radius: 10px;
-    margin: 20px auto;
+    background-color: #0f0f0fc9;
+    margin: auto;
 `;
 
 export const ProfileHeader = styled.header`
@@ -62,6 +60,7 @@ export const BackgroundP = styled.img`
 
 export const UserP = styled.div`
     padding: 2rem;
+    cursor: pointer;
 
     h2 {
         font-size: 3rem;
@@ -86,3 +85,10 @@ export const AddNews = styled.div`
         color: blueviolet;
     }
 `;
+
+export const ImgZoro = styled.img`
+    position: absolute;
+    left: -6rem;
+    width: 320px;
+    bottom: 10.6rem;
+`; 

@@ -134,6 +134,6 @@ export const UserLogado = styled.div`
   i:hover {
     color: #f00;
     font-weight: bolder;
-    transform: scale(1.4);
+    transform: scale(1.1);
   }
 `;

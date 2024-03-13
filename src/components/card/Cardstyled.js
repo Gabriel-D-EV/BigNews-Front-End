@@ -45,7 +45,7 @@ export const CardHeader = styled.article`
         text-align: center;
         margin-bottom: 1rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "3rem" : "1.5rem")};
+        font-size: ${(props) => (props.top? "4rem" : "1.5rem")};
     }
 `;
 

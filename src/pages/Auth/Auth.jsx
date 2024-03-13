@@ -1,4 +1,4 @@
-import { AuthContainer, Section, Img } from "./AuthStyled.js";
+import { AuthContainer, Section, Img, ImgLevi } from "./AuthStyled.js";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/logo-bn.png";
 import { Input } from "../../components/input/Input.jsx";
@@ -11,6 +11,7 @@ import { signupSchema } from "../../schemas/signupSchema.js";
 import { signin, signup } from "../../services/userServices.js";
 import Cookies from "js-cookie";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
+import levi from "../../images/levi.png";
 
 export function Auth() {
   const {
@@ -138,6 +139,7 @@ export function Auth() {
           </form>
         </Section>
       </AuthContainer>
+      <ImgLevi src={levi} alt="levi"/>
       <FooterFinal />
     </>
   );
