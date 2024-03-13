@@ -10,6 +10,7 @@ export function Card(props) {
             <h2>{props.title}</h2>
             <TextLimit text={props.text} limit={200} />
           </CardHeader>
+          <br />
           <CardFooter>
             <section>
               <i className="bi bi-hand-thumbs-up"></i>
