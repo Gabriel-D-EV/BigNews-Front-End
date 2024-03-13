@@ -1,4 +1,5 @@
 import axios from "axios";
+import Cookies from "js-cookie";
 
 
 const baseURL = ("https://real-erin-tortoise-hem.cyclic.app");
@@ -15,5 +16,14 @@ export function getTopNew() {
 
 export function searchNews(title) {
   const response = axios.get(`${baseURL}/news/search?title=${title}`);
+  return response;
+}
+
+export function getAllNewsByUser() {
+  const response = axios.get(`${baseURL}/news/byuser`, {
+    headers: {
+        Authorization: `Bearer ${Cookies.get("token")}`
+    }
+});
   return response;
 }

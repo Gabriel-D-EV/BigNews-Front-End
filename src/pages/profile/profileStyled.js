@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.h1`
-    width: 85%;
-    padding: 80px 50px;
+    width: 80%;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +53,13 @@ export const BackgroundP = styled.img`
     bottom: 0;
     object-fit: cover;
     width: 100%;
-    height: 55%;
+    height: 50%;
     z-index: -1;
     border-radius: 10px 10px 0 0;
 `;
 
 export const UserP = styled.div`
-    padding: 2rem;
+    padding: 4rem;
     cursor: pointer;
 
     h2 {
@@ -90,5 +90,22 @@ export const ImgZoro = styled.img`
     position: absolute;
     left: -6rem;
     width: 320px;
-    bottom: 10.6rem;
+    bottom: -9.4rem;
 `; 
+
+export const ProfileNews = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 1rem, auto;
+    flex-wrap: wrap;
+    padding: 80px 20px;
+
+    h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 2rem;
+        color: aquamarine;
+    }
+`;
