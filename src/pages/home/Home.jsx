@@ -1,9 +1,9 @@
-import boa from "../../images/boa.png";
+import nami from "../../images/nami.png";
 import { Card } from "../../components/card/Card.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
-import { HomeBody, HomeHeader, ImgBoa } from "./HomeStyled.js";
+import { HomeBody, HomeHeader, ImgNami } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
 
 
@@ -51,7 +51,7 @@ export default function Home() {
           />
         ))}
 
-        <ImgBoa src={boa} alt="nami" />
+        <ImgNami src={nami} alt="nami" />
         
       </HomeBody>
       

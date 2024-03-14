@@ -20,9 +20,9 @@ export const HomeBody = styled.section`
   padding: 110px 50px;
 `;
 
-export const ImgBoa = styled.img`
+export const ImgNami = styled.img`
     position: absolute;
-    width: 280px;
-    left: -2em;
-    top: 16.8rem;
+    width: 220px;
+    left: -1em;
+    top: 22.3rem;
 `;
