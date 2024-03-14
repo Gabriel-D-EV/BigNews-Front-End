@@ -1,7 +1,9 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const baseURL = ("https://real-erin-tortoise-hem.cyclic.app");
+const baseURL = ("https://big-news.onrender.com");
+
+
 
 export function signup(data) {
     delete data.password2;
