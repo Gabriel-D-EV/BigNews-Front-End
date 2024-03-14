@@ -57,7 +57,7 @@ export function Profile() {
 
         <ProfileNews>
 
-          {news.length === 0 && <h2>NENHUM POST ENCONTRADO!!</h2>}
+          {news.length === 0 && <h2>NENHUMA NOTÍCIA ENCONTRADA!!</h2>}
           {news.map((item) => {
             return (
               <Card
