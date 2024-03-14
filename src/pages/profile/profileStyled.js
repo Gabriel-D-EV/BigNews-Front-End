@@ -88,9 +88,9 @@ export const AddNews = styled.div`
 
 export const ImgZoro = styled.img`
     position: absolute;
-    left: -6rem;
-    width: 320px;
-    bottom: -9.4rem;
+    left: 44rem;
+    width: 350px;
+    top: 21.3rem;
 `; 
 
 export const ProfileNews = styled.div`
@@ -108,4 +108,11 @@ export const ProfileNews = styled.div`
         margin-top: 2rem;
         color: aquamarine;
     }
+`;
+
+export const ImgLuffy = styled.img`
+    position: absolute;
+    width: 200px;
+    left: 11rem;
+    bottom: -14rem;
 `;

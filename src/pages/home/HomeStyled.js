@@ -20,9 +20,9 @@ export const HomeBody = styled.section`
   padding: 110px 50px;
 `;
 
-export const ImgLuffy = styled.img`
+export const ImgBoa = styled.img`
     position: absolute;
-    width: 220px;
-    left: -1rem;
-    top: 20rem;
+    width: 280px;
+    left: -2em;
+    top: 16.8rem;
 `;

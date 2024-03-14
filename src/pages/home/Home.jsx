@@ -1,10 +1,9 @@
-
-import luffy from "../../images/luffy.png";
+import boa from "../../images/boa.png";
 import { Card } from "../../components/card/Card.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
-import { HomeBody, HomeHeader, ImgLuffy } from "./HomeStyled.js";
+import { HomeBody, HomeHeader, ImgBoa } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
 
 
@@ -51,7 +50,9 @@ export default function Home() {
             comments={item.comments}
           />
         ))}
-        <ImgLuffy src={luffy} alt="luffy" />
+
+        <ImgBoa src={boa} alt="nami" />
+        
       </HomeBody>
       
       <FooterFinal />

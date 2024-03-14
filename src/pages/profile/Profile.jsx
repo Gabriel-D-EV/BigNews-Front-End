@@ -1,10 +1,12 @@
 import { useContext, useEffect, useState } from "react";
+import luffy from "../../images/luffy.png";
 import { UserContext } from "../../context/userContext.jsx";
 import { Card } from "../../components/card/Card.jsx";
 import {
   AddNews,
   BackgroundP,
   IconP,
+  ImgLuffy,
   ImgP,
   ImgZoro,
   ProfileContainer,
@@ -57,9 +59,16 @@ export function Profile() {
 
         <ProfileNews>
 
-          {news.length === 0 && <h2>NENHUMA NOTÍCIA ENCONTRADA!!</h2>}
+          {news.length === 0 && 
+            <>
+              <h2>NENHUMA NOTÍCIA ENCONTRADA!!</h2>
+            <ImgLuffy src={luffy} alt="luffy" />
+
+            </>
+          }
           {news.map((item) => {
             return (
+              <>
               <Card
               key={item.id}
               title={item.title}
@@ -67,14 +76,16 @@ export function Profile() {
               banner={item.banner}
               likes={item.likes}
               comments={item.comments}
-            />  
+              />  
+                <ImgZoro src={zoro} />
+                </>
               );
           })}
         </ProfileNews>
 
       </ProfileContainer>
 
-      <ImgZoro src={zoro} />
+      
 
       <FooterFinal />
     </>
