@@ -22,7 +22,7 @@ export function searchNews(title) {
 }
 
 export function getAllNewsByUser() {
-  const response = axios.get(`${baseURL}/news/byuser`, {
+  const response = axios.get(`${baseURL}/news/byUser`, {
     headers: {
         Authorization: `Bearer ${Cookies.get("token")}`
     }
