@@ -54,7 +54,7 @@ export const BackgroundP = styled.img`
     bottom: 0;
     object-fit: cover;
     width: 100%;
-    height: 50%;
+    height: 60%;
     z-index: -1;
     border-radius: 10px 10px 0 0;
 `;
