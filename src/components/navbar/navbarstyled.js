@@ -77,17 +77,18 @@ export const NavList = styled.ul`
   align-items: center;
   font-size: 1.3rem;
   a {
+    border-radius: 10px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     padding: 2px 10px;
-    transition: 0.2s all ease-in-out;
+    transition: 0.3s all ease-in-out;
   }
   a:hover {
     color: blueviolet;
+    border: 1px solid;
     font-weight: bolder;
-    border-bottom : 1px solid;
   }
 `;
 
