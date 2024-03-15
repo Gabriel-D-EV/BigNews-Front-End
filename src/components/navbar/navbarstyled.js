@@ -28,6 +28,7 @@ export const Img = styled.img`
   object-fit: cover;
   padding: 10px;
   cursor: pointer;
+  align-items: center;
 `;
 
 export const InputSpace = styled.div`
