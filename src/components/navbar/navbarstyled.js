@@ -6,14 +6,14 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   position: fixed;
-  height: 10%;
+  height: 8%;
   top: 0;
   right: 0;
-  background-color: blueviolet;
+  background-color: #121212;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    rgba(0, 0, 0, 0.3) 0px 20px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
+    rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
 
   .ini-ent {
     display: flex;
@@ -27,6 +27,7 @@ export const Img = styled.img`
   width: 8rem;
   object-fit: cover;
   padding: 10px;
+  padding-top: 25px;
   cursor: pointer;
   align-items: center;
 `;
@@ -42,10 +43,11 @@ export const InputSpace = styled.div`
     position: absolute;
     top: 1;
     right: 0.2rem;
-    color: black;
+    color: white;
     z-index: 10;
     border: none;
     border-radius: 10px;
+    background-color: #121212;
     transition: all 0.2 ease-in-out;
   }
   button:hover {
@@ -57,8 +59,10 @@ export const InputSpace = styled.div`
     font-size: 1rem;
     padding: 0.5rem;
     width: 100%;
-    border: none;
+    color: white;
+    border: 1px solid white;
     border-radius: 10px;
+    background-color: #121212;
   }
   input:focus {
     border: 3px solid rgb(50, 30, 100);
@@ -69,20 +73,20 @@ export const NavList = styled.ul`
   text-decoration: none;
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
-
+  font-size: 1.3rem;
   a {
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
     padding: 2px 10px;
     transition: 0.2s all ease-in-out;
   }
   a:hover {
-    color: aquamarine;
-    font-weight: bold;
+    color: blueviolet;
+    font-weight: bolder;
     border-bottom : 1px solid;
   }
 `;
@@ -107,10 +111,12 @@ export const UserLogado = styled.div`
   justify-content: center;
   text-align: center;
   cursor: pointer;
+  padding: 5px;
 
   img {
     border-radius: 50%;
-    width: 40px;
+    width: 30px;
+    height: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -121,7 +127,7 @@ export const UserLogado = styled.div`
     font-weight: 500;
   }
   h2:hover {
-    color: aquamarine
+    color: blueviolet;
   }
   a {
     text-decoration: none;

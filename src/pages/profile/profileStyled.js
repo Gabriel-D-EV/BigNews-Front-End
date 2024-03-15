@@ -38,7 +38,8 @@ export const IconP = styled.i`
 `;
 
 export const ImgP = styled.img`
-    width: 20vw;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 10px solid #0f0f0f;
     object-fit: cover;
@@ -90,7 +91,7 @@ export const ImgZoro = styled.img`
     position: absolute;
     left: 44rem;
     width: 350px;
-    top: 21.3rem;
+    top: 28.8rem;
 `; 
 
 export const ProfileNews = styled.div`

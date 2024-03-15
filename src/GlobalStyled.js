@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 
     ::-webkit-scrollbar-thumb {
         width: 8px;
-        background: blueviolet;
+        background: black;
     }
 
 `;
