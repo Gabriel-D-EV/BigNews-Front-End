@@ -115,5 +115,5 @@ export const ImgLuffy = styled.img`
     position: absolute;
     width: 200px;
     left: 11rem;
-    bottom: -14rem;
+    bottom: -19rem;
 `;
