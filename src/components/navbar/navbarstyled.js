@@ -42,7 +42,7 @@ export const InputSpace = styled.div`
     cursor: pointer;
     position: absolute;
     top: 1;
-    right: 0.2rem;
+    right: 0.6rem;
     color: white;
     z-index: 10;
     border: none;

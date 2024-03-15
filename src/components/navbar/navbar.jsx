@@ -103,7 +103,7 @@ export function Navbar() {
 
           {!user ? (
             <Link to="/auth">
-            <Button type="button" text="Entrar"></Button>
+            <Button type="button" text="Login"></Button>
           </Link>
           ): (
             <UserLogado>

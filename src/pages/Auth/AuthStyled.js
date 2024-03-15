@@ -35,22 +35,22 @@ export const Section = styled.section`
     height: 60%;
     padding: 2rem;
     gap: 1rem;
-    background-color: ${(props) => (props.type === "signin" ? "blueviolet" : "gray")};
-    color: ${(props) => (props.type === "signup" ? "blueviolet" : "gray")};
+    background-color: ${(props) => (props.type === "signin" ? "#121212" : "gray")};
+    color: ${(props) => (props.type === "signup" ? "#121212" : "gray")};
     border-radius: 10px;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
 
     h2 {
         font-size: 2rem;
         text-align: center;
-        font-weight: bold;
-        color: black;
+        font-weight: bolder;
+        color: white;
     }
     hr {
         width: 100%;
         height: 1px;
         border: none;
-        background-color: black;
+        background-color: white;
     }
 `;
 export const Img = styled.img`
