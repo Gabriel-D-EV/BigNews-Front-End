@@ -1,5 +1,5 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import logo from "../../images/logo-bn.png";
+import logo from "../../images/logo-bnd2.png";
 import {
   Nav,
   InputSpace,

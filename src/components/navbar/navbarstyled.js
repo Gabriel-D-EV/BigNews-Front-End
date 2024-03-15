@@ -6,8 +6,7 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   position: fixed;
-  padding: 1rem 0;
-  height: 5%;
+  height: 10%;
   top: 0;
   right: 0;
   background-color: blueviolet;
@@ -25,9 +24,9 @@ export const Nav = styled.nav`
 `;
 
 export const Img = styled.img`
-  width: 5rem;
-  height: 3.5rem;
+  width: 8rem;
   object-fit: cover;
+  padding: 10px;
   cursor: pointer;
 `;
 

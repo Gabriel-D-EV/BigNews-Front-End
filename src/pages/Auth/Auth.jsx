@@ -1,6 +1,6 @@
 import { AuthContainer, Section, Img, ImgLevi } from "./AuthStyled.js";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../images/logo-bn.png";
+import logo from "../../images/logo-bnd2.png";
 import { Input } from "../../components/input/Input.jsx";
 import { Button } from "../../components/button/Button.jsx";
 import { useForm } from "react-hook-form";

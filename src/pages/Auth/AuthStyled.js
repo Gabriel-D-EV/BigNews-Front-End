@@ -54,12 +54,11 @@ export const Section = styled.section`
     }
 `;
 export const Img = styled.img`
-  width: 5rem;
-  height: 3.5rem;
+  width: 12rem;
   object-fit: cover;
   cursor: pointer;
   position: absolute;
-  top: 5%;
+  top: 0;
 `;
 
 export const ImgLevi = styled.img`

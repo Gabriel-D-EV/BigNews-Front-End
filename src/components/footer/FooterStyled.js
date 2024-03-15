@@ -6,28 +6,43 @@ export const FooterStyle = styled.footer`
     justify-content: space-around;
     background-color: #121212;
     z-index: 99;
+    padding: 10px;
 
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+
+        a {
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        }
+        a:hover {
+            color: blueviolet;
+        }
+        
     }
     p {
         text-align: center;
-        padding: 50px;
     }
 `;
 
 export const Redes = styled.div`
 
-    
+    padding: 50px;
+
     p {
         align-items: center;
+        text-align: center;
         font-size: 1.3rem;
         font-weight: bold;
         color: white;
-        margin: 0;
         padding: 5px;
     }  
     a {
@@ -53,15 +68,10 @@ export const Redes = styled.div`
     }
 `;
 
-export const ImgDon = styled.img`
-    position: absolute;
-    width: 250px;
-`;
-
 export const ImgQR = styled.img`
     width: 200px;
     
 `;
 export const ImgLogo = styled.img`
-    width: 200px;
+    width: 250px;
 `; 
