@@ -24,7 +24,7 @@ export const Nav = styled.nav`
 `;
 
 export const Img = styled.img`
-  width: 8rem;
+  width: 9rem;
   object-fit: cover;
   padding: 20px;
   padding-top: 25px;

@@ -73,5 +73,5 @@ export const ImgQR = styled.img`
     
 `;
 export const ImgLogo = styled.img`
-    width: 250px;
+    width: 280px;
 `; 
