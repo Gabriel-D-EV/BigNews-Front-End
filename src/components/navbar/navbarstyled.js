@@ -88,7 +88,6 @@ export const NavList = styled.ul`
   a:hover {
     color: blueviolet;
     border: 1px solid;
-    font-weight: bolder;
   }
 `;
 
@@ -135,12 +134,10 @@ export const UserLogado = styled.div`
     color: #fff;
   }
   i {
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: .2s ease-in;
   }
   i:hover {
     color: #f00;
-    font-weight: bolder;
-    transform: scale(1.1);
   }
 `;
