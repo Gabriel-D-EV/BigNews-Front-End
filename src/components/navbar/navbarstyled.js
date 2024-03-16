@@ -26,7 +26,7 @@ export const Nav = styled.nav`
 export const Img = styled.img`
   width: 8rem;
   object-fit: cover;
-  padding: 10px;
+  padding: 20px;
   padding-top: 25px;
   cursor: pointer;
   align-items: center;
@@ -75,7 +75,7 @@ export const NavList = styled.ul`
   display: flex;
   gap: 20px;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   a {
     border-radius: 10px;
     text-decoration: none;
