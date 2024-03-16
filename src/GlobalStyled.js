@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto", "Fira Sans", Inter, Verdana, sans-serif;
     }
 
     html {
