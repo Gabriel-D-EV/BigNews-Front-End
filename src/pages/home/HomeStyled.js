@@ -24,5 +24,5 @@ export const ImgNami = styled.img`
     position: absolute;
     width: 220px;
     left: -1em;
-    top: 22.3rem;
+    top: 24.3rem;
 `;

@@ -29,3 +29,12 @@ export function getAllNewsByUser() {
 });
   return response;
 }
+
+export function likeUser() {
+  const response = axios.post(`${baseURL}/news/like/${Cookies.get("id")}`, {
+    headers: {
+      Authorization: `Bearer ${Cookies.get("token")}`
+    }
+  });
+  return response;
+}

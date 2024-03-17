@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [news, setNews] = useState([]);
   const [topNews, setTopNews] = useState({});
+ 
   
 
   
@@ -20,6 +21,7 @@ export default function Home() {
 
     const topNewsResponse = await getTopNew();
     setTopNews(topNewsResponse.data.results);
+
   }
 
   useEffect(() => {
@@ -50,11 +52,8 @@ export default function Home() {
             comments={item.comments}
           />
         ))}
-
-        <ImgNami src={nami} alt="nami" />
-        
-      </HomeBody>
-      
+        <ImgNami src={nami} alt="nami" />       
+      </HomeBody>      
       <FooterFinal />
     </>
   );
