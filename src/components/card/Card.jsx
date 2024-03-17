@@ -1,8 +1,9 @@
-import { useContext } from "react";
-import { likeUser } from "../../services/newsServices";
+import { useContext, useEffect } from "react";
+import { getAllNews } from "../../services/newsServices";
 import { TextLimit } from "../textlimit/TextLimit";
 import { CardContainer, CardBody, CardFooter, CardHeader } from "./Cardstyled";
 import { UserContext } from "../../context/userContext";
+import axios from "axios";
 
 export function Card(props) {
 
@@ -10,11 +11,18 @@ export function Card(props) {
 
   async function Like() {
     try {
-      const response = await likeUser();
+      const response = await getAllNews();
+      const like = response.data.results.like
+      console.log(like);
     } catch (error) {
       console.log(error);
     }
   }
+
+  useEffect(() => {
+    Like();
+  }, []);
+
 
   return (
     <CardContainer>
@@ -27,7 +35,7 @@ export function Card(props) {
           <br />
           <CardFooter>
             <section className="like">
-              <i className="bi bi-hand-thumbs-up" onClick={likeUser}></i>
+              <i className="bi bi-hand-thumbs-up" onClick={Like}></i>
               <span>{props.likes?.length}</span>
             </section>
             <section className="comment">

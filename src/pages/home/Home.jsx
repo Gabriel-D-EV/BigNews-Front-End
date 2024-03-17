@@ -10,8 +10,8 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [news, setNews] = useState([]);
   const [topNews, setTopNews] = useState({});
- 
   
+ 
 
   
 
@@ -26,6 +26,7 @@ export default function Home() {
 
   useEffect(() => {
     findNews();
+    
     
   }, []);
 
