@@ -26,7 +26,6 @@ export function Profile() {
 
   async function findAllNewsUser() {
     const newsResponse = await getAllNewsByUser();
-    console.log(newsResponse.data);
     setNews(newsResponse.data.results);
   }
 

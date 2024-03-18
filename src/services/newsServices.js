@@ -1,10 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-
 const baseURL = ("https://big-news.onrender.com");
-
-
 
 export function getAllNews() {
   const response = axios.get(`${baseURL}/news`);
@@ -24,17 +21,18 @@ export function searchNews(title) {
 export function getAllNewsByUser() {
   const response = axios.get(`${baseURL}/news/byUser`, {
     headers: {
-        Authorization: `Bearer ${Cookies.get("token")}`
-    }
-});
+      Authorization: `Bearer ${Cookies.get("token")}`,
+    },
+  });
   return response;
 }
 
-export function createNews() {
-  const response = axios.post(`${baseURL}/news/create`, {
+export function createNews(data) {
+  const response = axios.post(`${baseURL}/news/create`, data, {
     headers: {
-      Authorization: `Bearer ${Cookies.get("token")}`
-  }
+      Authorization: `Bearer ${Cookies.get("token")}`,
+    },
+    
   });
   return response;
 }

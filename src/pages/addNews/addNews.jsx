@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-
+import { ErrorSpan } from "../../components/navbar/navbarstyled.js";
 import { Button } from "../../components/button/Button.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,23 +7,23 @@ import { newsSchema } from "../../schemas/newsSchemas.js";
 import { AddNewsContainer, ImgSupera, SectionNews } from "./addNewsStyled.js";
 import { useForm } from "react-hook-form";
 import { createNews } from "../../services/newsServices.js";
-import { InputNews } from "../../components/input/Input.jsx";
+import { Input } from "../../components/input/Input.jsx";
 import supera from "../../images/supera.png";
 
 export function AddNews() {
   const {
-    handleSubmit: handleSubmitAddNews,
-    formState: { errors: errorsNews },
-  } = useForm({
-    resolver: zodResolver(newsSchema),
-  });
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const navigate = useNavigate();
 
   async function inHandleSubmit(data) {
     try {
-        const response = await createNews(data);
-        console.log(response);
+      console.log(data);
+      const response = await createNews(data);
+
       navigate("/profile");
     } catch (error) {}
   }
@@ -32,36 +32,37 @@ export function AddNews() {
     <>
       <AddNewsContainer>
         <SectionNews>
-          <form onSubmit={handleSubmitAddNews(inHandleSubmit)}>
+          <form onSubmit={handleSubmit(inHandleSubmit)}>
             <h1>Adicionar Notícia</h1>
-            <InputNews
+            <Input
               type="text"
               name="title"
-              rows="1"
+              register={register}
               placeholder="Título da Notícia"
               required
             />
-
-            <InputNews
+            
+            <Input
               type="text"
-              name="description"
-              rows="6"
+              name="text"
+              register={register}
               placeholder="Descrição da Notícia"
               required
             />
-
-            <InputNews
+           
+            <Input
               type="text"
-              name="url"
+              name="banner"
               placeholder="URL do Banner"
-              rows="1"
+              register={register}
               required
             />
+           
             <Button type="submit" text="Adicionar"></Button>
           </form>
         </SectionNews>
       </AddNewsContainer>
-      <ImgSupera src={supera} alt="supera"/>
+      <ImgSupera src={supera} alt="supera" />
 
       <FooterFinal />
     </>

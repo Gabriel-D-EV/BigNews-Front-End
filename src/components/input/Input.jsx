@@ -8,10 +8,4 @@ export function Input({ type, placeholder, register, name }) {
     );
 }
 
-export function InputNews({ type, placeholder, rows }) {
-    return (
-        <InputSpace type={type} placeholder={placeholder} rows={rows} />
-        // 
-    );
-}
 

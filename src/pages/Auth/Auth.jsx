@@ -95,7 +95,7 @@ export function Auth() {
               type="text"
               placeholder="Nome"
               name="name"
-              required
+              
               autocomplete="off"
               register={registerSignup}
             />
@@ -106,7 +106,7 @@ export function Auth() {
               type="email"
               placeholder="Seu melhor e-mail"
               name="email"
-              required
+              
               autocomplete="off"
               register={registerSignup}
             />
@@ -117,7 +117,7 @@ export function Auth() {
               type="password"
               placeholder="Senha"
               name="password"
-              required
+              
               autocomplete="off"
               register={registerSignup}
             />
