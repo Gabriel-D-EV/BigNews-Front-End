@@ -18,7 +18,7 @@ import { FooterFinal } from "../../components/footer/Footer.jsx";
 import bg from "../../images/background.jpg";
 import zoro from "../../images/zoro.png";
 import { getAllNewsByUser } from "../../services/newsServices.js";
-
+import { Link } from "react-router-dom";
 
 export function Profile() {
   const { user } = useContext(UserContext);
@@ -27,14 +27,12 @@ export function Profile() {
   async function findAllNewsUser() {
     const newsResponse = await getAllNewsByUser();
     console.log(newsResponse.data);
-    setNews(newsResponse.data.results);    
+    setNews(newsResponse.data.results);
   }
-
 
   useEffect(() => {
     findAllNewsUser();
   }, []);
-
 
   return (
     <>
@@ -52,40 +50,37 @@ export function Profile() {
             <h3>@{user.username}</h3>
           </UserP>
 
-          <AddNews>
-            <i class="bi bi-plus-circle"></i>
-          </AddNews>
+          <Link to="/addnews">
+            <AddNews>
+              <i class="bi bi-plus-circle"></i>
+            </AddNews>
+          </Link>
         </ProfileHeader>
 
         <ProfileNews>
-
-          {news.length === 0 && 
+          {news.length === 0 && (
             <>
               <h2>NENHUMA NOTÍCIA ENCONTRADA!!</h2>
-            <ImgLuffy src={luffy} alt="luffy" />
-
+              <ImgLuffy src={luffy} alt="luffy" />
             </>
-          }
+          )}
           {news.map((item) => {
             return (
               <>
-              <Card
-              key={item.id}
-              title={item.title}
-              text={item.text}
-              banner={item.banner}
-              likes={item.likes}
-              comments={item.comments}
-              />  
+                <Card
+                  key={item.id}
+                  title={item.title}
+                  text={item.text}
+                  banner={item.banner}
+                  likes={item.likes}
+                  comments={item.comments}
+                />
                 <ImgZoro src={zoro} />
-                </>
-              );
+              </>
+            );
           })}
         </ProfileNews>
-
       </ProfileContainer>
-
-      
 
       <FooterFinal />
     </>
