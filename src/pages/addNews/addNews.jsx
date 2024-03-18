@@ -7,7 +7,7 @@ import { newsSchema } from "../../schemas/newsSchemas.js";
 import { AddNewsContainer, ImgSupera, SectionNews } from "./addNewsStyled.js";
 import { useForm } from "react-hook-form";
 import { createNews } from "../../services/newsServices.js";
-import { Input } from "../../components/input/Input.jsx";
+import { Input, InputArea } from "../../components/input/Input.jsx";
 import supera from "../../images/supera.png";
 
 export function AddNews() {
@@ -38,22 +38,23 @@ export function AddNews() {
               type="text"
               name="title"
               register={register}
-              placeholder="Título da Notícia"
+              placeholder="Título da Notícia:"
               required
             />
             
-            <Input
+            <InputArea
               type="text"
               name="text"
               register={register}
-              placeholder="Descrição da Notícia"
+              rows="10"
+              placeholder="Descrição da Notícia:"
               required
             />
            
             <Input
               type="text"
               name="banner"
-              placeholder="URL do Banner"
+              placeholder="URL do Banner:"
               register={register}
               required
             />
