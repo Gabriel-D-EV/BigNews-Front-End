@@ -7,8 +7,9 @@ export const CardContainer = styled.section`
     gap: 1rem;
     max-width: 100%;
     background-color: #3a3a3a;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40), 0 12px 10px rgba(0, 0, 0, 0.40);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);
     border-radius: 10px;
+    border: 1px solid white;
 `
 
 export const CardBody = styled.article`
@@ -45,7 +46,7 @@ export const CardHeader = styled.article`
         text-align: center;
         margin-bottom: 1rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "4rem" : "1.5rem")};
+        font-size: ${(props) => (props.top? "3.7rem" : "1.5rem")};
     }
 `;
 

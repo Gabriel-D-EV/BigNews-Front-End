@@ -7,9 +7,7 @@ export const AuthContainer = styled.div`
     align-items: center;
     width: 75%;
     margin: 0 auto;
-    padding: 0 50px;
-    background-color: #0f0f0fe9;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.40), 0 12px 20px rgba(0, 0, 0, 0.80);
+    
     border-radius: 10px;
     gap: 10px;
     margin-bottom: 60px;
@@ -38,7 +36,7 @@ export const Section = styled.section`
     background-color: ${(props) => (props.type === "signin" ? "#121212" : "gray")};
     color: ${(props) => (props.type === "signup" ? "#121212" : "gray")};
     border-radius: 10px;
-    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.40), 5px 12px 10px rgba(0, 0, 0, 0.40);
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.90), 5px 12px 30px rgba(0, 0, 0, 0.40);
 
     h2 {
         font-size: 2rem;
@@ -54,11 +52,11 @@ export const Section = styled.section`
     }
 `;
 export const Img = styled.img`
-  width: 15rem;
+  width: 15%;
   object-fit: cover;
   cursor: pointer;
   position: absolute;
-  top: 20px;
+  top: 2%;
 `;
 
 export const ImgLevi = styled.img`
@@ -66,5 +64,5 @@ export const ImgLevi = styled.img`
   z-index: 10;
   width: 320px;
   left: 0;
-  bottom: -60px;
+  bottom: -7%;
 `;

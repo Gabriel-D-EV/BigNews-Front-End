@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const ProfileContainer = styled.h1`
    
-    padding: 150px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-    background-color: #0f0f0fc9;
     margin: auto;
 `;
 
@@ -21,7 +20,7 @@ export const ProfileHeader = styled.header`
     border-radius: 10px;
     z-index: 0;
     background-color: #0f0f0f;
-    box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.70), 5px 12px 10px rgba(0, 0, 0, 0.70);
+    box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.70), 5px 12px 30px rgba(0, 0, 0, 0.70);
 `;
 
 export const IconP = styled.i`
@@ -89,9 +88,9 @@ export const AddNews = styled.div`
 
 export const ImgZoro = styled.img`
     position: absolute;
-    left: 44rem;
+    left: 40%;
     width: 350px;
-    top: 28.8rem;
+    top: 53%;
 `; 
 
 export const ProfileNews = styled.div`
@@ -114,6 +113,6 @@ export const ProfileNews = styled.div`
 export const ImgLuffy = styled.img`
     position: absolute;
     width: 200px;
-    left: 11rem;
-    bottom: -19rem;
+    left: 15%;
+    bottom: -33%;
 `;

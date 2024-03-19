@@ -7,8 +7,6 @@ export const AddNewsContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 60px;
-  background-color: #0f0f0fe9;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 15px 20px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   gap: 10px;
   margin-bottom: 60px;
@@ -17,13 +15,13 @@ export const AddNewsContainer = styled.div`
 export const SectionNews = styled.section`
   width: 80%;
   padding: 100px;
-  margin: 100px auto;
+  margin: 50px auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #121212;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 15px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 15px 30px rgba(0, 0, 0, 0.8);
 
   h1 {
     color: blueviolet;
@@ -47,6 +45,6 @@ export const SectionNews = styled.section`
 export const ImgSupera = styled.img`
   position: absolute;
   width: 300px;
-  top: 48%;
+  top: 55%;
   left: 12%;
 `;

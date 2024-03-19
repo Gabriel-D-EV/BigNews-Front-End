@@ -1,9 +1,9 @@
-import nami from "../../images/nami.png";
+import luffy from "../../images/luffy-g5.png";
 import { Card } from "../../components/card/Card.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
-import { HomeBody, HomeHeader, ImgNami } from "./HomeStyled.js";
+import { HomeBody, HomeHeader, ImgLuffy } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
 
 
@@ -53,7 +53,7 @@ export default function Home() {
             comments={item.comments}
           />
         ))}
-        <ImgNami src={nami} alt="nami" />       
+        <ImgLuffy src={luffy} alt="luffy" />       
       </HomeBody>      
       <FooterFinal />
     </>

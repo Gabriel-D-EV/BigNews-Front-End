@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     height: 100vh;
     color: white;
-    background-image: url(${images});
+    background-image: linear-gradient(#0f0f0fc9, #0f0f0fe9, #0f0f0ff9, black), url(${images});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 
     ::-webkit-scrollbar-thumb {
         width: 8px;
-        background: black;
+        background: #121212;
     }
 
 `;
