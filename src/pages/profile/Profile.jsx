@@ -31,15 +31,14 @@ export function Profile() {
 
   useEffect(() => {
     findAllNewsUser();
+
   }, []);
 
   return (
     <>
       <ProfileContainer>
         <ProfileHeader>
-          <IconP>
-            <i class="bi bi-pencil-square"></i>
-          </IconP>
+          
 
           <BackgroundP src={bg} alt="background" />
 
@@ -53,6 +52,11 @@ export function Profile() {
             <AddNews>
               <i class="bi bi-plus-circle"></i>
             </AddNews>
+          </Link>
+          <Link to="/profile">
+            <IconP>
+              <i class="bi bi-pencil-square"></i>
+            </IconP>
           </Link>
         </ProfileHeader>
 

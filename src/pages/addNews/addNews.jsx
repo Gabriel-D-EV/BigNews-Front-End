@@ -59,7 +59,7 @@ export function AddNews() {
               required
             />
            
-            <Button type="submit" text="Adicionar"></Button>
+            <Button type="submit" text="Publicar"></Button>
           </form>
         </SectionNews>
       </AddNewsContainer>

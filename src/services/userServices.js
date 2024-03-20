@@ -41,3 +41,8 @@ function aleatorioUser(name) {
     const randomNumber = Math.floor(Math.random() * 1000);
     return `${semEspacoLower}${randomNumber}`
 }
+
+export function userUpdate(data) {
+    const response = axios.put(`${baseURL}/user/${Cookies.get("id")}`, data);
+    return response;
+}

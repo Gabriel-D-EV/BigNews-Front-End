@@ -11,6 +11,7 @@ import { Auth } from "./pages/Auth/Auth.jsx";
 import { Profile } from "./pages/profile/Profile.jsx";
 import UserProvider from "./context/userContext.jsx";
 import { AddNews } from "./pages/addNews/addNews.jsx";
+import { UserUpdate } from "./pages/userUpdate/UserUpdate.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/addnews",
         element: <AddNews />,
+      },
+      {
+        path: "/userupdate",
+        element: <UserUpdate />,
       },
     ],
   },
