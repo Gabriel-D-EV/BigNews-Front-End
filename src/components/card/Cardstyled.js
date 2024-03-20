@@ -20,7 +20,7 @@ export const CardBody = styled.article`
 
 
     img{
-        width: 50%;
+        width: 40%;
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
@@ -42,11 +42,12 @@ export const CardHeader = styled.article`
     font-size: ${(props) => (props.top ? "1.2rem" : ".9rem")};
     
     h2 {
+        margin-top: 20px;
         color: aquamarine;
         text-align: center;
         margin-bottom: 1rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "3.7rem" : "1.5rem")};
+        font-size: ${(props) => (props.top? "3.7rem" : "1.3rem")};
     }
 `;
 

@@ -9,9 +9,9 @@ export const HomeHeader = styled.section`
 
 export const HomeBody = styled.section`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
   padding: 110px 50px;
@@ -21,5 +21,5 @@ export const ImgLuffy = styled.img`
     position: absolute;
     width: 400px;
     left: -2%;
-    top: 43%;
+    top: 36%;
 `;
