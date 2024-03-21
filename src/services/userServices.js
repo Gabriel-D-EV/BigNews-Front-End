@@ -1,9 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const id = Cookies.get("id");
-const token = Cookies.get("token");
-const baseURL = ("https://big-news.onrender.com");
+const baseURL = "https://big-news.onrender.com";
 //const baseURL = "http://localhost:3000";
 
 export async function signup(data) {
@@ -28,6 +26,8 @@ export async function signin(data) {
 
 export async function userLogado() {
   try {
+    const id = Cookies.get("id");
+    const token = Cookies.get("token");
     const response = await axios.get(`${baseURL}/user/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -48,6 +48,7 @@ function aleatorioUser(name) {
 
 export async function userUpdate(data) {
   try {
+    const id = Cookies.get("id");
     const response = await axios.patch(`${baseURL}/user/${id}`, data);
     return response;
   } catch (error) {

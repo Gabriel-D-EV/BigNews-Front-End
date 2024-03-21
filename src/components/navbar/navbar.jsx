@@ -113,7 +113,7 @@ export function Navbar() {
 
               <UserLogado>
                 <Link to="/profile">
-                  <img src={user.avatar} alt="imagem" />
+                  <img src={user.avatar}/>
                   <h2> {user.name}</h2>
                 </Link>
 
