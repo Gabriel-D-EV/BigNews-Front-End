@@ -48,7 +48,7 @@ function aleatorioUser(name) {
 
 export async function userUpdate(data) {
   try {
-    const response = await axios.patch(`${baseURL}/user/userUpdate/${id}`, data);
+    const response = await axios.patch(`${baseURL}/user/${id}`, data);
     return response;
   } catch (error) {
     console.error("Erro ao atualizar usuario", error);

@@ -8,19 +8,18 @@ import { userUpdate } from "../../services/userServices.js";
 import { useEffect } from "react";
 import saitama from "../../images/saitama.png";
 
-export  function UserUpdate() {
+export function UserUpdate() {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm({});
 
-  const navigate = useNavigate();
-
   async function inHandleSubmit(data) {
     try {
       const response = await userUpdate(data);
-      return response
       navigate("/profile");
     } catch (error) {}
   }
@@ -77,7 +76,7 @@ export  function UserUpdate() {
             <Button type="submit" text="Atualizar"></Button>
           </form>
         </SectionUpdate>
-        <ImgSaitama src={saitama} alt="Saitama"/>
+        <ImgSaitama src={saitama} alt="Saitama" />
       </UpdateContainer>
 
       <FooterFinal />
