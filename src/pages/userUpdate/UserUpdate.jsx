@@ -4,7 +4,7 @@ import { SectionUpdate, UpdateContainer } from "./UserUpdateStyled";
 import { Input } from "../../components/input/Input";
 import { Button } from "../../components/button/Button";
 import { FooterFinal } from "../../components/footer/Footer";
-import { userUpdate } from "../../services/userServices";
+import { updateUser } from "../../services/userServices";
 import { useEffect } from "react";
 
 export function UserUpdate() {
@@ -19,7 +19,7 @@ export function UserUpdate() {
   async function inHandleSubmit(data) {
     try {
       console.log(data);
-      const response = await userUpdate(data);
+      const response = await updateUser(data);
       console.log(response);
 
       navigate("/profile");
@@ -48,7 +48,7 @@ export function UserUpdate() {
               type="text"
               name="username"
               register={register}
-              placeholder="@Username:"
+              placeholder="@Username ( sem espaços ):"
               required
             />
             <Input

@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         element: <AddNews />,
       },
       {
-        path: "/userupdate",
+        path: "/userUpdate",
         element: <UserUpdate />,
       },
     ],
