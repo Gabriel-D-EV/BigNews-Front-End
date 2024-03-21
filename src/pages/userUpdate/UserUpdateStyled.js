@@ -35,6 +35,15 @@ export const SectionUpdate = styled.div`
     gap: 1rem;
     border-radius: 10px;
     margin: auto;
+    margin-right: 10%;
     z-index: 10;
   }
+`;
+
+export const ImgSaitama = styled.img`
+  position: absolute;
+  width: 25%;
+  top: 30%;
+  z-index: 10;
+  left: 13%;
 `;

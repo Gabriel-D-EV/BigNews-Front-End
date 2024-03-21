@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { SectionUpdate, UpdateContainer } from "./UserUpdateStyled";
+import { ImgSaitama, SectionUpdate, UpdateContainer } from "./UserUpdateStyled";
 import { Input } from "../../components/input/Input";
 import { Button } from "../../components/button/Button";
 import { FooterFinal } from "../../components/footer/Footer";
 import { userUpdate } from "../../services/userServices.js";
 import { useEffect } from "react";
+import saitama from "../../images/saitama.png";
 
 export  function UserUpdate() {
   const {
@@ -76,6 +77,7 @@ export  function UserUpdate() {
             <Button type="submit" text="Atualizar"></Button>
           </form>
         </SectionUpdate>
+        <ImgSaitama src={saitama} alt="Saitama"/>
       </UpdateContainer>
 
       <FooterFinal />
