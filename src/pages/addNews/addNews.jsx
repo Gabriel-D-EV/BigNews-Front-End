@@ -34,6 +34,7 @@ export function AddNews() {
         <SectionNews>
           <form onSubmit={handleSubmit(inHandleSubmit)}>
             <h1>Adicionar Notícia</h1>
+            <br />
             <Input
               type="text"
               name="title"
@@ -41,7 +42,15 @@ export function AddNews() {
               placeholder="Título da Notícia:"
               required
             />
-            
+
+            <Input
+              type="text"
+              name="banner"
+              placeholder="URL do Banner:"
+              register={register}
+              required
+            />
+
             <InputArea
               type="text"
               name="text"
@@ -50,15 +59,9 @@ export function AddNews() {
               placeholder="Descrição da Notícia:"
               required
             />
-           
-            <Input
-              type="text"
-              name="banner"
-              placeholder="URL do Banner:"
-              register={register}
-              required
-            />
-           
+
+            <br />
+
             <Button type="submit" text="Publicar"></Button>
           </form>
         </SectionNews>

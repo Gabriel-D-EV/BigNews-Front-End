@@ -1,10 +1,12 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-//const baseURL = ("https://big-news.onrender.com");
-const baseURL = "http://localhost:3000";
+const id = Cookies.get("id");
+const token = Cookies.get("token");
+const baseURL = ("https://big-news.onrender.com");
+//const baseURL = "http://localhost:3000";
 
-export function signup(data) {
+export async function signup(data) {
   delete data.password2;
   const body = {
     ...data,
@@ -12,23 +14,23 @@ export function signup(data) {
     avatar:
       "https://img2.gratispng.com/20180603/jx/kisspng-user-interface-design-computer-icons-default-stephen-salazar-photography-5b1462e1b19d70.1261504615280626897275.jpg",
   };
-  const response = axios.post(`${baseURL}/user/signup`, body);
+  const response = await axios.post(`${baseURL}/user/signup`, body);
   const login = { email: data.email, password: data.password };
   const responsel = axios.post(`${baseURL}/auth`, login);
 
   return response, responsel;
 }
 
-export function signin(data) {
-  const response = axios.post(`${baseURL}/auth`, data);
+export async function signin(data) {
+  const response = await axios.post(`${baseURL}/auth`, data);
   return response;
 }
 
 export async function userLogado() {
   try {
-    const response = await axios.get(`${baseURL}/user/${Cookies.get("id")}`, {
+    const response = await axios.get(`${baseURL}/user/${id}`, {
       headers: {
-        Authorization: `Bearer ${Cookies.get("token")}`,
+        Authorization: `Bearer ${token}`,
       },
     });
     return response;
@@ -44,10 +46,9 @@ function aleatorioUser(name) {
   return `${semEspacoLower}${randomNumber}`;
 }
 
-export function updateUser(data) {
+export async function userUpdate(data) {
   try {
-    const response = axios.patch(`${baseURL}/user/${Cookies.get("id")}`, data);
-    console.log(Cookies.get("id"));
+    const response = await axios.patch(`${baseURL}/user/userUpdate/${id}`, data);
     return response;
   } catch (error) {
     console.error("Erro ao atualizar usuario", error);

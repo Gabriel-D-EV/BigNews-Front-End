@@ -53,11 +53,13 @@ export function Profile() {
               <i class="bi bi-plus-circle"></i>
             </AddNews>
           </Link>
+          {/* */}
           <Link to="/userUpdate">
             <IconP>
               <i class="bi bi-pencil-square"></i>
             </IconP>
           </Link>
+          
         </ProfileHeader>
 
         <ProfileNews>

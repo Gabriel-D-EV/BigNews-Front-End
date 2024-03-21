@@ -4,24 +4,22 @@ import { SectionUpdate, UpdateContainer } from "./UserUpdateStyled";
 import { Input } from "../../components/input/Input";
 import { Button } from "../../components/button/Button";
 import { FooterFinal } from "../../components/footer/Footer";
-import { updateUser } from "../../services/userServices";
+import { userUpdate } from "../../services/userServices.js";
 import { useEffect } from "react";
 
-export function UserUpdate() {
+export  function UserUpdate() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({});
 
   const navigate = useNavigate();
 
   async function inHandleSubmit(data) {
     try {
-      console.log(data);
-      const response = await updateUser(data);
-      console.log(response);
-
+      const response = await userUpdate(data);
+      return response
       navigate("/profile");
     } catch (error) {}
   }
@@ -36,6 +34,7 @@ export function UserUpdate() {
         <SectionUpdate>
           <form onSubmit={handleSubmit(inHandleSubmit)}>
             <h1>Atualizar Perfil</h1>
+            <br />
             <Input
               type="text"
               name="name"
@@ -73,7 +72,7 @@ export function UserUpdate() {
               register={register}
               required
             />
-
+            <br />
             <Button type="submit" text="Atualizar"></Button>
           </form>
         </SectionUpdate>
