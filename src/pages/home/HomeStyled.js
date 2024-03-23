@@ -15,11 +15,16 @@ export const HomeBody = styled.section`
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
   padding: 110px 50px;
+  transition: all.5s ease-in-out;
+
+  section:hover {
+    transform: scale(1.05);
+    } 
 `;
 
 export const ImgLuffy = styled.img`
     position: absolute;
-    width: 400px;
-    left: -2%;
-    top: 36%;
+    width: 380px;
+    left: -4%;
+    top: 38%;
 `;
