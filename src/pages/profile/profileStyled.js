@@ -64,10 +64,8 @@ export const UserP = styled.div`
 
     h2 {
         font-size: 3rem;
-        border-bottom: 1px solid;
     }
     h3 {
-        text-align: center;
         font-size: 1.5rem;
         color: blueviolet;
     }

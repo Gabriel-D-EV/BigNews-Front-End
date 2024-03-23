@@ -5,6 +5,7 @@ export const CardContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    cursor: pointer;
     max-width: 100%;
     background-color: #3a3a3a;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);

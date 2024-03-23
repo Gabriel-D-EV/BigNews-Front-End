@@ -1,8 +1,8 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const baseURL = "https://big-news.onrender.com";
-//const baseURL = "http://localhost:3000";
+//const baseURL = "https://big-news.onrender.com";
+const baseURL = "http://localhost:3000";
 
 export async function signup(data) {
   delete data.password2;
@@ -49,9 +49,14 @@ function aleatorioUser(name) {
 export async function userUpdate(data) {
   try {
     const id = Cookies.get("id");
-    const response = await axios.patch(`${baseURL}/user/${id}`, data);
+    console.log(id);
+    const response = await axios.patch(`${baseURL}/user/${id}`, data, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
     return response;
   } catch (error) {
-    console.error("Erro ao atualizar usuario", error);
+    console.log("Erro ao atualizar usuario", error);
   }
 }
