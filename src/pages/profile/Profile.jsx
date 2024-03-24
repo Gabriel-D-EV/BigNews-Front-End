@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from "react";
 import luffy from "../../images/luffy.png";
 import { UserContext } from "../../context/userContext.jsx";
-import { Card, CardUser } from "../../components/card/Card.jsx";
+import { CardUser } from "../../components/card/Card.jsx";
 import {
   AddNews,
   BackgroundP,
   IconP,
   ImgLuffy,
   ImgP,
-  ImgZoro,
+  ImgLuffyg5,
   ProfileContainer,
   ProfileHeader,
   ProfileNews,
@@ -16,7 +16,7 @@ import {
 } from "./profileStyled.js";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import bg from "../../images/background.jpg";
-import zoro from "../../images/zoro.png";
+import luffyg5 from "../../images/luffy-g5.png";
 import { getAllNewsByUser } from "../../services/newsServices.js";
 import { Link } from "react-router-dom";
 
@@ -80,7 +80,7 @@ export function Profile() {
                   likes={item.likes}
                   comments={item.comments}        
                 />
-                <ImgZoro src={zoro} />
+                <ImgLuffyg5 src={luffyg5} />
               </>
             );
           })}

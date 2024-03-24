@@ -1,9 +1,9 @@
-import luffy from "../../images/luffy-g5.png";
+import vegeta from "../../images/vegeta.png";
 import { Card, CardTop } from "../../components/card/Card.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
-import { HomeBody, HomeHeader, ImgLuffy } from "./HomeStyled.js";
+import { HomeBody, HomeHeader, ImgVegeta } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
 
 
@@ -55,7 +55,7 @@ export default function Home() {
             
           />
         ))}
-        <ImgLuffy src={luffy} alt="luffy" />       
+        <ImgVegeta src={vegeta} alt="luffy" />       
       </HomeBody>      
       <FooterFinal />
     </>

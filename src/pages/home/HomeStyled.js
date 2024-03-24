@@ -5,6 +5,7 @@ export const HomeHeader = styled.section`
   display: flex;
   padding: 0 40px;
   padding-top: 100px;
+  margin-left: 15%;
 `;
 
 export const HomeBody = styled.section`
@@ -22,9 +23,9 @@ export const HomeBody = styled.section`
     } 
 `;
 
-export const ImgLuffy = styled.img`
+export const ImgVegeta = styled.img`
     position: absolute;
-    width:10px;
-    left: -4%;
-    top: 8%;
+    width: 18%;
+    left: 1%;
+    top: 10%;
 `;

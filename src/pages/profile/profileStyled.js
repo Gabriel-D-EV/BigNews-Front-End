@@ -84,11 +84,11 @@ export const AddNews = styled.div`
     }
 `;
 
-export const ImgZoro = styled.img`
+export const ImgLuffyg5 = styled.img`
     position: absolute;
     left: 40%;
-    width: 350px;
-    top: 53%;
+    width: 25%;
+    top: 48%;
 `; 
 
 export const ProfileNews = styled.div`
@@ -110,7 +110,7 @@ export const ProfileNews = styled.div`
 
 export const ImgLuffy = styled.img`
     position: absolute;
-    width: 200px;
-    left: 15%;
-    bottom: -33%;
+    width: 15%;
+    left: 12%;
+    bottom: -30%;
 `;
