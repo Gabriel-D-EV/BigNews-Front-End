@@ -21,7 +21,6 @@ export function AddNews() {
 
   async function inHandleSubmit(data) {
     try {
-      console.log(data);
       const response = await createNews(data);
 
       navigate("/profile");

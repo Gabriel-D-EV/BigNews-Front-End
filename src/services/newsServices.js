@@ -1,8 +1,8 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const baseURL = ("https://big-news.onrender.com");
-//const baseURL = ("http://localhost:3000");
+//const baseURL = ("https://big-news.onrender.com");
+const baseURL = ("http://localhost:3000");
 
 export function getAllNews() {
   const response = axios.get(`${baseURL}/news`);
@@ -36,4 +36,13 @@ export function createNews(data) {
     
   });
   return response;
+}
+
+export function deleteNews() {
+  const response = axios.delete(`${baseURL}/news`, {
+    headers: {
+      Authorization: `Bearer ${Cookies.get("token")}`,
+    },
+  })
+  return response
 }

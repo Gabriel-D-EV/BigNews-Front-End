@@ -24,7 +24,7 @@ export const HomeBody = styled.section`
 
 export const ImgLuffy = styled.img`
     position: absolute;
-    width: 380px;
+    width:10px;
     left: -4%;
-    top: 38%;
+    top: 8%;
 `;

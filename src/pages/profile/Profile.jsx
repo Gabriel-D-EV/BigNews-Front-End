@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import luffy from "../../images/luffy.png";
 import { UserContext } from "../../context/userContext.jsx";
-import { Card } from "../../components/card/Card.jsx";
+import { Card, CardUser } from "../../components/card/Card.jsx";
 import {
   AddNews,
   BackgroundP,
@@ -72,13 +72,13 @@ export function Profile() {
           {news.map((item) => {
             return (
               <>
-                <Card
+                <CardUser
                   key={item.id}
                   title={item.title}
                   text={item.text}
                   banner={item.banner}
                   likes={item.likes}
-                  comments={item.comments}
+                  comments={item.comments}        
                 />
                 <ImgZoro src={zoro} />
               </>

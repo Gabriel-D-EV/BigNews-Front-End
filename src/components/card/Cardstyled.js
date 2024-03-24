@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const CardContainer = styled.section`
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 1rem;
     cursor: pointer;
     max-width: 100%;
@@ -35,6 +36,15 @@ export const CardBody = styled.article`
         padding: 1.5rem;
         width: 100%;
     }
+
+    .deletenews {
+        color: red;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        cursor: pointer;
+    }
 `;
  
 export const CardHeader = styled.article`
@@ -64,5 +74,11 @@ export const CardFooter = styled.section`
         align-items: center;
         gap: 0.2rem;
         bottom: 0;
+    }
+    i {
+        font-size: 1rem;
+    }
+    span {
+        font-size: 1rem;
     }
 `;
