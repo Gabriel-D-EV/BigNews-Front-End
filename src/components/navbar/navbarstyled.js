@@ -20,6 +20,20 @@ export const Nav = styled.nav`
     align-items: center;
     gap: 20px;
     padding: 10px;
+
+    .logar p {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    a {
+    text-decoration: none;
+    color: #fff;
+    }
+    a:hover {
+      color: blueviolet;
+    }
+
   }
 `;
 
@@ -139,5 +153,9 @@ export const UserLogado = styled.div`
   }
   i:hover {
     color: #f00;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 600;
   }
 `;

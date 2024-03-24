@@ -101,27 +101,34 @@ export function Navbar() {
             </InputSpace>
           </form>
 
-          {!user ? (
-            <Link to="/auth">
-              <Button type="button" text="Login"></Button>
-            </Link>
-          ) : (
-            <>
-              <Link to="/auth">
-                <Button type="button" text="Cadastrar"></Button>
+          {user ? (
+            <UserLogado>
+              <Link to="/profile">
+                <img src={user.avatar} />
+                <h2> {user.name}</h2>
               </Link>
-
-              <UserLogado>
-                <Link to="/profile">
-                  <img src={user.avatar}/>
-                  <h2> {user.name}</h2>
-                </Link>
-
+              <div>
                 <i class="bi bi-box-arrow-right" onClick={signout}>
                   Sair
                 </i>
-              </UserLogado>
-            </>
+                <Link to="/auth">
+                  <p>Cadastre-se</p>
+                </Link>
+              </div>
+            </UserLogado>
+          ) : (
+            <div className="logar">
+              <p>
+                Olá,
+                <Link to="/auth">
+                  <h4>Entre </h4>
+                </Link> 
+                ou
+              </p>
+              <Link to="/auth">
+                <h4>Cadastre-se</h4>
+              </Link>
+            </div>
           )}
         </div>
       </Nav>
