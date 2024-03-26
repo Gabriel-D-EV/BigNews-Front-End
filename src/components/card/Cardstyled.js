@@ -23,7 +23,7 @@ export const CardBody = styled.article`
 
 
     img{
-        width: 40%;
+        width: 35%;
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
