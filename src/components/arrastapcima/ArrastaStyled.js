@@ -12,10 +12,21 @@ export const ArrastaStyle = styled.div`
     a {
         position: absolute;
         right: 50%;
+        bottom: 3%;
         text-decoration: none;
         color: white;
         font-size: 2rem;
         font-weight: 600;
         margin: 1rem;
+        transition: .2s ease-in-out;   
     }
+    p {
+        font-size: 1rem;
+    }
+
+    a:hover {
+        color: blueviolet;
+        transform: translateY(-15px);
+    }
+   
 `;
