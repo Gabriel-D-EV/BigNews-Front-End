@@ -19,6 +19,7 @@ import bg from "../../images/background.jpg";
 import luffyg5 from "../../images/luffy-g5.png";
 import { getAllNewsByUser } from "../../services/newsServices.js";
 import { Link } from "react-router-dom";
+import { Arrasta } from "../../components/arrastapcima/Arrasta.jsx";
 
 export function Profile() {
   const { user } = useContext(UserContext);
@@ -86,7 +87,7 @@ export function Profile() {
           })}
         </ProfileNews>
       </ProfileContainer>
-
+      <Arrasta/>
       <FooterFinal />
     </>
   );

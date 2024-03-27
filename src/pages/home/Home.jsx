@@ -5,6 +5,7 @@ import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
 import { HomeBody, HomeHeader, ImgVegeta } from "./HomeStyled.js";
 import { useEffect, useState } from "react";
+import { Arrasta } from "../../components/arrastapcima/Arrasta.jsx";
 
 
 export default function Home() {
@@ -52,11 +53,11 @@ export default function Home() {
             banner={item.banner}
             likes={item.likes}
             comments={item.comments}
-            
           />
         ))}
         <ImgVegeta src={vegeta} alt="luffy" />       
-      </HomeBody>      
+      </HomeBody>    
+      <Arrasta/>
       <FooterFinal />
     </>
   );
