@@ -20,6 +20,7 @@ import luffyg5 from "../../images/luffy-g5.png";
 import { getAllNewsByUser } from "../../services/newsServices.js";
 import { Link } from "react-router-dom";
 import { Arrasta } from "../../components/arrastapcima/Arrasta.jsx";
+import { Voltar } from "../../components/voltar/Voltar.jsx";
 
 export function Profile() {
   const { user } = useContext(UserContext);
@@ -32,18 +33,19 @@ export function Profile() {
 
   useEffect(() => {
     findAllNewsUser();
-
   }, []);
 
   return (
     <>
       <ProfileContainer>
         <ProfileHeader>
-          
-
           <BackgroundP src={bg} alt="background" />
 
           <UserP>
+            <Link to="/">
+              <Voltar />
+            </Link>
+
             <ImgP src={user.avatar} alt="foto de usuario" />
             <h2>{user.name}</h2>
             <h3>@{user.username}</h3>
@@ -60,7 +62,6 @@ export function Profile() {
               <i class="bi bi-pencil-square"></i>
             </IconP>
           </Link>
-          
         </ProfileHeader>
 
         <ProfileNews>
@@ -79,7 +80,7 @@ export function Profile() {
                   text={item.text}
                   banner={item.banner}
                   likes={item.likes}
-                  comments={item.comments}        
+                  comments={item.comments}
                 />
                 <ImgLuffyg5 src={luffyg5} />
               </>
@@ -87,7 +88,7 @@ export function Profile() {
           })}
         </ProfileNews>
       </ProfileContainer>
-      <Arrasta/>
+      <Arrasta />
       <FooterFinal />
     </>
   );

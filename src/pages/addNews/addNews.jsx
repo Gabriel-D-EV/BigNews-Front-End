@@ -1,21 +1,19 @@
 import { Link, useNavigate } from "react-router-dom";
-import { ErrorSpan } from "../../components/navbar/navbarstyled.js";
 import { Button } from "../../components/button/Button.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { newsSchema } from "../../schemas/newsSchemas.js";
 import { AddNewsContainer, ImgSupera, SectionNews } from "./addNewsStyled.js";
 import { useForm } from "react-hook-form";
 import { createNews } from "../../services/newsServices.js";
 import { Input, InputArea } from "../../components/input/Input.jsx";
 import supera from "../../images/supera.png";
+import { Voltar } from "../../components/voltar/Voltar.jsx";
 
 export function AddNews() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({});
 
   const navigate = useNavigate();
 
@@ -31,6 +29,9 @@ export function AddNews() {
     <>
       <AddNewsContainer>
         <SectionNews>
+          <Link to="/profile">
+            <Voltar />
+          </Link>
           <form onSubmit={handleSubmit(inHandleSubmit)}>
             <h1>Adicionar Notícia</h1>
             <br />

@@ -1,39 +1,40 @@
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ImgSaitama, SectionUpdate, UpdateContainer } from "./UserUpdateStyled";
 import { Input } from "../../components/input/Input";
 import { Button } from "../../components/button/Button";
 import { FooterFinal } from "../../components/footer/Footer";
 import { userUpdate } from "../../services/userServices.js";
-import { useEffect } from "react";
 import saitama from "../../images/saitama.png";
+import { Voltar } from "../../components/voltar/Voltar.jsx";
 
 export function UserUpdate() {
-  const navigate = useNavigate();
-
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm({});
 
-  async function inHandleSubmit(data) {
+  const navigate = useNavigate();
+
+  async function inSubmit(data) {
     try {
       const response = await userUpdate(data);
+
       navigate("/profile");
     } catch (error) {}
   }
 
-  useEffect(() => {
-    inHandleSubmit();
-  }, []);
-
   return (
     <>
       <UpdateContainer>
+        
         <SectionUpdate>
-          <form onSubmit={handleSubmit(inHandleSubmit)}>
-            <h1>Atualizar Perfil</h1>
+        <Link to="/profile">
+            <Voltar/>
+          </Link>
+          <form onSubmit={handleSubmit(inSubmit)}>
+            <h1>Atualizar Usuário</h1>
             <br />
             <Input
               type="text"
@@ -52,7 +53,7 @@ export function UserUpdate() {
             />
             <Input
               type="email"
-              name="e-mail"
+              name="email"
               register={register}
               placeholder="Seu melhor E-mail:"
               required
@@ -62,6 +63,7 @@ export function UserUpdate() {
               name="password"
               register={register}
               placeholder="Senha (mais de 8 caracteres):"
+              autocomplete="current-password"
               required
             />
 

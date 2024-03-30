@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const ProfileContainer = styled.h1`
    
-    padding: 100px;
+    padding: 80px;
     display: flex;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;

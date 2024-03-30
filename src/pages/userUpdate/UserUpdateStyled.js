@@ -10,9 +10,9 @@ export const UpdateContainer = styled.div`
 `;
 
 export const SectionUpdate = styled.div`
-  padding: 100px;
+  padding: 70px 80px;
   width: 80%;
-  margin: 50px auto;
+  margin: auto;
   background-color: #121212;
   align-items: center;
   justify-content: center;
@@ -31,19 +31,19 @@ export const SectionUpdate = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     gap: 1rem;
     border-radius: 10px;
     margin: auto;
-    margin-right: 10%;
+    margin-right: 0;
     z-index: 10;
   }
 `;
 
 export const ImgSaitama = styled.img`
   position: absolute;
-  width: 25%;
-  top: 30%;
+  width: 28%;
+  top: 20%;
   z-index: 10;
-  left: 13%;
+  left: 18%;
 `;

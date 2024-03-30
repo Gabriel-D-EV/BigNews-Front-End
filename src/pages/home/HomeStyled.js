@@ -19,7 +19,7 @@ export const HomeBody = styled.section`
   transition: all.5s ease-in-out;
 
   section:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     z-index: 9999;
     } 
 `;

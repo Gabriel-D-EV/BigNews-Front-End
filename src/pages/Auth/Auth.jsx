@@ -94,8 +94,7 @@ export function Auth() {
             <Input
               type="text"
               placeholder="Nome"
-              name="name"
-              
+              name="name" 
               autocomplete="off"
               register={registerSignup}
             />
@@ -105,8 +104,7 @@ export function Auth() {
             <Input
               type="email"
               placeholder="Seu melhor e-mail"
-              name="email"
-              
+              name="email"  
               autocomplete="off"
               register={registerSignup}
             />
@@ -116,8 +114,7 @@ export function Auth() {
             <Input
               type="password"
               placeholder="Senha"
-              name="password"
-              
+              name="password"  
               autocomplete="off"
               register={registerSignup}
             />

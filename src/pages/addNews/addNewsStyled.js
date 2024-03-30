@@ -1,25 +1,22 @@
 import styled from "styled-components";
 
 export const AddNewsContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 60px;
-  border-radius: 10px;
-  gap: 10px;
-  margin-bottom: 60px;
+  padding: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 `;
 
 export const SectionNews = styled.section`
+  padding: 70px 80px;
   width: 80%;
-  padding: 100px;
-  margin: 50px auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: auto;
   background-color: #121212;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 15px 30px rgba(0, 0, 0, 0.8);
 
@@ -44,7 +41,7 @@ export const SectionNews = styled.section`
 
 export const ImgSupera = styled.img`
   position: absolute;
-  width: 300px;
-  top: 55%;
-  left: 12%;
+  width: 23%;
+  top: 42%;
+  left: 13%;
 `;
