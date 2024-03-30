@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const HomeHeader = styled.section`
   display: flex;
   padding: 0 40px;
-  padding-top: 100px;
+  margin-top: 10%;
   margin-left: 15%;
 `;
 
@@ -27,6 +27,6 @@ export const HomeBody = styled.section`
 export const ImgVegeta = styled.img`
     position: absolute;
     width: 16%;
-    left: 1%;
+    left: 3%;
     top: 10%;
 `;
