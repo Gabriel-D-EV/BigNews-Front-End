@@ -26,7 +26,7 @@ export const HomeBody = styled.section`
 
 export const ImgVegeta = styled.img`
     position: absolute;
-    width: 18%;
+    width: 16%;
     left: 1%;
     top: 10%;
 `;
