@@ -7,11 +7,16 @@ export const AddNewsContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media (max-width: 1000px) {
+    padding: 10px;
+    width: 90%;
+    margin-top: 35%;
+  }
 `;
 
 export const SectionNews = styled.section`
   padding: 70px 80px;
-  width: 80%;
   margin: auto;
   background-color: #121212;
   align-items: center;
@@ -37,11 +42,19 @@ export const SectionNews = styled.section`
     margin: auto;
     z-index: 10;
   }
+
+  @media (max-width: 1000px) {
+    padding: 40px 30px;
+  }
 `;
 
 export const ImgSupera = styled.img`
   position: absolute;
-  width: 23%;
-  top: 42%;
-  left: 13%;
+  width: 26%;
+  top: 35%;
+  left: 10%;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

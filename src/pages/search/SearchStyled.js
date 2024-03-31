@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
 export const ContainerResults = styled.section`
-  padding-top: 1rem;
+  padding-top: .8rem;
   padding-bottom: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #0f0f0f99;
-  
 
   img {
     width: 50%;
+  }
+
+  @media (max-width: 1000px) {
+    margin: auto;
+    margin-top: 25%;
+
+    img {
+      width: 40%;
+    }
   }
 `;
 
@@ -21,6 +29,10 @@ export const SearchNews = styled.div`
     margin: 1rem, auto;
     width: 70%;
     
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
 `;
 
 export const TextResults = styled.div`

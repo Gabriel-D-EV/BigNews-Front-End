@@ -12,7 +12,8 @@ export const ProfileContainer = styled.h1`
   @media (max-width: 1000px) {
     width: 95%;
     padding: 10px;
-    margin: 25% auto;
+    margin: auto;
+    margin-top: 35% ;
   }
 `;
 
@@ -137,6 +138,7 @@ export const ProfileNews = styled.div`
 
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
+    width: 90%;
   }
 `;
 
