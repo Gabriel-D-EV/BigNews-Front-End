@@ -11,7 +11,7 @@ export const AddNewsContainer = styled.div`
   @media (max-width: 1000px) {
     padding: 10px;
     width: 90%;
-    margin-top: 35%;
+    margin: 35% auto;
   }
 `;
 

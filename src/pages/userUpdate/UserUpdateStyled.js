@@ -7,6 +7,12 @@ export const UpdateContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media (max-width: 1000px) {
+    padding: 10px;
+    width: 90%;
+    margin: 35% auto;
+  }
 `;
 
 export const SectionUpdate = styled.div`
@@ -38,6 +44,10 @@ export const SectionUpdate = styled.div`
     margin-right: 0;
     z-index: 10;
   }
+
+  @media (max-width: 1000px) {
+    padding: 40px 30px;
+  }
 `;
 
 export const ImgSaitama = styled.img`
@@ -46,4 +56,8 @@ export const ImgSaitama = styled.img`
   top: 20%;
   z-index: 10;
   left: 18%;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
