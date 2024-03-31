@@ -23,6 +23,22 @@ export const AuthContainer = styled.div`
         margin: auto;
         z-index: 10;
     }
+
+    .inicio {
+        display: none;
+    }
+
+    @media (max-width: 1000px) {
+        margin-top: 12%;
+        flex-direction: column;
+
+        .inicio {
+            display: flex;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+    }
 `;
 
 export const Section = styled.section`
@@ -57,6 +73,10 @@ export const Img = styled.img`
   cursor: pointer;
   position: absolute;
   top: 2%;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const ImgLevi = styled.img`
@@ -65,4 +85,8 @@ export const ImgLevi = styled.img`
   width: 320px;
   left: 0;
   bottom: -7%;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

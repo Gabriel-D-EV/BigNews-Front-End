@@ -12,6 +12,7 @@ import { signin, signup } from "../../services/userServices.js";
 import Cookies from "js-cookie";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import levi from "../../images/levi.png";
+import { Voltar } from "../../components/voltar/Voltar.jsx";
 
 export function Auth() {
   const {
@@ -53,6 +54,11 @@ export function Auth() {
   return (
     <>
       <AuthContainer>
+        <div className="inicio">
+          <Link to="/">
+            <Voltar />
+          </Link>
+        </div>
         <Link to="/">
           <Img src={logo} alt="Logo big News" />
         </Link>
@@ -94,7 +100,7 @@ export function Auth() {
             <Input
               type="text"
               placeholder="Nome"
-              name="name" 
+              name="name"
               autocomplete="off"
               register={registerSignup}
             />
@@ -104,7 +110,7 @@ export function Auth() {
             <Input
               type="email"
               placeholder="Seu melhor e-mail"
-              name="email"  
+              name="email"
               autocomplete="off"
               register={registerSignup}
             />
@@ -114,7 +120,7 @@ export function Auth() {
             <Input
               type="password"
               placeholder="Senha"
-              name="password"  
+              name="password"
               autocomplete="off"
               register={registerSignup}
             />
@@ -136,7 +142,7 @@ export function Auth() {
           </form>
         </Section>
       </AuthContainer>
-      <ImgLevi src={levi} alt="levi"/>
+      <ImgLevi src={levi} alt="levi" />
       <FooterFinal />
     </>
   );
