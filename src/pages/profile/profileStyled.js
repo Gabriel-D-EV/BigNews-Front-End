@@ -12,7 +12,7 @@ export const ProfileContainer = styled.h1`
   @media (max-width: 1000px) {
     width: 95%;
     padding: 10px;
-    margin: 30% auto;
+    margin: 25% auto;
   }
 `;
 
