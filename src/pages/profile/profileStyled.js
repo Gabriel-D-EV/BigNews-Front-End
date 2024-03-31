@@ -63,7 +63,7 @@ export const BackgroundP = styled.img`
   right: 0;
   bottom: 0;
   object-fit: cover;
-  width: 100vw;
+  width: 100%;
   height: 60%;
   z-index: -1;
   border-radius: 10px 10px 0 0;
@@ -79,7 +79,7 @@ export const UserP = styled.div`
   cursor: pointer;
 
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h3 {
     font-size: 1.5rem;
