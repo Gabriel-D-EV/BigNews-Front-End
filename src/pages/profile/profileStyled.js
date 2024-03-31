@@ -75,7 +75,7 @@ export const BackgroundP = styled.img`
 `;
 
 export const UserP = styled.div`
-  padding: 4rem;
+  padding: 4rem 1rem;
   cursor: pointer;
 
   h2 {
@@ -87,7 +87,7 @@ export const UserP = styled.div`
   }
   @media (max-width: 1000px) {
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     h3 {
       font-size: 1rem;
