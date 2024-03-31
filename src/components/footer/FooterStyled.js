@@ -31,6 +31,17 @@ export const FooterStyle = styled.footer`
     align-items: end;
     text-align: end;
   }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    p {
+      text-align: center;
+    }
+  }
 `;
 
 export const Redes = styled.div`
@@ -69,7 +80,15 @@ export const Redes = styled.div`
 
 export const ImgQR = styled.img`
   width: 200px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 export const ImgLogo = styled.img`
   width: 280px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

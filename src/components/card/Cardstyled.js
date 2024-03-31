@@ -61,6 +61,14 @@ export const CardHeader = styled.article`
         width: 100%;
         font-size: ${(props) => (props.top? "3.7rem" : "1.3rem")};
     }
+
+    @media (max-width: 1000px) {
+        font-size: ${(props) => (props.top ? "1.2rem" : ".9rem")};
+
+        h2 {
+            font-size: ${(props) => (props.top? "2rem" : "1.3rem")};
+        }
+  }
 `;
 
 export const CardFooter = styled.section`

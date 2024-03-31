@@ -7,6 +7,7 @@ import {
   NavList,
   ErrorSpan,
   UserLogado,
+  Menu,
 } from "./navbarstyled.js";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -85,6 +86,10 @@ export function Navbar() {
           </NavList>
         </div>
 
+        <Menu>
+          <i class="bi bi-list"></i>
+        </Menu>
+
         <div className="ini-ent">
           <form onSubmit={handleSubmit(onSearch)}>
             <InputSpace>
@@ -122,7 +127,7 @@ export function Navbar() {
                 Olá,
                 <Link to="/auth">
                   <h4>Entre </h4>
-                </Link> 
+                </Link>
                 ou
               </p>
               <Link to="/auth">

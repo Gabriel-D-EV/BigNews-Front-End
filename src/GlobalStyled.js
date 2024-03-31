@@ -33,4 +33,11 @@ export const GlobalStyle = createGlobalStyle`
         background: #121212;
     }
 
+    @media (max-width: 1000px) {
+        html, body {
+            overflow-x: hidden;
+            margin: 0;
+        }
+    }
+
 `;

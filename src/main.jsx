@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import { Search } from "./pages/search/Search";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home/Home.jsx";

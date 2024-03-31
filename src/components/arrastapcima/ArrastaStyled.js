@@ -8,7 +8,6 @@ export const ArrastaStyle = styled.div`
     text-align: center;
     margin: 0 auto;
     position: relative;
-
     a {
         position: absolute;
         right: 50%;
@@ -20,13 +19,18 @@ export const ArrastaStyle = styled.div`
         margin: 1rem;
         transition: .2s ease-in-out;   
     }
-    p {
-        font-size: 1rem;
-    }
 
     a:hover {
         color: blueviolet;
         transform: translateY(-15px);
     }
    
+
+    @media (max-width: 1000px) {
+    text-align: center;
+
+    a {
+        right: 40%;
+    }
+  }
 `;

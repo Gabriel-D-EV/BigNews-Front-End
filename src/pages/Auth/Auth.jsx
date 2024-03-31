@@ -35,8 +35,8 @@ export function Auth() {
   async function inHandleSubmit(data) {
     try {
       const response = await signin(data);
-      Cookies.set("id", response.data.id);
-      Cookies.set("token", response.data.token, { expires: 1 });
+      Cookies.set("id", response.data.id, { expires: 15 });
+      Cookies.set("token", response.data.token, { expires: 15 });
       navigate("/");
     } catch (error) {}
   }
@@ -44,8 +44,8 @@ export function Auth() {
   async function upHandleSubmit(data) {
     try {
       const response = await signup(data);
-      Cookies.set("id", response.data.id);
-      Cookies.set("token", response.data.token, { expires: 1 });
+      Cookies.set("id", response.data.id, { expires: 15 });
+      Cookies.set("token", response.data.token, { expires: 15 });
       navigate("/");
     } catch (error) {}
   }

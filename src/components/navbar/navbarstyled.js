@@ -33,6 +33,9 @@ export const Nav = styled.nav`
     a:hover {
       color: blueviolet;
     }
+  }
+
+  @media (max-width: 1000px) {
 
   }
 `;
@@ -44,6 +47,7 @@ export const Img = styled.img`
   padding-top: 25px;
   cursor: pointer;
   align-items: center;
+  
 `;
 
 export const InputSpace = styled.div`
@@ -81,6 +85,10 @@ export const InputSpace = styled.div`
   input:focus {
     border: 3px solid rgb(50, 30, 100);
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -102,6 +110,10 @@ export const NavList = styled.ul`
   a:hover {
     color: blueviolet;
     border: 1px solid;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 
@@ -157,5 +169,22 @@ export const UserLogado = styled.div`
   p {
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const Menu = styled.div`
+  font-size: 3rem;
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: block;
+    z-index: 99999;
+    position: fixed;
+    top: 5px;
+    right: 5px;
   }
 `;
