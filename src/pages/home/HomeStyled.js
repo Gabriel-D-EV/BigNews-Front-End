@@ -31,6 +31,9 @@ export const HomeBody = styled.section`
 
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 90%;
+    padding: 60px 10px;
   }
 `;
 
