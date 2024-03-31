@@ -38,20 +38,22 @@ export const Nav = styled.nav`
   .nav-list {
     display: flex;
     align-items: center;
+    text-align: center;
 
     @media (max-width: 1000px) {
       display: flex;
-      position: absolute;
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      margin: auto;
     }
   }
 
   @media (max-width: 1000px) {
-    height: 12%;
+    height: 15%;
 
     a {
-      font-size: 1rem;
+      font-size: .8rem;
     }
   }
 `;
@@ -126,7 +128,6 @@ export const NavList = styled.ul`
     color: blueviolet;
     border: 1px solid;
   }
-
 `;
 
 export const ErrorSpan = styled.span`
@@ -181,5 +182,11 @@ export const UserLogado = styled.div`
   p {
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  @media (max-width: 1000px) {
+    p, i {
+      font-size: .8rem;
+    }
   }
 `;
