@@ -9,7 +9,8 @@ export const HomeHeader = styled.section`
 
   @media (max-width: 1000px) {
     margin-left: 0;
-    margin-top: 30%;
+    margin-top: 35%;
+    padding: 10px;
   }
 `;
 

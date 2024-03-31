@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { searchNews } from "../../services/newsServices";
 import { ContainerResults, SearchNews, TextResults } from "./SearchStyled";
 import { Card } from "../../components/card/Card";
+import { Arrasta } from "../../components/arrastapcima/Arrasta.jsx";
+import { FooterFinal } from "../../components/footer/Footer.jsx";
 
 export function Search() {
   const { title } = useParams();
@@ -24,7 +26,8 @@ export function Search() {
   }, [title]);
 
   return (
-    <ContainerResults>
+    <>
+      <ContainerResults>
       <TextResults>
         <span>
           {news.length
@@ -48,6 +51,9 @@ export function Search() {
           />
         ))}
       </SearchNews>
-    </ContainerResults>
+      </ContainerResults>   
+      <Arrasta/>
+      <FooterFinal />
+    </>
   );
 }

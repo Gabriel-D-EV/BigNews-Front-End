@@ -7,11 +7,9 @@ import {
   NavList,
   ErrorSpan,
   UserLogado,
-  Menu,
 } from "./navbarstyled.js";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button } from "../button/Button.jsx";
 import { searchSchema } from "../../schemas/searchSchema.js";
 import { userLogado } from "../../services/userServices.js";
 import { useContext, useEffect, useState } from "react";
@@ -52,6 +50,7 @@ export function Navbar() {
     navigate("/");
   }
 
+
   useEffect(() => {
     if (Cookies.get("token")) findUserLogado();
   }, []);
@@ -63,80 +62,80 @@ export function Navbar() {
           <Img src={logo} alt="Logo big News" />
         </Link>
 
-        <div>
-          <NavList>
-            <li>
-              <a href="https://goanimes.net/" target="_blank">
-                ANIMES
-              </a>
-            </li>
-            <li>
-              <a href="https://lermanga.org/" target="_blank">
-                MANGÁS
-              </a>
-            </li>
-            <li>
-              <a href="https://huntersscan.xyz/" target="_blank">
-                MANHWA
-              </a>
-            </li>
-            <li>
-              <a href="#">Chat</a>
-            </li>
-          </NavList>
-        </div>
+        <div className={`nav-list`}>
+          <div>
+            <NavList>
+              <li>
+                <a href="https://goanimes.net/" target="_blank">
+                  ANIMES
+                </a>
+              </li>
+              <li>
+                <a href="https://lermanga.org/" target="_blank">
+                  MANGÁS
+                </a>
+              </li>
+              <li>
+                <a href="https://huntersscan.xyz/" target="_blank">
+                  MANHWA
+                </a>
+              </li>
+              <li>
+                <a href="#">Chat</a>
+              </li>
+            </NavList>
+          </div>
 
-        <Menu>
-          <i class="bi bi-list"></i>
-        </Menu>
+          <div className="ini-ent">
+            <form onSubmit={handleSubmit(onSearch)}>
+              <InputSpace>
+                <button type="submit">
+                  <i className="bi bi-search"></i>
+                </button>
+                <input
+                  {...register("title")}
+                  type="text"
+                  strip
+                  placeholder="Pesquisar"
+                  required
+                />
+              </InputSpace>
+            </form>
 
-        <div className="ini-ent">
-          <form onSubmit={handleSubmit(onSearch)}>
-            <InputSpace>
-              <button type="submit">
-                <i className="bi bi-search"></i>
-              </button>
-              <input
-                {...register("title")}
-                type="text"
-                strip
-                placeholder="Pesquisar"
-                required
-              />
-            </InputSpace>
-          </form>
-
-          {user ? (
-            <UserLogado>
-              <Link to="/profile">
-                <img src={user.avatar} />
-                <h2> {user.name}</h2>
-              </Link>
-              <div>
-                <i class="bi bi-box-arrow-right" onClick={signout}>
-                  Sair
-                </i>
+            {user ? (
+              <UserLogado>
+                <Link to="/profile">
+                  <img src={user.avatar} />
+                  <h2> {user.name}</h2>
+                </Link>
+                <div>
+                  <i class="bi bi-box-arrow-right" onClick={signout}>
+                    Sair
+                  </i>
+                  <Link to="/auth">
+                    <p>Cadastre-se</p>
+                  </Link>
+                </div>
+              </UserLogado>
+            ) : (
+              <div className="logar">
+                <p>
+                  Olá,
+                  <Link to="/auth">
+                    <h4>Entre </h4>
+                  </Link>
+                  ou
+                </p>
                 <Link to="/auth">
-                  <p>Cadastre-se</p>
+                  <h4>Cadastre-se</h4>
                 </Link>
               </div>
-            </UserLogado>
-          ) : (
-            <div className="logar">
-              <p>
-                Olá,
-                <Link to="/auth">
-                  <h4>Entre </h4>
-                </Link>
-                ou
-              </p>
-              <Link to="/auth">
-                <h4>Cadastre-se</h4>
-              </Link>
-            </div>
-          )}
+            )}
+          </div>
         </div>
+      
       </Nav>
+
       {errors.title && <ErrorSpan>{errors.title.message}</ErrorSpan>}
       <Outlet />
     </>
