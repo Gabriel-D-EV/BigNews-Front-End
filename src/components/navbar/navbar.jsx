@@ -80,9 +80,7 @@ export function Navbar() {
                   MANHWA
                 </a>
               </li>
-              <li>
-                <a href="#">Chat</a>
-              </li>
+              
             </NavList>
           </div>
 
