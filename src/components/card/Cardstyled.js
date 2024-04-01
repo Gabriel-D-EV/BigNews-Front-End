@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const CardContainerTop = styled.section`
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+    
+`
 
 export const CardContainer = styled.section`
     display: flex;
@@ -27,6 +35,7 @@ export const CardBody = styled.article`
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
+        border: 3px solid white;
     }
 
     div {
@@ -55,11 +64,12 @@ export const CardHeader = styled.article`
     
     h2 {
         margin-top: 20px;
-        color: aquamarine;
+        color: ${(props) => (props.top? "violet" : "aquamarine")};
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "3.7rem" : "1.5rem")};
+        font-style: italic;
+        font-size: ${(props) => (props.top? "4.2rem" : "1.5rem")};
     }
 
     @media (max-width: 1000px) {

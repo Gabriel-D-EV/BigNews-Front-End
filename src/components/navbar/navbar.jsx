@@ -50,7 +50,6 @@ export function Navbar() {
     navigate("/");
   }
 
-
   useEffect(() => {
     if (Cookies.get("token")) findUserLogado();
   }, []);
@@ -58,9 +57,11 @@ export function Navbar() {
   return (
     <>
       <Nav>
-        <Link to="/">
-          <Img src={logo} alt="Logo big News" />
-        </Link>
+        <div className="img">
+          <Link to="/">
+            <Img src={logo} alt="Logo big News" />
+          </Link>
+        </div>
 
         <div className={`nav-list`}>
           <div>
@@ -80,7 +81,6 @@ export function Navbar() {
                   MANHWA
                 </a>
               </li>
-              
             </NavList>
           </div>
 
@@ -131,7 +131,6 @@ export function Navbar() {
             )}
           </div>
         </div>
-      
       </Nav>
 
       {errors.title && <ErrorSpan>{errors.title.message}</ErrorSpan>}

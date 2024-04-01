@@ -145,7 +145,7 @@ export const ProfileNews = styled.div`
 export const ImgLuffy = styled.img`
   position: absolute;
   width: 15%;
-  left: 12%;
+  left: 10%;
   bottom: -30%;
 
   @media (max-width: 1000px) {

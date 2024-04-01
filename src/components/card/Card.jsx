@@ -1,7 +1,7 @@
 
 import { deleteNews } from "../../services/newsServices";
 import { TextLimit } from "../textlimit/TextLimit";
-import { CardContainer, CardBody, CardFooter, CardHeader } from "./Cardstyled";
+import { CardContainer, CardBody, CardFooter, CardHeader, CardContainerTop } from "./Cardstyled";
 
 
 
@@ -9,7 +9,7 @@ export function CardTop(props) {
 
 
   return (
-    <CardContainer>
+    <CardContainerTop>
       <CardBody>
         <div>
           <CardHeader top={props.top}>
@@ -18,7 +18,7 @@ export function CardTop(props) {
         </div>
         <img src={props.banner} alt="Banner da Noticia" />
       </CardBody>
-    </CardContainer>
+    </CardContainerTop>
   );
 }
 

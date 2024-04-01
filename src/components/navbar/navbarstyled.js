@@ -9,11 +9,18 @@ export const Nav = styled.nav`
   height: 8%;
   top: 0;
   right: 0;
-  background-color: #121212;
+  background-color: #121212df;
   z-index: 99999999;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.3) 0px 20px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
     rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
+  
+  .img {
+    transition: .2s ease-in-out;
+  }
+  .img:hover {
+    transform: scale(1.05);
+  }
 
   .ini-ent {
     display: flex;
@@ -65,6 +72,7 @@ export const Img = styled.img`
   padding-top: 25px;
   cursor: pointer;
   align-items: center;
+  
 
   @media (max-width: 1000px) {
     display: none;

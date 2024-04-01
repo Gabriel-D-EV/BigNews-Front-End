@@ -38,12 +38,17 @@ export default function Home() {
     <>
       <Navbar />
       <HomeHeader>
+        <h1>Últimas Notícias:</h1>
+
+        <br />
         <CardTop
           top="true"
           title={topNews?.title} 
           banner={topNews?.banner}
         />
+        
       </HomeHeader>
+      <hr />
       <HomeBody>
         {news.map((item) => (
           <Card

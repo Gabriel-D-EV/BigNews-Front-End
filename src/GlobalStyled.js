@@ -25,12 +25,12 @@ export const GlobalStyle = createGlobalStyle`
 
     ::-webkit-scrollbar {
         width: 8px;
-        background: #121212;
+        background: black;
     }
 
     ::-webkit-scrollbar-thumb {
         width: 8px;
-        background: #0f0f0fe9;
+        background: #121212;
     }
 
     @media (max-width: 1000px) {

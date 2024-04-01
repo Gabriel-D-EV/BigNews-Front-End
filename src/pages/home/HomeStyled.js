@@ -3,14 +3,29 @@ import styled from "styled-components";
 
 export const HomeHeader = styled.section`
   display: flex;
+  flex-direction: column;
   padding: 0 40px;
-  margin-top: 10%;
+  margin: 10% 0 5% 0;
   margin-left: 15%;
+
+  h1 {
+    font-size: 4rem;
+    align-items: center;
+    text-align: center;
+    font-family: "Fira Sans";
+    font-weight: bolder;
+    font-style: italic;
+    border-bottom: 10px double;
+  }
 
   @media (max-width: 1000px) {
     margin-left: 0;
-    margin-top: 35%;
+    margin-top: 40%;
     padding: 10px;
+
+    h1 {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -39,11 +54,12 @@ export const HomeBody = styled.section`
 
 export const ImgVegeta = styled.img`
     position: absolute;
-    width: 16%;
-    left: 3%;
-    top: 10%;
+    width: 18%;
+    left: 0;
+    top: 18%;
 
     @media (max-width: 1000px) {
     display: none;
   }
 `;
+
