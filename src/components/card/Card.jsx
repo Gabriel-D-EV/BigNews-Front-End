@@ -29,19 +29,20 @@ export function Card(props) {
 
     const like = id;
 
-    console.log(like);
+    console.log(like.length);
   }
 
-  async function noticia(id) {
+  async function noticia(id, all) {
 
     const idNews = id;
+    const user = all
 
-    console.log(idNews);
+    console.log(idNews, user );
   }
 
   return (
     <CardContainer>
-      <CardBody onClick={() => noticia(props.title)}>
+      <CardBody onClick={() => noticia(props.title, props)}>
         <div>
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>

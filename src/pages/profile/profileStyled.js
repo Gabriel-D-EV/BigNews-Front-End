@@ -47,7 +47,7 @@ export const ImgP = styled.img`
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 10px solid #0f0f0f;
+  border: 8px solid #0f0f0f;
   object-fit: cover;
   object-position: center;
 
@@ -76,7 +76,7 @@ export const BackgroundP = styled.img`
 `;
 
 export const UserP = styled.div`
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   cursor: pointer;
 
   h2 {

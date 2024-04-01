@@ -23,7 +23,7 @@ export const CardBody = styled.article`
 
 
     img{
-        width: 35%;
+        width: 40%;
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
@@ -33,7 +33,7 @@ export const CardBody = styled.article`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1.5rem;
+        padding: .5rem;
         width: 100%;
     }
 
@@ -59,14 +59,14 @@ export const CardHeader = styled.article`
         text-align: center;
         margin-bottom: 1rem;
         width: 100%;
-        font-size: ${(props) => (props.top? "3.7rem" : "1.3rem")};
+        font-size: ${(props) => (props.top? "3.7rem" : "1.5rem")};
     }
 
     @media (max-width: 1000px) {
         font-size: ${(props) => (props.top ? "1.2rem" : ".9rem")};
 
         h2 {
-            font-size: ${(props) => (props.top? "2rem" : "1.3rem")};
+            font-size: ${(props) => (props.top? "2rem" : "1.4rem")};
         }
   }
 `;

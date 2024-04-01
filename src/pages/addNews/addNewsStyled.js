@@ -16,7 +16,7 @@ export const AddNewsContainer = styled.div`
 `;
 
 export const SectionNews = styled.section`
-  padding: 70px 80px;
+  padding: 60px 90px;
   margin: auto;
   background-color: #121212;
   align-items: center;
@@ -51,7 +51,7 @@ export const SectionNews = styled.section`
 export const ImgSupera = styled.img`
   position: absolute;
   width: 26%;
-  top: 35%;
+  top: 34%;
   left: 10%;
 
   @media (max-width: 1000px) {

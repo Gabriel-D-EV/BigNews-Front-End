@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   top: 0;
   right: 0;
   background-color: #121212;
-  z-index: 2;
+  z-index: 99999999;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.3) 0px 20px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
     rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
