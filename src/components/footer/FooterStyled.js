@@ -6,7 +6,7 @@ export const FooterStyle = styled.footer`
   justify-content: space-between;
   background-color: #121212;
   z-index: 99;
-  padding: 30px;
+  padding: 10px;
 
   div {
     display: flex;
@@ -45,7 +45,7 @@ export const FooterStyle = styled.footer`
 `;
 
 export const Redes = styled.div`
-  padding: 50px;
+  padding: 10px;
 
   p {
     align-items: center;
