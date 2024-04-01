@@ -7,13 +7,18 @@ import { createNews } from "../../services/newsServices.js";
 import { Input, InputArea } from "../../components/input/Input.jsx";
 import supera from "../../images/supera.png";
 import { Voltar } from "../../components/voltar/Voltar.jsx";
+import { newsSchema } from "../../schemas/newsSchemas.js";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ErrorSpan } from "../../components/navbar/navbarstyled.js";
 
 export function AddNews() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({});
+  } = useForm({
+    resolver: zodResolver(newsSchema)
+  });
 
   const navigate = useNavigate();
 
@@ -42,7 +47,9 @@ export function AddNews() {
               placeholder="Título da Notícia:"
               required
             />
-
+            {errors.title && (
+              <ErrorSpan>{errors.title.message}</ErrorSpan>
+            )}
             <Input
               type="text"
               name="banner"
@@ -50,7 +57,9 @@ export function AddNews() {
               register={register}
               required
             />
-
+            {errors.banner && (
+              <ErrorSpan>{errors.banner.message}</ErrorSpan>
+            )}
             <InputArea
               type="text"
               name="text"
@@ -59,7 +68,9 @@ export function AddNews() {
               placeholder="Descrição da Notícia:"
               required
             />
-
+            {errors.text && (
+              <ErrorSpan>{errors.text.message}</ErrorSpan>
+            )}
             <br />
 
             <Button type="submit" text="Publicar"></Button>
