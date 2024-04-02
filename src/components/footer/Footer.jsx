@@ -13,7 +13,7 @@ export function FooterFinal() {
         <a href="https://www.youtube.com/channel/UCk1yxwX6zPEdWhfZoffbVIw" target="_blank">
           <i class="bi bi-youtube"></i> <p>Youtube</p>
         </a>
-        <a href="https://discord.gg/e3GxMaGcZv" target="_blank">
+        <a href="https://discord.gg/BSBGDptVGw" target="_blank">
           <i class="bi bi-discord"></i> <p>Discord</p>
         </a>
       </Redes>
