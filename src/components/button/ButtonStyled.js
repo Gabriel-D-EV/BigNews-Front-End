@@ -12,7 +12,7 @@ export const ButtonSpace = styled.button`
   h3 {
     border: 2px solid blueviolet;
     color: white;
-    padding: 4px 10px;
+    padding: 7px 100px;
     border-radius: 10px;
     transition: 0.2s all ease-in-out;
     font-size: large;

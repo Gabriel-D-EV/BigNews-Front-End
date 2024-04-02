@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const ProfileContainer = styled.h1`
   padding: 80px;
   display: flex;
@@ -83,7 +85,7 @@ export const UserP = styled.div`
     font-size: 4rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: blueviolet;
   }
   @media (max-width: 1000px) {
@@ -91,7 +93,7 @@ export const UserP = styled.div`
       font-size: 1.8rem;
     }
     h3 {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 `;

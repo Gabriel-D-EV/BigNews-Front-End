@@ -45,21 +45,17 @@ export const FooterStyle = styled.footer`
 `;
 
 export const Redes = styled.div`
-  padding: 10px;
 
   p {
     align-items: center;
-    text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
     color: white;
-    padding: 5px;
+    padding: 20px;
   }
   a {
-    margin: 5px;
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
@@ -79,14 +75,15 @@ export const Redes = styled.div`
 `;
 
 export const ImgQR = styled.img`
-  width: 200px;
+  width: 150px;
 
   @media (max-width: 1000px) {
     display: none;
   }
 `;
+
 export const ImgLogo = styled.img`
-  width: 280px;
+  width: 250px;
 
   @media (max-width: 1000px) {
     display: none;

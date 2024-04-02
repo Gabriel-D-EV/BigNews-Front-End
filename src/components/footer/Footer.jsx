@@ -3,6 +3,7 @@ import qrcode from "../../images/portifolio-g.png";
 import logo from "../../images/logo-bnd.png";
 
 export function FooterFinal() {
+  
   return (
     <FooterStyle>
       <ImgLogo src={logo} alt="Logo big News" />
@@ -21,8 +22,9 @@ export function FooterFinal() {
         <br />
         <ImgQR src={qrcode} alt="QR-Code" />
         <a href="https://gabrielsilvadeveloper.site/portifolio" target="_blank"><h3>Gabriel Dev</h3></a>
+        <p>Copyright &copy; 2024 - Big News - Todos direitos reservados</p>
       </div>
-      <div><p>Copyright &copy; 2024 - Big News - Todos direitos reservados</p></div>
+      <div></div>
     </FooterStyle>
   );
 }
