@@ -54,6 +54,15 @@ export const CardBody = styled.article`
         left: 1%;
         cursor: pointer;
     }
+
+    .updatenews {
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1%;
+        left: 6%;
+        cursor: pointer;
+    }
 `;
  
 export const CardHeader = styled.article`

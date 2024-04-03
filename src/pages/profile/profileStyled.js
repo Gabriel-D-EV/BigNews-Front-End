@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 
-
 export const ProfileContainer = styled.h1`
   padding: 80px;
   display: flex;
@@ -34,8 +33,8 @@ export const ProfileHeader = styled.header`
 
 export const IconP = styled.i`
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  bottom: 2%;
+  right: 1%;
   color: aquamarine;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -100,8 +99,8 @@ export const UserP = styled.div`
 
 export const AddNews = styled.div`
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2%;
+  right: 4%;
   color: aquamarine;
   cursor: pointer;
   transition: all 0.2s ease-in-out;

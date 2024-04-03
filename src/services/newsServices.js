@@ -46,3 +46,12 @@ export function deleteNews() {
   })
   return response
 }
+
+export function updateNew() {
+  const response = axios.patch(`${baseURL}/news`, {
+    headers: {
+      Authorization: `Bearer ${Cookies.get("token")}`,
+    },
+  })
+  return response
+}

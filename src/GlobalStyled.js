@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import images from "./images/animes-bg.jpg";
 
+
 export const GlobalStyle = createGlobalStyle`
     *{
     margin: 0;

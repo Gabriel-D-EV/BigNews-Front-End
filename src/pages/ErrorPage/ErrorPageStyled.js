@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ErrorPageSt = styled.div`
     display: flex;
     width: 70vw;

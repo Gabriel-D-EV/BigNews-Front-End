@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ContainerResults = styled.section`
   padding-top: .8rem;
   padding-bottom: 25%;

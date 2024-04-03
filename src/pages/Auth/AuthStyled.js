@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const AuthContainer = styled.div`
     height: 100vh;
     display: flex;
@@ -67,6 +68,7 @@ export const Section = styled.section`
         background-color: white;
     }
 `;
+
 export const Img = styled.img`
   width: 15%;
   object-fit: cover;
