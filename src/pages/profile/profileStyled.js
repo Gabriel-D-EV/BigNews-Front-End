@@ -7,20 +7,18 @@ export const ProfileContainer = styled.h1`
   width: 80%;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
   margin: auto;
-
+  
   @media (max-width: 1000px) {
     width: 95%;
     padding: 10px;
     margin: auto;
-    margin-top: 35% ;
+    margin-top: 35%;
   }
 `;
 
 export const ProfileHeader = styled.header`
   width: 100%;
-  margin-top: 2%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -29,18 +27,28 @@ export const ProfileHeader = styled.header`
   z-index: 0;
   background-color: #0f0f0f;
   box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.7), 5px 12px 30px rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 1400px) {
+    margin-top: 8%;
+  }
 `;
 
 export const IconP = styled.i`
   position: absolute;
   bottom: 2%;
   right: 1%;
-  color: aquamarine;
+  color: white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  text-align: center;
+  font-size: 1.8rem;
 
   :hover {
     color: blueviolet;
+  }
+
+  p {
+    font-size: .7rem;
   }
 `;
 
@@ -100,13 +108,23 @@ export const UserP = styled.div`
 export const AddNews = styled.div`
   position: absolute;
   bottom: 2%;
-  right: 4%;
-  color: aquamarine;
+  right: 5%;
+  color: white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  text-align: center;
+  font-size: 1.8rem;
 
   :hover {
     color: blueviolet;
+  }
+
+  p {
+    font-size: .7rem;
+  }
+
+  @media (max-width: 1000px) {
+    right: 10%;
   }
 `;
 
@@ -115,7 +133,9 @@ export const ImgLuffyg5 = styled.img`
   left: 40%;
   width: 25%;
   top: 48%;
-
+  @media (max-width: 1400px) {
+    display: none;
+  }
   @media (max-width: 1000px) {
     display: none;
   }

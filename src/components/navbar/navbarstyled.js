@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -120,7 +121,6 @@ export const NavList = styled.ul`
   text-decoration: none;
   list-style: none;
   display: flex;
-  gap: 20px;
   align-items: center;
   font-size: 1.2rem;
   a {

@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const FooterStyle = styled.footer`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #121212;
   z-index: 99;
-  padding: 10px;
+  padding: 15px;
 
   div {
     display: flex;

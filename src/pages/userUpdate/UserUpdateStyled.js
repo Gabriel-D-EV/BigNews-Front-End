@@ -44,6 +44,10 @@ export const SectionUpdate = styled.div`
     margin: auto;
     margin-right: 0;
     z-index: 10;
+
+    @media (max-width: 1000px) {
+      margin: auto;
+    }
   }
 
   @media (max-width: 1000px) {

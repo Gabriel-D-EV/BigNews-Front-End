@@ -7,6 +7,7 @@ export const ArrastaStyle = styled.div`
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    margin-top: 8%;
     position: relative;
     a {
         position: absolute;

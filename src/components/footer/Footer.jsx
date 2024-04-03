@@ -24,7 +24,6 @@ export function FooterFinal() {
         <a href="https://gabrielsilvadeveloper.site/portifolio" target="_blank"><h3>Gabriel Dev</h3></a>
         <p>Copyright &copy; 2024 - Big News - Todos direitos reservados</p>
       </div>
-      <div></div>
     </FooterStyle>
   );
 }

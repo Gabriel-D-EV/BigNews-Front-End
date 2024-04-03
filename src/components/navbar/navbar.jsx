@@ -81,6 +81,12 @@ export function Navbar() {
                   MANHWA
                 </a>
               </li>
+              <li>
+                <a href="https://discord.gg/BSBGDptVGw" target="_blank">
+                  DISCORD
+                </a>
+              </li>
+              
             </NavList>
           </div>
 
