@@ -60,7 +60,7 @@ export const CardBody = styled.article`
         font-size: 1.5rem;
         position: absolute;
         top: 1%;
-        left: 6%;
+        left: 10%;
         cursor: pointer;
     }
 `;

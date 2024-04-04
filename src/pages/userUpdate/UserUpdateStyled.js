@@ -20,7 +20,7 @@ export const SectionUpdate = styled.div`
   padding: 70px 80px;
   width: 80%;
   margin: auto;
-  background-color: #121212;
+  background-color: #121212e9;
   align-items: center;
   justify-content: center;
   text-align: center;

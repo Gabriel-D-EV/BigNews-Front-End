@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const AddNewsContainer = styled.div`
+export const UpNewsContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 100px;
@@ -20,7 +20,7 @@ export const AddNewsContainer = styled.div`
 export const SectionNews = styled.section`
   padding: 60px 90px;
   margin: auto;
-  background-color: #121212e9;
+  background-color: #121212e1;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -50,11 +50,11 @@ export const SectionNews = styled.section`
   }
 `;
 
-export const ImgSupera = styled.img`
+export const ImgRyuki = styled.img`
   position: absolute;
   width: 22%;
-  top: 43%;
-  left: 10%;
+  top: 20%;
+  left: 8%;
 
   @media (max-width: 1000px) {
     display: none;

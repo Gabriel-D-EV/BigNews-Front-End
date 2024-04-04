@@ -50,8 +50,8 @@ export const Section = styled.section`
     height: 60%;
     padding: 2rem;
     gap: 1rem;
-    background-color: ${(props) => (props.type === "signin" ? "#121212" : "gray")};
-    color: ${(props) => (props.type === "signup" ? "#121212" : "gray")};
+    background-color: ${(props) => (props.type === "signin" ? "#121212e9" : "#808080d9")};
+    color: ${(props) => (props.type === "signup" ? "#121212e9" : "#808080d9")};
     border-radius: 10px;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.90), 5px 12px 30px rgba(0, 0, 0, 0.40);
 

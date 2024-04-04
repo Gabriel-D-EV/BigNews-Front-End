@@ -1,6 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
+
 const baseURL = ("https://big-news.onrender.com");
 //const baseURL = ("http://localhost:3000");
 
@@ -47,8 +48,8 @@ export function deleteNews() {
   return response
 }
 
-export function updateNew() {
-  const response = axios.patch(`${baseURL}/news`, {
+export function updateNew(data) {
+  const response = axios.patch(`${baseURL}/news/update/`, data, {
     headers: {
       Authorization: `Bearer ${Cookies.get("token")}`,
     },

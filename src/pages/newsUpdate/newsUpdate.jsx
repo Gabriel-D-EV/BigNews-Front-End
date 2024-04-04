@@ -1,18 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../../components/button/Button.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
-import { AddNewsContainer, ImgSupera, SectionNews } from "./addNewsStyled.js";
 import { useForm } from "react-hook-form";
-import { createNews } from "../../services/newsServices.js";
+import { updateNew } from "../../services/newsServices.js";
 import { Input, InputArea } from "../../components/input/Input.jsx";
-import supera from "../../images/supera.png";
+import ryuki from "../../images/ryuki.png";
 import { Voltar } from "../../components/voltar/Voltar.jsx";
 import { newsSchema } from "../../schemas/newsSchemas.js";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorSpan } from "../../components/navbar/navbarstyled.js";
+import { ImgRyuki, SectionNews, UpNewsContainer } from "./newsupdateStyled.js";
 
-
-export function AddNews() {
+export function UpdateNews() {
   const {
     register,
     handleSubmit,
@@ -25,8 +24,8 @@ export function AddNews() {
 
   async function inHandleSubmit(data) {
     try {
-      const response = await createNews(data);
-      console.log(response.data);
+      const response = await updateNew(data);
+      console.log(response);
 
       navigate("/profile");
     } catch (error) {}
@@ -34,13 +33,13 @@ export function AddNews() {
 
   return (
     <>
-      <AddNewsContainer>
+      <UpNewsContainer>
         <SectionNews>
           <Link to="/profile">
             <Voltar />
           </Link>
           <form onSubmit={handleSubmit(inHandleSubmit)}>
-            <h1>Adicionar Notícia</h1>
+            <h1>Atualizar Notícia</h1>
             <br />
             <Input
               type="text"
@@ -78,8 +77,8 @@ export function AddNews() {
             <Button type="submit" text="Publicar"></Button>
           </form>
         </SectionNews>
-      </AddNewsContainer>
-      <ImgSupera src={supera} alt="supera" />
+      </UpNewsContainer>
+      <ImgRyuki src={ryuki} alt="supera" />
 
       <FooterFinal />
     </>

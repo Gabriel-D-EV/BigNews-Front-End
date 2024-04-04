@@ -25,7 +25,7 @@ export const ProfileHeader = styled.header`
   position: relative;
   border-radius: 10px;
   z-index: 0;
-  background-color: #0f0f0f;
+  background-color: #0f0f0fe9;
   box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.7), 5px 12px 30px rgba(0, 0, 0, 0.7);
 
   @media (max-width: 1400px) {
@@ -130,9 +130,9 @@ export const AddNews = styled.div`
 
 export const ImgLuffyg5 = styled.img`
   position: absolute;
-  left: 40%;
+  left: 37%;
   width: 25%;
-  top: 48%;
+  top: 42%;
   @media (max-width: 1400px) {
     display: none;
   }

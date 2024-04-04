@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import { deleteNews, updateNew } from "../../services/newsServices";
 import { TextLimit } from "../textlimit/TextLimit";
 import { CardContainer, CardBody, CardFooter, CardHeader, CardContainerTop } from "./Cardstyled";
@@ -74,15 +75,13 @@ export function CardUser(props) {
     deleteNews();
   }
 
-  function updateNews() {
-    updateNew();
-  }
-
   return (
     <CardContainer>
       <CardBody>
         <div>
-          <i class=" updatenews bi bi-pencil-square" onClick={updateNews}></i>
+          <Link to="/newsUpdate">
+            <i class=" updatenews bi bi-pencil-square"></i>
+          </Link>
           <i class=" deletenews bi bi-x-circle" onClick={delNews}></i>
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>

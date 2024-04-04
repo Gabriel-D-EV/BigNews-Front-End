@@ -11,6 +11,7 @@ import { Profile } from "./pages/profile/Profile.jsx";
 import UserProvider from "./context/userContext.jsx";
 import { AddNews } from "./pages/addNews/addNews.jsx";
 import { UserUpdate } from "./pages/userUpdate/UserUpdate.jsx";
+import { UpdateNews } from "./pages/newsUpdate/newsUpdate.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/userUpdate",
         element: <UserUpdate />,
+      },
+      {
+        path: "/newsUpdate",
+        element: <UpdateNews />,
       },
     ],
   },
