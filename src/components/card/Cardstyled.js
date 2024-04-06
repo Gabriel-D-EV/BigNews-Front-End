@@ -16,14 +16,13 @@ export const CardContainer = styled.section`
     gap: 1rem;
     cursor: pointer;
     max-width: 100%;
-    background-color: #3a3a3a;
+    background-color: #3a3a3a39;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);
     border-radius: 10px;
-    border: 1px solid white;
+    
     
 `
-
-export const CardBody = styled.article`
+export const CardBodyTop = styled.article`
     display: flex;
     width: 100%;
     justify-content: center;
@@ -64,11 +63,53 @@ export const CardBody = styled.article`
         cursor: pointer;
     }
 `;
+
+export const CardBody = styled.article`
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px 10px 0 0;
+        
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    .deletenews {
+        color: red;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        cursor: pointer;
+    }
+
+    .updatenews {
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1%;
+        left: 10%;
+        cursor: pointer;
+    }
+`;
  
 export const CardHeader = styled.article`
     display: flex;
+    text-align: justify;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     font-size: ${(props) => (props.top ? "1.2rem" : ".9rem")};
     
     h2 {

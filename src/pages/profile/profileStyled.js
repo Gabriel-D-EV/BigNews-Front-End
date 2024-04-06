@@ -19,6 +19,7 @@ export const ProfileContainer = styled.h1`
 
 export const ProfileHeader = styled.header`
   width: 100%;
+  margin-top: 2%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -132,7 +133,7 @@ export const ImgLuffyg5 = styled.img`
   position: absolute;
   left: 37%;
   width: 25%;
-  top: 42%;
+  top: 35%;
   @media (max-width: 1400px) {
     display: none;
   }

@@ -7,14 +7,14 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   position: fixed;
-  height: 8%;
+  height: 10%;
   top: 0;
   right: 0;
   background-color: #121212df;
   z-index: 99999999;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.3) 0px 20px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
-    rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    rgba(0, 0, 0, 0.3) 0px 20px 30px, rgba(0, 0, 0, 0.3) 0px 10px 10px,
+    rgba(0, 0, 0, 0.3) 0px 15px 75px, rgba(0, 0, 0, 0.2) 0px 5px 65px;
   
   .img {
     transition: .2s ease-in-out;
@@ -82,7 +82,7 @@ export const Img = styled.img`
 
 export const InputSpace = styled.div`
   position: relative;
-  width: 200px;
+  width: 300px;
   display: flex;
   align-items: center;
   margin-left: 1rem;
@@ -90,12 +90,13 @@ export const InputSpace = styled.div`
     cursor: pointer;
     position: absolute;
     top: 1;
+    font-size: 1.3rem;
     right: 0.6rem;
     color: white;
     z-index: 10;
     border: none;
     border-radius: 10px;
-    background-color: #121212;
+    background-color: transparent;
     transition: all 0.2 ease-in-out;
   }
   button:hover {
@@ -108,12 +109,18 @@ export const InputSpace = styled.div`
     padding: 0.5rem;
     width: 100%;
     color: white;
+    border-radius: 0 10px;
     border: 1px solid white;
-    border-radius: 10px;
     background-color: #121212;
   }
   input:focus {
     border: 3px solid rgb(50, 30, 100);
+    background-color: #191919;
+
+    button {
+    color: 2px solid rgb(50, 30, 100);
+    background-color: #191919;
+  }
   }
 `;
 
@@ -124,7 +131,7 @@ export const NavList = styled.ul`
   align-items: center;
   font-size: 1.2rem;
   a {
-    border-radius: 10px;
+    border-radius: 0 10px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;

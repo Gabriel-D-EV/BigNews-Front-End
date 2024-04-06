@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { deleteNews, updateNew } from "../../services/newsServices";
 import { TextLimit } from "../textlimit/TextLimit";
-import { CardContainer, CardBody, CardFooter, CardHeader, CardContainerTop } from "./Cardstyled";
+import { CardContainer, CardBody, CardFooter, CardHeader, CardContainerTop, CardBodyTop } from "./Cardstyled";
 
 
 
@@ -11,14 +11,14 @@ export function CardTop(props) {
 
   return (
     <CardContainerTop>
-      <CardBody>
+      <CardBodyTop>
         <div>
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>
           </CardHeader>
         </div>
         <img src={props.banner} alt="Banner da Noticia" />
-      </CardBody>
+      </CardBodyTop>
     </CardContainerTop>
   );
 }
@@ -44,12 +44,13 @@ export function Card(props) {
   return (
     <CardContainer>
       <CardBody onClick={() => noticia(props.title, props)}>
+      <img src={props.banner} alt="Banner da Noticia" />
         <div>
           <CardHeader top={props.top}>
-            <h2>{props.title}</h2>
-            <TextLimit text={props.text} limit={150} />
+            <h2>{props.title}</h2> <br />
+            <TextLimit text={props.text} limit={180} />
           </CardHeader>
-          <br />
+          <br /> <br />
           <CardFooter>
             <section className="like" onClick={() => like(props.likes)}>
               <i className="bi bi-hand-thumbs-up" ></i>
@@ -61,8 +62,6 @@ export function Card(props) {
             </section>
           </CardFooter>
         </div>
-
-        <img src={props.banner} alt="Banner da Noticia" />
       </CardBody>
     </CardContainer>
   );
@@ -77,7 +76,7 @@ export function CardUser(props) {
 
   return (
     <CardContainer>
-      <CardBody>
+      <CardBodyTop>
         <div>
           <Link to="/newsUpdate">
             <i class=" updatenews bi bi-pencil-square"></i>
@@ -101,7 +100,7 @@ export function CardUser(props) {
         </div>
 
         <img src={props.banner} alt="Banner da Noticia" />
-      </CardBody>
+      </CardBodyTop>
     </CardContainer>
   );
 }

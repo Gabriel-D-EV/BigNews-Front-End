@@ -31,12 +31,12 @@ export const HomeHeader = styled.section`
 
 export const HomeBody = styled.section`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   grid-gap: 1rem;
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
-  padding: 110px 50px;
+  padding: 110px 80px;
   transition: all.5s ease-in-out;
 
   section:hover {
