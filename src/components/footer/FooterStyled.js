@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const FooterStyle = styled.footer`
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@ export const Redes = styled.div`
     font-size: 1.3rem;
     font-weight: bold;
     color: white;
-    padding: 20px;
+    padding: 10px;
   }
   a {
     display: flex;

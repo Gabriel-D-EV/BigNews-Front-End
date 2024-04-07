@@ -56,7 +56,7 @@ export function Navbar() {
 
   return (
     <>
-      <Nav>
+      <Nav id="header">
         <div className="img">
           <Link to="/">
             <Img src={logo} alt="Logo big News" />

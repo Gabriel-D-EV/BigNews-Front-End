@@ -42,15 +42,15 @@ export function Card(props) {
   }
 
   return (
-    <CardContainer>
+    <CardContainer className="card" >
       <CardBody onClick={() => noticia(props.title, props)}>
       <img src={props.banner} alt="Banner da Noticia" />
         <div>
           <CardHeader top={props.top}>
-            <h2>{props.title}</h2> <br />
+            <h2>{props.title}</h2>
             <TextLimit text={props.text} limit={180} />
           </CardHeader>
-          <br /> <br />
+          
           <CardFooter>
             <section className="like" onClick={() => like(props.likes)}>
               <i className="bi bi-hand-thumbs-up" ></i>

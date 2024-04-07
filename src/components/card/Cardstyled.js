@@ -18,9 +18,7 @@ export const CardContainer = styled.section`
     max-width: 100%;
     background-color: #3a3a3a39;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);
-    border-radius: 10px;
-    
-    
+    border-radius: 10px; 
 `
 export const CardBodyTop = styled.article`
     display: flex;
@@ -103,6 +101,7 @@ export const CardBody = styled.article`
         left: 10%;
         cursor: pointer;
     }
+    
 `;
  
 export const CardHeader = styled.article`
@@ -111,9 +110,9 @@ export const CardHeader = styled.article`
     flex-direction: column;
     width: 95%;
     font-size: ${(props) => (props.top ? "1.2rem" : ".9rem")};
-    
+    margin-bottom: 10%;
     h2 {
-        margin-top: 20px;
+        
         color: ${(props) => (props.top? "violet" : "aquamarine")};
         text-align: center;
         margin-bottom: .5rem;
@@ -133,6 +132,8 @@ export const CardHeader = styled.article`
 
 export const CardFooter = styled.section`
     display: flex;
+    position: absolute;
+    bottom: 2%;
     align-items: center;
     gap: 1rem;
     

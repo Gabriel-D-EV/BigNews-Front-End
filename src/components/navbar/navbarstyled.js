@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   position: fixed;
-  height: 10%;
+  height: 15%;
   top: 0;
   right: 0;
   background-color: #121212df;
@@ -41,6 +41,9 @@ export const Nav = styled.nav`
     a:hover {
       color: blueviolet;
     }
+    .newheader {
+      height: 10%;
+    }
   }
 
   .nav-list {
@@ -61,7 +64,7 @@ export const Nav = styled.nav`
     height: 15%;
 
     a {
-      font-size: .8rem;
+      font-size: .9rem;
     }
   }
 `;
@@ -82,7 +85,7 @@ export const Img = styled.img`
 
 export const InputSpace = styled.div`
   position: relative;
-  width: 300px;
+  width: 350px;
   display: flex;
   align-items: center;
   margin-left: 1rem;
@@ -120,7 +123,10 @@ export const InputSpace = styled.div`
     button {
     color: 2px solid rgb(50, 30, 100);
     background-color: #191919;
+    }
   }
+  @media (max-width: 1000px) {
+    width: 200px;
   }
 `;
 

@@ -20,8 +20,8 @@ export const HomeHeader = styled.section`
 
   @media (max-width: 1000px) {
     margin-left: 0;
-    margin-top: 40%;
-    padding: 10px;
+    margin-top: 35%;
+    padding: 5px;
 
     h1 {
       font-size: 3rem;
@@ -39,7 +39,7 @@ export const HomeBody = styled.section`
   padding: 110px 80px;
   transition: all.5s ease-in-out;
 
-  section:hover {
+  .card:hover {
     transform: scale(1.05);
     z-index: 9999;
     } 

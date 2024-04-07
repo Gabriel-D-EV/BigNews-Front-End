@@ -31,7 +31,7 @@ export const ArrastaStyle = styled.div`
     text-align: center;
 
     a {
-        right: 40%;
+        right: 45%;
     }
   }
 `;
