@@ -60,7 +60,7 @@ export default function Home() {
             comments={item.comments}
           />
         ))}
-        <ImgVegeta src={vegeta} alt="luffy" />       
+        <ImgVegeta src={vegeta} alt="Vegeta" />       
       </HomeBody>    
       <Arrasta/>
       <FooterFinal />

@@ -43,7 +43,7 @@ export function Card(props) {
 
   return (
     <CardContainer className="card" >
-      <CardBody onClick={() => noticia(props.title, props)}>
+      <CardBody onClick={() => noticia(props._id, props.user)}>
       <img src={props.banner} alt="Banner da Noticia" />
         <div>
           <CardHeader top={props.top}>
