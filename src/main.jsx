@@ -12,6 +12,7 @@ import UserProvider from "./context/userContext.jsx";
 import { AddNews } from "./pages/addNews/addNews.jsx";
 import { UserUpdate } from "./pages/userUpdate/UserUpdate.jsx";
 import { UpdateNews } from "./pages/newsUpdate/newsUpdate.jsx";
+import { PoliticaDePrivacidade } from "./pages/politicaDePrivacidade/politicaDePrivacidade.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/auth",
     element: <Auth />,
+  },
+  {
+    path: "/PoliticaDePrivacidade",
+    element: <PoliticaDePrivacidade />,
   },
 ]);
 

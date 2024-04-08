@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-around;
   background-color: #121212;
   z-index: 99;
-  padding: 15px;
+  padding: 5px;
 
   div {
     display: flex;
@@ -29,8 +29,8 @@ export const FooterStyle = styled.footer`
     }
   }
   p {
-    align-items: end;
-    text-align: end;
+    align-items: center;
+    text-align: center;
   }
 
   @media (max-width: 1000px) {
@@ -90,3 +90,23 @@ export const ImgLogo = styled.img`
     display: none;
   }
 `;
+
+export const FooterEnd = styled.div`
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    
+    p {
+      align-items: center;
+      color: white;
+      padding: 5px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    a:hover {
+      color: blueviolet;
+    }
+`; 
