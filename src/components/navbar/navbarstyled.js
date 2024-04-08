@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   position: fixed;
-  height: 15%;
+  height: 10%;
   top: 0;
   right: 0;
   background-color: #121212df;
