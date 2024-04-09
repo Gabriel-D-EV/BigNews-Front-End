@@ -12,12 +12,12 @@ export function CardTop(props) {
   return (
     <CardContainerTop>
       <CardBodyTop>
+      <img src={props.banner} alt="Banner da Noticia" />
         <div>
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>
           </CardHeader>
         </div>
-        <img src={props.banner} alt="Banner da Noticia" />
       </CardBodyTop>
     </CardContainerTop>
   );

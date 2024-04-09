@@ -2,13 +2,20 @@ import styled from "styled-components";
 
 
 export const Privacidade = styled.div`
-    width: 85%;
+    width: 70%;
+    top: 8%;
     margin: 8% auto;
     align-items: center;
     justify-content: center;
-    background-color: #12121299;
-    padding: 30px;
+    background-color: #121212a9;
+    padding: 50px 90px;
     border-radius: 10px;
+
+    @media (max-width: 1000px) {
+        width: 85%;
+        padding: 50px 20px;
+        margin: 40% auto;
+    }
     
 `;
 
@@ -45,6 +52,20 @@ export const Politica = styled.section`
     p {
         font-size: 1.2rem;
         padding: 10px;
+    }
+
+    @media (max-width: 1000px) {
+        padding: 5px;
+        h1 {
+            text-align: center;
+            padding-top: 45%;
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        };
     }
 `; 
 

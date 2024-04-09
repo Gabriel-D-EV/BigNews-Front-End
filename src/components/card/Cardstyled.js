@@ -22,17 +22,20 @@ export const CardContainer = styled.section`
 `
 export const CardBodyTop = styled.article`
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     height: 100%;
 
 
     img{
-        width: 40%;
+        width: 60%;
+        height: 40%;
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
         border: 3px solid white;
+        margin: auto;
     }
 
     div {

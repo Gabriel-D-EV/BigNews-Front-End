@@ -5,8 +5,8 @@ export const HomeHeader = styled.section`
   display: flex;
   flex-direction: column;
   padding: 0 40px;
-  margin: 10% 0 5% 0;
-  margin-left: 15%;
+  margin-top: 6%;
+  
 
   h1 {
     font-size: 4rem;
@@ -54,7 +54,7 @@ export const HomeBody = styled.section`
 
 export const ImgVegeta = styled.img`
     position: absolute;
-    width: 18%;
+    width: 20%;
     left: 0;
     top: 18%;
 

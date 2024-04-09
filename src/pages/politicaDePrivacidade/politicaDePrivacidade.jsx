@@ -8,6 +8,8 @@ import {
   Privacidade,
 } from "./politicaDePrivacidadeStyled";
 import logo from "../../images/logo-bnd.png";
+import { Voltar } from "../../components/voltar/Voltar";
+import { Link } from "react-router-dom";
 
 export function PoliticaDePrivacidade() {
   return (
@@ -15,6 +17,9 @@ export function PoliticaDePrivacidade() {
       <Navbar />
       <ImgLogo src={logo} alt="Logo big News" />
       <Privacidade>
+        <Link to="/">
+          <Voltar />
+        </Link>
         <h1>Política de Privacidade</h1>
         <ListPriv>
           <ul>
@@ -130,7 +135,7 @@ export function PoliticaDePrivacidade() {
               O Big-News | Donquixote não analisou todos os sites vinculados ao
               seu site e não é responsável pelo conteúdo de nenhum site
               vinculado. A inclusão de qualquer link não implica endosso por
-              Mugiwaras Oficial do site. O uso de qualquer site vinculado é por
+              Big-News | Donquixote do site. O uso de qualquer site vinculado é por
               conta e risco do usuário.
             </p>
             <h3>6.1 Modificações</h3>
