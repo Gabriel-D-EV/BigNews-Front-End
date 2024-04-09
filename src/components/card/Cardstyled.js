@@ -29,7 +29,7 @@ export const CardBodyTop = styled.article`
 
 
     img{
-        width: 60%;
+        width: 50%;
         height: 40%;
         object-fit: cover;
         object-position: center;
