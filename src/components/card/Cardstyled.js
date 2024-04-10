@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const CardContainerTop = styled.section`
     display: flex;
     flex-direction: column;
@@ -20,6 +21,7 @@ export const CardContainer = styled.section`
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);
     border-radius: 10px; 
 `
+
 export const CardBodyTop = styled.article`
     display: flex;
     flex-direction: column;
@@ -29,13 +31,14 @@ export const CardBodyTop = styled.article`
 
 
     img{
-        width: 50%;
-        height: 40%;
+        width: 40%;
+        height: 30%;
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
         border: 3px solid white;
-        margin: auto;
+        margin: 1% auto;
+
     }
 
     div {

@@ -54,8 +54,8 @@ export const HomeBody = styled.section`
 
 export const ImgVegeta = styled.img`
     position: absolute;
-    width: 18%;
-    left: 0;
+    width: 16%;
+    left: 8%;
     top: 11%;
 
     @media (max-width: 1000px) {
