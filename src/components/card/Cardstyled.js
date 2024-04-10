@@ -39,6 +39,10 @@ export const CardBodyTop = styled.article`
         border: 3px solid white;
         margin: 1% auto;
 
+        @media (max-width: 1000px) {
+            width: 80%;
+            height: 60%;
+        }
     }
 
     div {

@@ -20,7 +20,7 @@ export const HomeHeader = styled.section`
 
   @media (max-width: 1000px) {
     margin-left: 0;
-    margin-top: 35%;
+    margin-top: 38%;
     padding: 5px;
 
     h1 {
