@@ -42,6 +42,7 @@ export const HomeBody = styled.section`
   .card:hover {
     transform: scale(1.05);
     z-index: 9999;
+    box-shadow: 0 0 10px violet, 0 0 30px blueviolet;
     } 
 
   @media (max-width: 1000px) {

@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { deleteNews, updateNew } from "../../services/newsServices";
+import { deleteNews } from "../../services/newsServices";
 import { TextLimit } from "../textlimit/TextLimit";
 import { CardContainer, CardBody, CardFooter, CardHeader, CardContainerTop, CardBodyTop } from "./Cardstyled";
 
@@ -82,6 +82,7 @@ export function CardUser(props) {
             <i class=" updatenews bi bi-pencil-square"></i>
           </Link>
           <i class=" deletenews bi bi-x-circle" onClick={delNews}></i>
+          <img className="imgcarduser" src={props.banner} alt="Banner da Noticia" />
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>
             <TextLimit text={props.text} limit={300} />
@@ -98,8 +99,6 @@ export function CardUser(props) {
             </section>          
           </CardFooter>
         </div>
-
-        <img src={props.banner} alt="Banner da Noticia" />
       </CardBodyTop>
     </CardContainer>
   );

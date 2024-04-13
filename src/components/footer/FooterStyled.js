@@ -95,11 +95,12 @@ export const FooterEnd = styled.div`
     align-items: center;
     text-align: center;
     padding: 10px;
-    
+    background-color: #121212;
     p {
       align-items: center;
       color: white;
       padding: 5px;
+      font-size: .8rem;
     }
     a {
       color: white;

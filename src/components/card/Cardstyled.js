@@ -36,7 +36,7 @@ export const CardBodyTop = styled.article`
         object-fit: cover;
         object-position: center;
         border-radius: 0 10px 10px 0;
-        border: 3px solid white;
+        border: 6px solid white;
         margin: 1% auto;
 
         @media (max-width: 1000px) {
@@ -51,6 +51,11 @@ export const CardBodyTop = styled.article`
         justify-content: space-between;
         padding: .5rem;
         width: 100%;
+
+        .imgcarduser {
+            width: 80%;
+            height: 45%;
+        }
     }
 
     .deletenews {
