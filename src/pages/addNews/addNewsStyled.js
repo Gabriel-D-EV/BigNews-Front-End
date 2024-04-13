@@ -53,7 +53,7 @@ export const SectionNews = styled.section`
 export const ImgSupera = styled.img`
   position: absolute;
   width: 22%;
-  top: 43%;
+  top: 39%;
   left: 10%;
 
   @media (max-width: 1000px) {

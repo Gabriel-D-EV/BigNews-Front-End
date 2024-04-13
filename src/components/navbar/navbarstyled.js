@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   position: fixed;
-  height: 10%;
+  height: 7%;
   top: 0;
   right: 0;
   background-color: #121212df;
@@ -61,7 +61,7 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 1000px) {
-    height: 15%;
+    height: 13%;
 
     a {
       font-size: .9rem;

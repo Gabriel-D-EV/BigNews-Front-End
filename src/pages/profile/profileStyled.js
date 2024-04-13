@@ -131,9 +131,10 @@ export const AddNews = styled.div`
 
 export const ImgLuffyg5 = styled.img`
   position: absolute;
-  left: 37%;
-  width: 25%;
-  top: 35%;
+  right: 20%;
+  width: 20%;
+  top: 40%;
+  
   @media (max-width: 1400px) {
     display: none;
   }
