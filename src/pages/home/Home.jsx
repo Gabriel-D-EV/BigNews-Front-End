@@ -38,7 +38,7 @@ export default function Home() {
     <>
       <Navbar />
       <HomeHeader>
-        <h1>Últimas Notícias:</h1>
+        <h1>Última Notícia:</h1>
 
         <br />
         <CardTop

@@ -31,12 +31,12 @@ export const CardBodyTop = styled.article`
 
 
     img{
-        width: 40%;
+        width: 45%;
         height: 30%;
         object-fit: cover;
         object-position: center;
-        border-radius: 0 10px 10px 0;
-        border: 6px solid white;
+        border-radius: 0 200px 0;
+        border: 6px solid blueviolet;
         margin: 1% auto;
 
         @media (max-width: 1000px) {
@@ -50,12 +50,23 @@ export const CardBodyTop = styled.article`
         flex-direction: column;
         justify-content: space-between;
         padding: .5rem;
-        width: 100%;
+        
 
         .imgcarduser {
-            width: 80%;
-            height: 45%;
+            width: 90%;
+            height: 80%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 100px 0 100px 0;
+            margin-top: 5%;
         }
+
+        @media (max-width: 1000px) {
+            .imgcarduser {
+                margin-top: 10%;
+            }
+        }
+
     }
 
     .deletenews {
@@ -65,15 +76,21 @@ export const CardBodyTop = styled.article`
         top: 1%;
         left: 1%;
         cursor: pointer;
+        z-index: 99;
     }
 
     .updatenews {
-        color: white;
+        color: violet;
         font-size: 1.5rem;
         position: absolute;
         top: 1%;
         left: 10%;
         cursor: pointer;
+        z-index: 99;
+    }
+
+    @media (max-width: 1000px) {
+        height: 75vh;
     }
 `;
 
