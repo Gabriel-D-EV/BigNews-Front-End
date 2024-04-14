@@ -17,7 +17,7 @@ export const Nav = styled.nav`
     rgba(0, 0, 0, 0.3) 0px 15px 75px, rgba(0, 0, 0, 0.2) 0px 5px 65px;
   
   .img {
-    transition: .2s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .img:hover {
     transform: scale(1.05);
@@ -37,6 +37,7 @@ export const Nav = styled.nav`
     a {
       text-decoration: none;
       color: #fff;
+      transition: all 0.5s ease-in-out;
     }
     a:hover {
       color: blueviolet;
@@ -143,7 +144,7 @@ export const NavList = styled.ul`
     font-weight: bold;
     text-transform: uppercase;
     padding: 2px 10px;
-    transition: 0.3s all ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   a:hover {
     color: blueviolet;
@@ -185,6 +186,7 @@ export const UserLogado = styled.div`
   h2 {
     font-size: 1rem;
     font-weight: 500;
+    transition: all 0.5s ease-in-out;
   }
   h2:hover {
     color: blueviolet;
@@ -195,7 +197,7 @@ export const UserLogado = styled.div`
   }
   i {
     font-size: 1rem;
-    transition: 0.2s ease-in;
+    transition: all 0.5s ease-in-out;
   }
   i:hover {
     color: #f00;

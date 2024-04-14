@@ -23,6 +23,7 @@ export const FooterStyle = styled.footer`
       text-decoration: none;
       color: white;
       font-size: 1rem;
+      transition: all 0.5s ease-in-out;
     }
     a:hover {
       color: blueviolet;
@@ -50,9 +51,9 @@ export const Redes = styled.div`
   p {
     align-items: center;
     font-size: 1.3rem;
-    font-weight: bold;
     color: white;
     padding: 10px;
+    transition: all 0.5s ease-in-out;
   }
   a {
     display: flex;
@@ -60,17 +61,19 @@ export const Redes = styled.div`
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
   }
   i {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   a:hover {
     i {
-      transform: scale(1.7);
+      transform: scale(2);
       color: blueviolet;
     }
     p {
       color: blueviolet;
+      font-weight: 500;
     }
   }
 `;

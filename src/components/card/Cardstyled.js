@@ -60,13 +60,6 @@ export const CardBodyTop = styled.article`
             border-radius: 100px 0 100px 0;
             margin-top: 5%;
         }
-
-        @media (max-width: 1000px) {
-            .imgcarduser {
-                margin-top: 10%;
-            }
-        }
-
     }
 
     .deletenews {
@@ -91,6 +84,14 @@ export const CardBodyTop = styled.article`
 
     @media (max-width: 1000px) {
         height: 75vh;
+
+        img{
+            width: 98%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            margin: 1% auto;
+        }
     }
 `;
 

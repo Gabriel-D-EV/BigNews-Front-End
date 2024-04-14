@@ -37,10 +37,13 @@ export const HomeBody = styled.section`
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
   padding: 110px 80px;
-  transition: all.5s ease-in-out;
+  
+  section {
+    transition: all 0.5s ease-in-out;
+  }
 
   .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     z-index: 9999;
     box-shadow: 0 0 10px violet, 0 0 30px blueviolet;
     } 
