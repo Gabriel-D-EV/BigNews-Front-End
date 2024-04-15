@@ -37,6 +37,8 @@ export const HomeBody = styled.section`
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
   padding: 110px 80px;
+  text-decoration: none;
+  a , h
   
   section {
     transition: all 0.5s ease-in-out;

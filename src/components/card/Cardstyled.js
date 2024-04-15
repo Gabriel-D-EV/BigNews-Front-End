@@ -96,7 +96,13 @@ export const CardBody = styled.article`
     width: 100%;
     justify-content: center;
     height: 100%;
+    text-decoration: none;
 
+    p {
+        text-decoration: none;
+        color: white;
+        
+    }
 
     img{
         width: 100%;
@@ -112,6 +118,7 @@ export const CardBody = styled.article`
         justify-content: space-between;
         padding: .5rem;
         width: 100%;
+        text-decoration: none;
     }
 
     .deletenews {
@@ -176,8 +183,10 @@ export const CardFooter = styled.section`
     }
     i {
         font-size: 1rem;
+        color: white;
     }
     span {
         font-size: 1rem;
+        color: white;
     }
 `;

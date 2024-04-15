@@ -14,6 +14,7 @@ import { UserUpdate } from "./pages/userUpdate/UserUpdate.jsx";
 import { UpdateNews } from "./pages/newsUpdate/newsUpdate.jsx";
 import { PoliticaDePrivacidade } from "./pages/politicaDePrivacidade/politicaDePrivacidade.jsx";
 import { DeleteNews } from "./pages/deleteNews/deleteNews.jsx";
+import { FindNew } from "./pages/findNew/findNew.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/deleteNews/:id",
         element: <DeleteNews />,
+      },
+      {
+        path: "/findNew/:id",
+        element: <FindNew />,
       },
     ],
   },
