@@ -25,7 +25,6 @@ export function CardTop(props) {
 }
 
 export function Card(props) {
-
   return (
     <CardContainer className="card">
       <CardBody>
@@ -97,7 +96,6 @@ export function CardFindNew(props) {
 
     console.log(like.length);
   }
-
 
   return (
     <CardContainer className="card">

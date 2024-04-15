@@ -145,7 +145,7 @@ export const ImgLuffyg5 = styled.img`
 
 export const ProfileNews = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 1rem, auto;
   flex-wrap: wrap;
@@ -160,7 +160,7 @@ export const ProfileNews = styled.div`
   }
 
   @media (max-width: 1000px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     width: 90%;
   }
 `;
