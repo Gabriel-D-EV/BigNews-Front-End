@@ -25,7 +25,7 @@ export function UserUpdate() {
   async function inSubmit(data) {
     try {
       const response = await userUpdate(data);
-      navigate("/");
+      navigate("/profile");
     } catch (error) {}
   }
 

@@ -39,8 +39,8 @@ export function createNews(data) {
   return response;
 }
 
-export function deleteNews() {
-  const response = axios.delete(`${baseURL}/news`, {
+export function deleteNews(id) {
+  const response = axios.delete(`${baseURL}/news/${id}`, {
     headers: {
       Authorization: `Bearer ${Cookies.get("token")}`,
     },
@@ -48,8 +48,17 @@ export function deleteNews() {
   return response
 }
 
-export function updateNew(data) {
-  const response = axios.patch(`${baseURL}/news/update/`, data, {
+export function updateNew(body, id) {
+  const response = axios.patch(`${baseURL}/news/update/${id}`, body, {
+    headers: {
+      Authorization: `Bearer ${Cookies.get("token")}`,
+    },
+  })
+  return response
+}
+
+export function getNewsById(id) {
+  const response = axios.get(`${baseURL}/news/${id}`, {
     headers: {
       Authorization: `Bearer ${Cookies.get("token")}`,
     },

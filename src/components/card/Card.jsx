@@ -70,18 +70,18 @@ export function Card(props) {
 
 export function CardUser(props) {
 
-  function delNews() {
-    deleteNews();
-  }
-
   return (
     <CardContainer>
       <CardBodyTop>
         <div>
-          <Link to="/newsUpdate">
+          <Link to={`/newsUpdate/${props.id}`}>
             <i class=" updatenews bi bi-pencil-square"></i>
           </Link>
-          <i class=" deletenews bi bi-x-circle" onClick={delNews}></i>
+
+          <Link to={`/deleteNews/${props.id}`}><i class=" deletenews bi bi-trash3"></i></Link>
+
+          
+
           <img className="imgcarduser" src={props.banner} alt="Banner da Noticia" />
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>

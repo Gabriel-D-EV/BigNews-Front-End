@@ -1,8 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Button } from "../../components/button/Button.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { useForm } from "react-hook-form";
-import { updateNew } from "../../services/newsServices.js";
+import { getNewsById, updateNew } from "../../services/newsServices.js";
 import { Input, InputArea } from "../../components/input/Input.jsx";
 import ryuki from "../../images/ryuki.png";
 import { Voltar } from "../../components/voltar/Voltar.jsx";
@@ -10,12 +10,15 @@ import { newsSchema } from "../../schemas/newsSchemas.js";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorSpan } from "../../components/navbar/navbarstyled.js";
 import { ImgRyuki, SectionNews, UpNewsContainer } from "./newsupdateStyled.js";
+import { useEffect } from "react";
 
 export function UpdateNews() {
+  const { id } = useParams();
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue,
   } = useForm({
     resolver: zodResolver(newsSchema)
   });
@@ -24,12 +27,27 @@ export function UpdateNews() {
 
   async function inHandleSubmit(data) {
     try {
-      const response = await updateNew(data);
-      console.log(response);
-
+      await updateNew(data, id);
       navigate("/profile");
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   }
+
+  async function findNewsById(id) { 
+    try {
+      const {data} = await getNewsById(id);
+      setValue("title", data.title);
+      setValue("banner", data.banner);
+      setValue("text", data.text);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    findNewsById(id)
+  })
 
   return (
     <>
