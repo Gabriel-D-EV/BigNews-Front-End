@@ -19,7 +19,8 @@ export const CardContainer = styled.section`
     max-width: 100%;
     background-color: #3a3a3a59;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);
-    border-radius: 10px; 
+    border-radius: 10px;
+    height: 100%;
 `
 
 export const CardBodyTop = styled.article`
