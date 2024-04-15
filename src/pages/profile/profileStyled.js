@@ -156,7 +156,6 @@ export const ProfileNews = styled.div`
     text-align: center;
     font-weight: bold;
     margin-top: 2rem;
-    color: aquamarine;
   }
 
   @media (max-width: 1000px) {
