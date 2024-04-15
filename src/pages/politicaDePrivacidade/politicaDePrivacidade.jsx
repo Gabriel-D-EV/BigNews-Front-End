@@ -43,6 +43,9 @@ export function PoliticaDePrivacidade() {
             <li>
               <a href="#Links">Links</a>
             </li>
+            <li>
+              <a href="#cookie">Cookies</a>
+            </li>
           </ul>
         </ListPriv>
 
@@ -135,8 +138,8 @@ export function PoliticaDePrivacidade() {
               O Big-News | Donquixote não analisou todos os sites vinculados ao
               seu site e não é responsável pelo conteúdo de nenhum site
               vinculado. A inclusão de qualquer link não implica endosso por
-              Big-News | Donquixote do site. O uso de qualquer site vinculado é por
-              conta e risco do usuário.
+              Big-News | Donquixote do site. O uso de qualquer site vinculado é
+              por conta e risco do usuário.
             </p>
             <h3>6.1 Modificações</h3>
             <p>
@@ -151,6 +154,36 @@ export function PoliticaDePrivacidade() {
               as leis do Big-News | Donquixote e você se submete
               irrevogavelmente à jurisdição exclusiva dos tribunais naquele
               estado ou localidade.
+            </p>
+          </div>
+
+          <div id="cookie">
+            <h1>7.Finalidade da Coleta de Cookies:</h1>
+            <p>
+              Utilizamos cookies para melhorar o desempenho e a experiência em
+              nosso site. Os cookies são arquivos de texto criados pelo site e
+              armazenados no dispositivo que acessa a plataforma (notebooks,
+              tablets, smartphones, etc.).
+            </p>
+            <h3>7.1Autorização e Legitimação:</h3>
+            <p>
+              Ao utilizar nosso site, você concorda com a coleta de dados por
+              meio de cookies. A coleta de dados é legítima e está em
+              conformidade com as normas previstas na Lei 13.709/18, que versa
+              sobre a proteção de dados e outras legislações pertinentes.
+            </p>
+            <h3>7.2Comunicação dos Dados:</h3>
+            <p>
+              Os dados coletados são utilizados para comunicação com nossos
+              clientes e usuários. Mantemos esses dados de forma segura e
+              confidencial.
+            </p>
+            <h3>7.3Direitos do Usuário:</h3>
+            <p>
+              Você tem o direito de solicitar informações sobre os dados
+              coletados e de pedir sua exclusão ou alteração. Caso tenha
+              dúvidas, entre em contato diretamente com nossa equipe pela aba de
+              contato.
             </p>
           </div>
         </Politica>

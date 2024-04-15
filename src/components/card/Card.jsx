@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import { deleteNews } from "../../services/newsServices";
 import { TextLimit } from "../textlimit/TextLimit";
 import { CardContainer, CardBody, CardFooter, CardHeader, CardContainerTop, CardBodyTop } from "./Cardstyled";
 

@@ -3,6 +3,7 @@ import { Button } from "../../components/button/Button";
 import { ContainerDel } from "./deleteNewsStyled";
 import { useNavigate, useParams } from "react-router-dom";
 import { deleteNews } from "../../services/newsServices";
+import { FooterFinal } from "../../components/footer/Footer.jsx";
 
 export function DeleteNews() {
     const { id } = useParams();
@@ -43,6 +44,7 @@ export function DeleteNews() {
           </form>
         </div>
       </ContainerDel>
+      <FooterFinal />
     </>
   );
 }

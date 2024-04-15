@@ -17,7 +17,7 @@ export const CardContainer = styled.section`
     gap: 1rem;
     cursor: pointer;
     max-width: 100%;
-    background-color: #3a3a3a39;
+    background-color: #3a3a3a59;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.80), 0 12px 30px rgba(0, 0, 0, 0.90);
     border-radius: 10px; 
 `
@@ -37,7 +37,7 @@ export const CardBodyTop = styled.article`
         object-position: center;
         border-radius: 0 200px 0;
         border: 6px solid blueviolet;
-        margin: 1% auto;
+        margin: auto;
 
         @media (max-width: 1000px) {
             width: 80%;
@@ -57,8 +57,7 @@ export const CardBodyTop = styled.article`
             height: 80%;
             object-fit: cover;
             object-position: center;
-            border-radius: 100px 0 100px 0;
-            margin-top: 5%;
+            border-radius: 150px 0 150px 0;
         }
     }
 
@@ -83,14 +82,12 @@ export const CardBodyTop = styled.article`
     }
 
     @media (max-width: 1000px) {
-        height: 75vh;
-
         img{
             width: 98%;
             height: 100%;
             object-fit: cover;
             object-position: center;
-            margin: 1% auto;
+            margin: auto;
         }
     }
 `;

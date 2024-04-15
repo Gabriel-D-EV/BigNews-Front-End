@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
     max-width: 100vw;
-    height: 100vh;
+    
     color: white;
     background-image: linear-gradient(#0f0f0fc9, #0f0f0fe9, #0f0f0ff9, black), url(${images});
     background-size: cover;
