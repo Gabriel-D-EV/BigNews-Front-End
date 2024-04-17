@@ -58,6 +58,7 @@ export function UpdateNews() {
           </Link>
           <form onSubmit={handleSubmit(inHandleSubmit)}>
             <h1>Atualizar Notícia</h1>
+            <h3>Preencher todos os campos</h3>
             <br />
             <Input
               type="text"
