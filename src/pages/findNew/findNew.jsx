@@ -13,7 +13,7 @@ export function FindNew() {
 
   console.log(id, news);
 
-  ARRUMARRRRRRRRRRR
+
  
 
   async function getNew() {
@@ -36,6 +36,7 @@ export function FindNew() {
         <Link to="/">
           <Voltar />
         </Link>
+        <p>arrumar</p>
         <CardFindNew
           key={news.data.id}
           id={news.data.id}
