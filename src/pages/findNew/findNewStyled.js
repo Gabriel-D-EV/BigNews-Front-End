@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const FindCardNew = styled.section`
-    margin: 0 auto;
-    margin-top: 8%;
+    margin: 10% auto;
     width: 70%;
-    
 `;

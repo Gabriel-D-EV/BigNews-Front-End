@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardContainerTop,
   CardBodyTop,
+  CardBodyFindNews,
 } from "./Cardstyled";
 
 export function CardTop(props) {
@@ -74,6 +75,8 @@ export function CardUser(props) {
             <TextLimit text={props.text} limit={300} />
           </CardHeader>
           <br />
+         
+
           <CardFooter>
             <section className="like">
               <i className="bi bi-hand-thumbs-up"></i>
@@ -99,8 +102,8 @@ export function CardFindNew(props) {
 
   return (
     <CardContainer className="card">
-      <CardBody>
-        <img src={props.banner} alt="Banner da Noticia" />
+      <CardBodyFindNews>
+        <img className="findnewbyid" src={props.banner} alt="Banner da Noticia" />
         <div>
           <CardHeader top={props.top}>
             <h2>{props.title}</h2>
@@ -118,7 +121,7 @@ export function CardFindNew(props) {
             </section>
           </CardFooter>
         </div>
-      </CardBody>
+      </CardBodyFindNews>
     </CardContainer>
   );
 }

@@ -2,7 +2,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { Button } from "../../components/button/Button.jsx";
 import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { useForm } from "react-hook-form";
-import { getNewsById, updateNew } from "../../services/newsServices.js";
+import { getNewById, updateNew } from "../../services/newsServices.js";
 import { Input, InputArea } from "../../components/input/Input.jsx";
 import ryuki from "../../images/ryuki.png";
 import { Voltar } from "../../components/voltar/Voltar.jsx";
@@ -34,9 +34,9 @@ export function UpdateNews() {
     }
   }
 
-  async function findNewsById(id) { 
+  async function findNewById(id) { 
     try {
-      const {data} = await getNewsById(id);
+      const {data} = await getNewById(id);
       setValue("title", data.title);
       setValue("banner", data.banner);
       setValue("text", data.text);
@@ -46,7 +46,7 @@ export function UpdateNews() {
   }
 
   useEffect(() => {
-    findNewsById(id)
+    findNewById(id)
   })
 
   return (

@@ -91,6 +91,35 @@ export const CardBodyTop = styled.article`
   }
 `;
 
+export const CardBodyFindNews = styled.article`
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+
+  p {
+    text-decoration: none;
+    color: white;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px 0 0 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: 100%;
+    text-decoration: none;
+  }
+`; 
+
 export const CardBody = styled.article`
   width: 100%;
   justify-content: center;
@@ -151,7 +180,7 @@ export const CardHeader = styled.article`
     margin-bottom: 0.5rem;
     width: 100%;
     font-style: italic;
-    font-size: ${(props) => (props.top ? "4.2rem" : "1.5rem")};
+    font-size: ${(props) => (props.top ? "4rem" : "1.5rem")};
   }
 
   @media (max-width: 1000px) {

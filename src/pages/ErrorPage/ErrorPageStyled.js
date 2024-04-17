@@ -11,11 +11,12 @@ export const ErrorPageSt = styled.div`
     border-radius: 20px;
     font-size: 2rem;
     background-color: #090909e9;
-    box-shadow: 5px 20px 15px rgba(50, 30, 90, 0.70), 5px 12px 10px rgba(50, 30, 90, 0.70);
+    box-shadow: 0 5px 25px rgba(50, 30, 90, 0.70), 0 10px 15px rgba(50, 30, 90, 0.90);
     h1 {
         margin: 100px auto;
         color: #ff0000;
         font-size: 6rem;
+        text-align: center;
     }
     p {
         margin: 20px auto;

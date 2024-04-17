@@ -26,9 +26,13 @@ export function Profile() {
   const { user } = useContext(UserContext);
   const [news, setNews] = useState([]);
 
+  console.log(news);
+
   async function findAllNewsUser() {
     const newsResponse = await getAllNewsByUser();
     setNews(newsResponse.data.results);
+
+    
   }
 
   useEffect(() => {

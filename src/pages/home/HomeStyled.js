@@ -9,13 +9,15 @@ export const HomeHeader = styled.section`
   
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     align-items: center;
     text-align: center;
     font-family: "Fira Sans";
     font-weight: bolder;
     font-style: italic;
+    padding-bottom: 20px;
     border-bottom: 10px double;
+    margin-bottom: 3%;
   }
 
   @media (max-width: 1000px) {
@@ -25,6 +27,7 @@ export const HomeHeader = styled.section`
 
     h1 {
       font-size: 3rem;
+      margin-bottom: 10%;
     }
   }
 `;
@@ -38,7 +41,7 @@ export const HomeBody = styled.section`
   border-radius: 0 0 15px 15px;
   padding: 110px 80px;
   text-decoration: none;
-  a , h
+  
   
   section {
     transition: all 0.5s ease-in-out;

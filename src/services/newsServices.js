@@ -57,8 +57,8 @@ export function updateNew(body, id) {
   return response
 }
 
-export function getNewsById(id) {
-  const response = axios.get(`${baseURL}/news/${id}`, {
+export function getNewById(id) {
+  const response = axios.get(`${baseURL}/news/getNewById/${id}`, {
     headers: {
       Authorization: `Bearer ${Cookies.get("token")}`,
     },

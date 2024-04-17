@@ -7,7 +7,7 @@ export default function ErrorPage() {
 
   return (
     <ErrorPageSt>
-      <h1>Oops!</h1>
+      <h1>Eita Porra!</h1>
       <p>Desculpe, ocorreu um erro inesperado.</p>
       <p>
         <i>{error.statusText || error.message}</i>

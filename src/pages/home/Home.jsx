@@ -4,13 +4,15 @@ import { FooterFinal } from "../../components/footer/Footer.jsx";
 import { Navbar } from "../../components/navbar/navbar.jsx";
 import { getAllNews, getTopNew } from "../../services/newsServices.js";
 import { HomeBody, HomeHeader, ImgVegeta } from "./HomeStyled.js";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Arrasta } from "../../components/arrastapcima/Arrasta.jsx";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../context/userContext.jsx";
 
 export default function Home() {
   const [news, setNews] = useState([]);
   const [topNews, setTopNews] = useState({});
+  const { user } = useContext(UserContext);
 
   async function findNews() {
     const newsResponse = await getAllNews();
@@ -28,9 +30,8 @@ export default function Home() {
     <>
       <Navbar />
       <HomeHeader>
-        <h1>Última Notícia:</h1>
+        <h1>Olá {user.name}, Confira a Última Notícia!!</h1>
 
-        <br />
         <CardTop top="true" title={topNews?.title} banner={topNews?.banner} />
       </HomeHeader>
       <hr />
