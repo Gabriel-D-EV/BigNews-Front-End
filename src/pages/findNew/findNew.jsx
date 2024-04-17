@@ -12,6 +12,8 @@ export function FindNew() {
 
 
   console.log(id, news);
+
+  ARRUMARRRRRRRRRRR
  
 
   async function getNew() {
