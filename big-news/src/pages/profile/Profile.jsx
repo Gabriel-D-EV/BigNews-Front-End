@@ -57,13 +57,13 @@ export function Profile() {
 
           <Link to="/addnews">
             <AddNews>
-              <i class="bi bi-plus-circle"><p>Add <br /> Notícia</p></i>
+              <i className="bi bi-plus-circle"><p>Add <br /> Notícia</p></i>
             </AddNews>
           </Link>
           {/* */}
           <Link to="/userUpdate">
             <IconP>
-              <i class="bi bi-pencil-square"><p>Editar <br /> User</p></i>
+              <i className="bi bi-pencil-square"><p>Editar <br /> User</p></i>
             </IconP>
           </Link>
         </ProfileHeader>

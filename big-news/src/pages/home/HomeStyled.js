@@ -20,6 +20,15 @@ export const HomeHeader = styled.section`
     margin-bottom: 3%;
   }
 
+  h3 {
+    font-size: 2.3rem;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+  }
+
   @media (max-width: 1000px) {
     margin-left: 0;
     margin-top: 38%;

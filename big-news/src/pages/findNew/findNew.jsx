@@ -29,7 +29,7 @@ export function FindNew() {
 
   useEffect(() => {
     getNew(id);
-  }, [id]);
+  }, []);
   return (
     <>
       <FindCardNew>

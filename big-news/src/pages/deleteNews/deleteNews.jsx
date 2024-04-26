@@ -21,14 +21,18 @@ export function DeleteNews() {
     async function naoHandleSubmit() {
         try {
           navigate("/profile");
-        } catch (error) {}
+        } catch (error) {
+          console.log(error);
+        }
     }
     
     async function simHandleSubmit() {
         try {
         await deleteNews(id)
           navigate("/profile");
-        } catch (error) {}
+        } catch (error) {
+          console.log(error);
+        }
       }
 
   return (
