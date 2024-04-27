@@ -25,8 +25,8 @@ export const HomeHeader = styled.section`
     align-items: center;
     text-align: center;
     padding: 30px 0;
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
+    border-radius: 10px;
+    background-color: red; 
   }
 
   @media (max-width: 1000px) {
