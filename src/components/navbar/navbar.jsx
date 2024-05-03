@@ -72,7 +72,7 @@ export function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="https://leitordemanga.com/" target="_blank">
+                <a href="https://mangaplus.shueisha.co.jp/updates" target="_blank">
                   MANGÁS
                 </a>
               </li>
