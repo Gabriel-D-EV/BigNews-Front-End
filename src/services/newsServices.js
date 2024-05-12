@@ -8,7 +8,6 @@ const baseURL = ("https://big-news.onrender.com");
 export function getAllNews() {
   const response = axios.get(`${baseURL}/news`);
   return response;
-  console.log(response);
 }
 
 export function getTopNew() {
