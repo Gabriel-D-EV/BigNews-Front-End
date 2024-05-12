@@ -35,7 +35,6 @@ export const HomeHeader = styled.section`
 
   h2:hover {
     color: violet;
-    font-size: 4rem;
   }
   
 

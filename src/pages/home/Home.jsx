@@ -32,7 +32,7 @@ export default function Home() {
       <HomeHeader>
         <h3 className="developer">Site em Desenvolvimento ( Quase Finalizando )</h3>
 
-        <h2><i class="bi bi-heart-fill"></i>  Feliz dia das Mães  <i class="bi bi-heart-fill"></i></h2>
+        <h2><i class="bi bi-heart-fill"></i>  Querida mãe, você é como o Kamehameha do Goku, irradiando amor e força em todas as direções. Seu carinho é tão poderoso quanto o Rasengan do Naruto, e sua dedicação é tão inabalável quanto a busca pelo One Piece. Feliz Dia das Mães!  <i class="bi bi-heart-fill"></i></h2>
         
         <h1>Olá {user.name}, Confira a Última Notícia!!</h1>
 
