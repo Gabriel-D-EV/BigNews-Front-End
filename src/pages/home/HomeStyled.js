@@ -19,7 +19,7 @@ export const HomeHeader = styled.section`
   }
 
   .dia-especial {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bolder;
     color: white;
