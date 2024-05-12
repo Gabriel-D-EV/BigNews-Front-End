@@ -28,10 +28,10 @@ export const CardBodyTop = styled.article`
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  height: 100%;
+  
 
   img {
-    width: 45%;
+    width: 65%;
     height: 30%;
     object-fit: cover;
     object-position: center;

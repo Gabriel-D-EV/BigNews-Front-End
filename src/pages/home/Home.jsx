@@ -40,8 +40,6 @@ export default function Home() {
         
       </HomeHeader>
       <hr />
-
-
       <HomeBody>
         {news.map((item) => (
           <Link to={`/findNew/${item.id}`}>

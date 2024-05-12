@@ -41,7 +41,7 @@ export const HomeHeader = styled.section`
 
   .developer {
     font-size: 2.3rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     align-items: center;
     text-align: center;
     padding: 30px 0;
