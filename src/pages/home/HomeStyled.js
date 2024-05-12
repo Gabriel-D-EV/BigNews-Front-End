@@ -18,7 +18,7 @@ export const HomeHeader = styled.section`
     margin-bottom: 3%;
   }
 
-  h2 {
+  .dia-especial {
     font-size: 3rem;
     text-align: center;
     font-weight: bolder;
@@ -27,13 +27,14 @@ export const HomeHeader = styled.section`
     z-index: 10;
     transition: 0.4s ease-in-out;
     margin: 40px 0;
+    margin-left: 20%;
 
     i {
       color: red;
     }
   }
 
-  h2:hover {
+  .dia-especial:hover {
     color: violet;
   }
   
@@ -56,6 +57,9 @@ export const HomeHeader = styled.section`
     h1 {
       font-size: 3rem;
       margin-bottom: 10%;
+    }
+    .dia-especial {
+      margin-left: 0;
     }
   }
 `;
