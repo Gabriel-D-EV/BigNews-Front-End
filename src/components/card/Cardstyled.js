@@ -42,6 +42,7 @@ export const CardBodyTop = styled.article`
     @media (max-width: 1000px) {
       width: 80%;
       height: 60%;
+      border-radius: 0 100px 0;
     }
   }
 
