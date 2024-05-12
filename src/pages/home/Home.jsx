@@ -30,13 +30,17 @@ export default function Home() {
     <>
       <Navbar />
       <HomeHeader>
-        <h3>Site em Desenvolvimento ( Quase Finalizando )</h3>
+        <h3 className="developer">Site em Desenvolvimento ( Quase Finalizando )</h3>
+
+        <h2><i class="bi bi-heart-fill"></i>  Feliz dia das Mães  <i class="bi bi-heart-fill"></i></h2>
         
         <h1>Olá {user.name}, Confira a Última Notícia!!</h1>
 
         <CardTop top="true" title={topNews?.title} banner={topNews?.banner} />
+        
       </HomeHeader>
       <hr />
+
 
       <HomeBody>
         {news.map((item) => (

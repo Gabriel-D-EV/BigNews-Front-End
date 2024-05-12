@@ -15,7 +15,7 @@ export const VoltarStyle = styled.div`
         left: -8%;
         bottom: 5px;
         text-decoration: none;
-        background-color: #0f0f0fe9; 
+        background-color: #0f0f0f89; 
         width: 40px;
         height: 40px;
         border-radius: 50%;
