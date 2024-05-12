@@ -51,7 +51,7 @@ export const HomeHeader = styled.section`
 
   @media (max-width: 1000px) {
     margin-left: 0;
-    margin-top: 38%;
+    margin-top: 30%;
     padding: 5px;
 
     h1 {
@@ -65,19 +65,18 @@ export const HomeBody = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
   padding: 110px 80px;
   text-decoration: none;
 
   section {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .card:hover {
-    transform: scale(1.07);
-    z-index: 9999;
+    transform: scale(1.02);
     box-shadow: 0 0 10px violet, 0 0 30px blueviolet;
   }
 

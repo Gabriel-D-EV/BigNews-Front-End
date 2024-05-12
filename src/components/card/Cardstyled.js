@@ -12,7 +12,7 @@ export const CardContainer = styled.section`
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 5rem;
+  gap: 10rem;
   cursor: pointer;
   max-width: 100%;
   background-color: #3a3a3a59;
