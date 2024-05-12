@@ -22,6 +22,7 @@ export const HomeHeader = styled.section`
 
   h3 {
     font-size: 2.3rem;
+    margin-bottom: 40px;
     align-items: center;
     text-align: center;
     padding: 30px 0;

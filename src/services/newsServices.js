@@ -2,12 +2,13 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 
-const baseURL = ("https://big-news.onrender.com");
-//const baseURL = ("http://localhost:3000");
+//const baseURL = ("https://big-news.onrender.com");
+const baseURL = ("http://localhost:3000");
 
 export function getAllNews() {
   const response = axios.get(`${baseURL}/news`);
   return response;
+  console.log(response);
 }
 
 export function getTopNew() {

@@ -8,22 +8,28 @@ export const VoltarStyle = styled.div`
     text-align: center;
     margin: 0 auto;
     position: relative;
+    
 
     a {
         position: absolute;
         left: -8%;
-        bottom: -15px;
+        bottom: 5px;
         text-decoration: none;
+        background-color: #0f0f0fe9; 
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
         color: white;
         font-size: 2rem;
         font-weight: 600;
-        margin: 1rem;
+        padding: 2px;
         transition: .2s ease-in-out;   
     }
-    p {
-        font-size: 1rem;
-    }
 
+    i {
+        align-items: center;
+        justify-content: center;
+    }
     a:hover {
         color: blueviolet;
         transform: translateX(-10px);

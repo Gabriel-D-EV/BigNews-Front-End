@@ -31,6 +31,7 @@ export default function Home() {
       <Navbar />
       <HomeHeader>
         <h3>Site em Desenvolvimento ( Quase Finalizando )</h3>
+        
         <h1>Olá {user.name}, Confira a Última Notícia!!</h1>
 
         <CardTop top="true" title={topNews?.title} banner={topNews?.banner} />
