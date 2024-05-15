@@ -19,6 +19,7 @@ export const HomeHeader = styled.section`
   }
 
   .dia-especial {
+    display: none;
     font-size: 2.5rem;
     text-align: center;
     font-weight: bolder;
