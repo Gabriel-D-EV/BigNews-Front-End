@@ -1,5 +1,6 @@
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 import { ErrorPageSt } from "./ErrorPageStyled";
+import { Voltar } from "../../components/voltar/Voltar";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -7,8 +8,14 @@ export default function ErrorPage() {
 
   return (
     <ErrorPageSt>
-      <h1>Eita Porra!</h1>
-      <p>Desculpe, ocorreu um erro inesperado.</p>
+      <Link to="/">
+        <Voltar />
+      </Link>
+      <h1>
+        Ops!! Parece que algo deu errado. Mas não se preocupe, nosso time de
+        hamsters altamente treinados já está correndo em suas rodinhas para
+        resolver o problema! !
+      </h1>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
