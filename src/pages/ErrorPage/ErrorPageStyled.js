@@ -26,4 +26,12 @@ export const ErrorPageSt = styled.div`
     i {
         color: violet;
     }
+    @media (max-width: 1000px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+  }
 `;
