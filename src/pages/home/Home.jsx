@@ -30,9 +30,9 @@ export default function Home() {
     <>
       <Navbar />
       <HomeHeader>
-        <h3 className="developer">Site em Desenvolvimento ( Quase Finalizando )</h3>
+        <h3 className="developer">Desenvolvimento pausado, logo mais voltaremos</h3>
 
-        <h2 className="dia-especial"><i class="bi bi-heart-fill"></i>  Queridas mães, vocês são como o Kamehameha do Goku, irradiando amor e força em todas as direções. Seu carinho é tão poderoso quanto o Rasengan do Naruto, e sua dedicação é tão inabalável quanto a busca pelo One Piece. Feliz Dia das Mães!  <i class="bi bi-heart-fill"></i></h2>
+        <h2 className="dia-especial"><i class="bi bi-heart-fill"></i> TEXTO <i class="bi bi-heart-fill"></i></h2>
         
         <h1>Olá {user.name}, Confira a Última Notícia!!</h1>
 
