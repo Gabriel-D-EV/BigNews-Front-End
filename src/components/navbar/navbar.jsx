@@ -77,7 +77,7 @@ export function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="https://huntersscan.xyz/" target="_blank">
+                <a href="https://manhastro.com/" target="_blank">
                   MANHWA
                 </a>
               </li>
