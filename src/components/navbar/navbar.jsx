@@ -72,7 +72,7 @@ export function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="https://manhastro.com/" target="_blank">
+                <a href="https://mugiwarasoficial.com/" target="_blank">
                   MANGÁS
                 </a>
               </li>
