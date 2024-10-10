@@ -67,7 +67,7 @@ export function Navbar() {
           <div>
             <NavList>
               <li>
-                <a href="https://animesonlinecc.to/" target="_blank">
+                <a href="https://subanimes.love/" target="_blank">
                   ANIMES
                 </a>
               </li>
