@@ -67,6 +67,11 @@ export function Navbar() {
           <div>
             <NavList>
               <li>
+                <a href="https://chat-bignews.vercel.app/" target="_blank">
+                  Chat
+                </a>
+              </li>
+              <li>
                 <a href="https://subanimes.love/" target="_blank">
                   ANIMES
                 </a>
